@@ -1,8 +1,22 @@
 import React from 'react'
+import {Proj} from '../../../data/index'
+import List from '../common/List'
+
+function list(pro){
+  return <List
+      key={pro.id}
+      title={pro.title}
+      img={pro.img}
+      info={pro.description}
+      skills={pro.skills}
+  />
+}
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <>
+    {Proj.map(list)}
+    </>
   )
 }
 
