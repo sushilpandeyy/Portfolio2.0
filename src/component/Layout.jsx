@@ -1,8 +1,13 @@
 import React from 'react'
-
+import Bio from './Bio'
+import '../App.css'
 const Layout = () => {
   return (
-    <div>Layout</div>
+   <>
+   <div className="biobox">
+   <Bio/>
+   </div>
+   </>
   )
 }
 
