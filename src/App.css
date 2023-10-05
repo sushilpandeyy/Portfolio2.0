@@ -5,9 +5,42 @@
     background-color: white;
     margin: 0px;
 }
+.bioo{
+    padding-bottom: 20px;
+}
 .biobox{
-    height: 850px;
+    
     margin: 30px;
     border-radius: 10px;
     background-color: white;
+}
+.biodetails{
+    display: flex;
+}
+.bioname{
+    width: 70%;
+    margin: 20px;
+}
+.biowidget{
+ margin: 20px;
+ align-self: center;
+ align-content: flex-start;
+}
+.highlighted-btn{
+    background-color: #0B65C2;
+    color: white;
+}
+.bio-buttons{
+    display: flex;
+}
+.connectbutton{
+    background-color: #0B65C2;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.connect-bt-tx{
+    text-align: center;
+}
+.resumebutton{
+    margin-left: 20px;
 }

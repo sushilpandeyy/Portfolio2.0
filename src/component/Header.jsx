@@ -7,7 +7,7 @@ const Header = () => {
         <div className="logo">
             <img src={reactsvg}></img>
         </div>
-        <div className="menu">MENU</div>
+        <div className="menu">NightlightRoundIcon</div>
     </div>
     </>
   )
