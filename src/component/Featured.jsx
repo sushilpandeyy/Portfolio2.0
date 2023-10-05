@@ -1,6 +1,6 @@
 import React from 'react'
 import data from "../../data"
-import Card from './Card'
+import Card from './common/Card'
 
 function createcard(contact){
 return <Card 
