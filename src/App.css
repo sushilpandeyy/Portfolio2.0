@@ -9,8 +9,9 @@
     padding-bottom: 20px;
 }
 .biobox{
-    
     margin: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
     border-radius: 10px;
     background-color: white;
 }
@@ -43,4 +44,12 @@
 }
 .resumebutton{
     margin-left: 20px;
+}
+.headimage{
+    height: 281px;
+}
+.headimage-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }

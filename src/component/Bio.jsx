@@ -3,7 +3,9 @@ import '../App.css'
 import { Button } from '@mui/material'
 const Bio = () => {
   return (<div className='bioo'>
-    <div className="headimage"></div>
+    <div className="headimage">
+        <img className='headimage-img' src='https://wallpaperaccess.com/full/2641074.gif'/>
+    </div>
     <div className="profilepic"></div>
     <div className="biodetails">
         <div className="bioname">
