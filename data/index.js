@@ -45,8 +45,8 @@ const Proj = [
 const Cert = [
     {
         id: "211",
-        title:"Complete 2023 Web Development Bootcamp",
-        org:"Dr. Angela Yu",
+        title:"Flipkart Grid 5.0 Certificate",
+        org:"Flipkart",
         date:"Sep 2023",
         Cred: "18b0ed89-d7a7-483d-a18b-5416c1c097adCredential ID 18b0ed89-d7a7-483d-a18b-5416c1c097ad",
         img: "https://media.licdn.com/dms/image/C560BAQF6H8gAs-JyFg/company-logo_100_100/0/1627543110554?e=1704326400&v=beta&t=NHIVRixx3fJu3Y0s668d0azjhXlakNIy4_Vm_DRT2z0",
@@ -55,7 +55,7 @@ const Cert = [
     {
         id: "212",
         title:"The Complete 2023 Web Development Bootcamp",
-        org:"Flipkart",
+        org:"Dr. Angela Yu",
         date:"Aug 2023",
         Cred: "UC-78169afe-f46b-4fdf-9812-802a737b84d9",
         img: "https://play-lh.googleusercontent.com/wKwW77zj6Gd-llTDakdjSDnWUPKSMDGXhnZSXel3A3qQSiM1cbDvuspBpQk15tiT9ik",
