@@ -42,4 +42,33 @@ const Proj = [
     }
 ]
 
-export  {data, Proj};
+const Cert = [
+    {
+        id: "211",
+        title:"Complete 2023 Web Development Bootcamp",
+        org:"Dr. Angela Yu",
+        date:"Sep 2023",
+        Cred: "18b0ed89-d7a7-483d-a18b-5416c1c097adCredential ID 18b0ed89-d7a7-483d-a18b-5416c1c097ad",
+        img: "https://media.licdn.com/dms/image/C560BAQF6H8gAs-JyFg/company-logo_100_100/0/1627543110554?e=1704326400&v=beta&t=NHIVRixx3fJu3Y0s668d0azjhXlakNIy4_Vm_DRT2z0",
+        skills: "Data Structures, Algorithms"
+    },
+    {
+        id: "212",
+        title:"The Complete 2023 Web Development Bootcamp",
+        org:"Flipkart",
+        date:"Aug 2023",
+        Cred: "UC-78169afe-f46b-4fdf-9812-802a737b84d9",
+        img: "https://play-lh.googleusercontent.com/wKwW77zj6Gd-llTDakdjSDnWUPKSMDGXhnZSXel3A3qQSiM1cbDvuspBpQk15tiT9ik",
+        skills: "ReactJS, ExpressJS, NodeJS, MongoDB, MYSQL"
+    },
+    {
+        id: "213",
+        title:"CodeAgoda 2023",
+        org:"Agoda",
+        date:"Apr 2023",
+        Cred: "d3d54e02-0e52-4755-9994-d018ec033ab5",
+        img: "https://media.licdn.com/dms/image/C4D0BAQGBa_7QNZNwpw/company-logo_100_100/0/1656643826125?e=1704326400&v=beta&t=YSrSgYmAGlhd0WM8RifS0zPn37Lvp0NjganUa0QRWPI",
+        skills: "Data Structures, Algorithms"
+    }
+]
+export  {data, Proj, Cert};
