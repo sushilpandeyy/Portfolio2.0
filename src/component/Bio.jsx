@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App.css'
 import { Button } from '@mui/material'
+import { Link } from 'react-router-dom'
 const Bio = () => {
   return (<div className='bioo'>
     <div className="headimage">
@@ -25,7 +26,7 @@ const Bio = () => {
         </div>
     </div>
     <div className="bio-buttons">
-            <div className="connectbutton"><Button variant="contained">Connect</Button></div>
+            <div className="connectbutton"><Link to={"/connect"}><Button variant="contained">Connect</Button></Link></div>
             <div className="resumebutton"><Button variant="outlined">Resume</Button></div>
     </div>
     </div>

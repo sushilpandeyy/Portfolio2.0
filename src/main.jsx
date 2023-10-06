@@ -4,11 +4,13 @@ import App from './App.jsx'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './component/Layout.jsx'
+import Connect from './component/Connect.jsx'
 
 const router= createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route path='' element={<Layout/>}/>
+      <Route path='connect' element={<Connect/>}/>
     </Route>
   )
 )

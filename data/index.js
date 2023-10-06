@@ -171,6 +171,11 @@ const other = [
         title: "Github",
         img: "https://www.techwar.gr/wp-content/uploads/2023/06/GitHub__headpic.jpg"
     },
+    {
+        id: "6o",
+        title: "Figma",
+        img: "https://cdn.mos.cms.futurecdn.net/TWZ3c7ANbf3zUV6YWFPi8a.jpg"
+    },
 ]
 const exp = [
     {
@@ -188,7 +193,7 @@ const exp = [
         org: "EveryDukan",
         dur: "Aug 2021 - Jan 2023",
         info: "",
-        skill: "Android Development",
+        skill: "MIT App Inventor, Digital Marketing, Designing",
         img: "https://media.licdn.com/dms/image/C4E0BAQHQQMv0LVsWlQ/company-logo_100_100/0/1630741395294?e=1704931200&v=beta&t=BkzXbbLVUKwt6iqEOVc19gD-mKK62Bc8WRsAYAlYLMg"
     },
 ]
