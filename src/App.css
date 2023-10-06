@@ -83,18 +83,22 @@ h2{
     padding-top: 10px;
 }
 .feat-card{
-    display: flex;
+   display: flex;
+   overflow: scroll;
+   
 }
 .card-des{
     margin: 10px;
 }
 .card-feat{
-    width: 230px;
+    position: relative;
     height: 280px;
+    width: 200px;
     margin-left: 20px;
     border-width: 0.5px;
     border-style: solid;
     border-radius: 10px;
+   
 }
 .card-para{
     margin: 10px;
@@ -112,7 +116,7 @@ h2{
     align-items: center;
 }
 .toggle{
-    
+    padding: 10px;
     width: 100px;
     font-weight: 400;
     display: flex;
@@ -142,8 +146,38 @@ h2{
     margin: 20px;
 }
 .articles{
-    margin-top: 20px;
-    display: flex;
     
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-x: auto;
+    margin: 20px;
     align-items: center;
+}
+.skill-cards{
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+h3{
+    margin-left: 20px;
+    padding: 0px;
+}
+.skillcard{
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+.sk-img{
+    width: 200px;
+    border-radius: 10px;
+    height: 100px;
+}
+h4{
+    margin: 5px;
+
 }

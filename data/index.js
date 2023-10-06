@@ -16,9 +16,10 @@ const data = [{
     image: "https://github.blog/wp-content/uploads/2022/12/1200x640-1.png",
     info: "Check all of my Projects"
 },
+
 ]
 
-const Proj = [
+const Proj = [  
     {
         id: "1111",
         img: "https://cdni.iconscout.com/illustration/premium/thumb/job-recruitment-application-5374048-4500227.png?f=webp",
@@ -71,4 +72,105 @@ const Cert = [
         skills: "Data Structures, Algorithms"
     }
 ]
-export  {data, Proj, Cert};
+const frontskill = [
+    {
+        id:"1f",
+        title: "HTML CSS",
+        img: "https://ez-snippet.vercel.app/_next/image?url=%2Ftech%2Ffrontend%2Fhtmlcss.jpeg&w=1920&q=75"
+    },
+    {
+        id: "2f",
+        title: "Javascript",
+        img: "https://miro.medium.com/v2/resize:fit:991/1*IZBNrGFzTkPOmnGS69_O0w.png"
+    },
+    {
+        id: "3f",
+        title: "ReactJS",
+        img: "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1279225/retina_1708x683_0521-react-redux-and-immutablejs-Waldek_Newsletter-993b50f4ae56e9ee6e024a309c23a6c4.png"
+    },
+    {
+        id: "4f",
+        title: "Material UI",
+        img: "https://blog.openreplay.com/images/why-should-you-use-material-ui/images/hero.png"
+    },
+    {
+    id: "5f",
+        title: "Nivo",
+        img: "https://blog.openreplay.com/images/building-and-rendering-charts-with-nivo-in-react/images/hero.png"
+    },
+]
+const backskill = [
+    {
+        id:"1b",
+        title: "NodeJS",
+        img: "https://ez-snippet.vercel.app/_next/image?url=%2Ftech%2Fbackend%2Fnodejs.webp&w=1080&q=75"
+    },
+    {
+        id: "2b",
+        title: "ExpressJS",
+        img: "https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA"
+    },
+]
+const database = [
+    {
+        id:"1d",
+        title: "MySql",
+        img: "https://beehosting.pro/wp-content/uploads/2022/06/mysql_database_large.jpg"
+    },
+    {
+        id: "2d",
+        title: "MongoDB",
+        img: "https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png"
+    },
+]
+const program = [
+    {
+        id:"1p",
+        title: "C",
+        img: "https://miro.medium.com/v2/resize:fit:750/0*tc5hGik294F0OmbC"
+    },
+    {
+        id: "2p",
+        title: "C++",
+        img: "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1289560/regular_1708x683_cover-0828_AfterAllTheseYearstheWorldisStillPoweredbyCProgramming_Razvan_Newsletter-2b9ea38294bb08c5aea1f0c1cb06732f.png"
+    },
+    {
+        id: "2p",
+        title: "Javascript",
+        img: "https://miro.medium.com/v2/resize:fit:991/1*IZBNrGFzTkPOmnGS69_O0w.png"
+    },
+]
+const other = [
+    {
+        id:"0o",
+        title: "React Native",
+        img: "https://pagepro.co/blog/wp-content/uploads/2021/05/ReactNativepicture.png"
+    },
+    {
+        id:"1o",
+        title: "Expo",
+        img: "https://global-uploads.webflow.com/618fa90c201104b94458e1fb/64fec4335268299cec06a9a8_expo-git_Main-Image.jpg"
+    },
+    {
+        id: "2o",
+        title: "Redux",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgtalDmuNSRPvgttO-aML8rdgSI9meYdHnqQ&usqp=CAU"
+    },
+    {
+        id: "3o",
+        title: "Postman",
+        img: "https://cdn.worldvectorlogo.com/logos/postman.svg"
+    },
+    {
+        id: "4o",
+        title: "Git",
+        img: "https://www.20i.com/blog/wp-content/uploads/2022/08/git-blog-header.png"
+    },
+    {
+        id: "5o",
+        title: "Github",
+        img: "https://www.techwar.gr/wp-content/uploads/2023/06/GitHub__headpic.jpg"
+    },
+]
+
+export  {data, Proj, Cert, frontskill, backskill, database, program, other};
