@@ -179,5 +179,10 @@ h3{
 }
 h4{
     margin: 5px;
-
+}
+p{
+    margin: 2px;
+}
+.about-p{
+    margin: 20px;
 }

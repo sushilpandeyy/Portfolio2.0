@@ -172,5 +172,25 @@ const other = [
         img: "https://www.techwar.gr/wp-content/uploads/2023/06/GitHub__headpic.jpg"
     },
 ]
+const exp = [
+    {
+        id: "1e",
+        title: "Freelancer",
+        org: "Self Employed",
+        dur: "Mar 2020 - Present",
+        info: "",
+        skill: "Web Development, MERN Stack, Wordpress, SEO",
+        img: "https://media.licdn.com/dms/image/C4E0BAQH3nUDO57s78A/company-logo_100_100/0/1531936161449?e=1704931200&v=beta&t=pxusR1Tr_H5-6_J6r6nulYIV2BDyRokJSCYdB5XqKbs"
+    },
+    {
+        id: "2e",
+        title: "Cheif Builder",
+        org: "EveryDukan",
+        dur: "Aug 2021 - Jan 2023",
+        info: "",
+        skill: "Android Development",
+        img: "https://media.licdn.com/dms/image/C4E0BAQHQQMv0LVsWlQ/company-logo_100_100/0/1630741395294?e=1704931200&v=beta&t=BkzXbbLVUKwt6iqEOVc19gD-mKK62Bc8WRsAYAlYLMg"
+    },
+]
 
-export  {data, Proj, Cert, frontskill, backskill, database, program, other};
+export  {data, Proj, Cert, frontskill, backskill, database, program, other, exp};
