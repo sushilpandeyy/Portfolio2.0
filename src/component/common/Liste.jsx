@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Liste = (props) => {
   return (
     <div className="projectbox">
@@ -11,7 +12,7 @@ const Liste = (props) => {
             <p>{props.org}</p>
             <p>{props.dur}</p>
             <p>{props.info}</p>
-            <p><b>Skills: </b>{props.skill}</p>
+            {(props.skill)?<p><b>Skills: </b>{props.skill}</p>:" "}
         </div>
         
     </div>
