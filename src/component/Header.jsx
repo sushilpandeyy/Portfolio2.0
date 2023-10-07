@@ -1,5 +1,6 @@
 import React from 'react'
 import reactsvg from '../assets/react.svg'
+import Night from '../assets/night.png'
 const Header = () => {
   return (
     <>
@@ -7,7 +8,7 @@ const Header = () => {
         <div className="logo">
             <a href="https://contactsushil.vercel.app/"><img src={reactsvg}></img></a>
         </div>
-        <div className="menu">NightlightRounded</div>
+        <div className="menu"><img className='dark-bright' src={Night} alt=""/></div>
     </div>
     </>
   )

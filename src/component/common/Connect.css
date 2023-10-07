@@ -1,4 +1,5 @@
 .connect{
+    position: fixed;
     height: 100%;
     width: 100%;
 }
@@ -16,14 +17,14 @@
     border: 0.1em solid white;
     box-shadow: 0 0 10px white, inset 0 0 20px white; 
     border-radius: 100%;
-    position: absolute;
+    position: fixed;
     left: 50%;
    right: 50%;
    top: 260px;
 }
 .nucleus1{
   background-color: black;
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   border: 0.6em solid white;
   border-top: 1.5em solid white;
@@ -39,7 +40,7 @@
 .nucleus2{
     transform: rotate(45deg);
     background-color: black;
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     border: 0.6em solid white;
     border-top: 1.5em solid white;
@@ -55,7 +56,7 @@
   .nucleus3{
     transform: rotate(90deg);
     background-color: black;
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     border: 0.6em solid white;
     border-top: 1.5em solid white;
@@ -71,7 +72,7 @@
   .nucleus4{
     transform: rotate(135deg);
     background-color: black;
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     border: 0.6em solid white;
     border-top: 1.5em solid white;
@@ -87,7 +88,7 @@
   .img-prop{
     height: 30px;
     width: 30px;
-    margin: 20px;
+    margin: 25px;
     border-radius: 5px;
   }
 
@@ -133,4 +134,13 @@
 }
 #med-img{
     transform: rotate(-45deg);
+}
+.follow-txt{
+  margin-top: 200px;
+}
+.bot-follow{
+  position: fixed;
+   left: 0;
+   bottom: 100px;
+   width: 100%;
 }
