@@ -27,7 +27,7 @@ const Bio = () => {
     </div>
     <div className="bio-buttons">
             <div className="connectbutton"><Link to={"/connect"}><Button variant="contained">Connect</Button></Link></div>
-            <div className="resumebutton"><Button variant="outlined">Resume</Button></div>
+            <div className="resumebutton"><Link to={"https://drive.google.com/file/d/1IHie2TUlCBBpiKh2UI8EqKhTKcfWtJwa/view?usp=sharing"}><Button variant="outlined">Resume</Button></Link></div>
     </div>
     </div>
   )
