@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import Articles from './common/Articles'
-import Certificate from './common/certificate'
+import Certificate from '../component/common/Certificate.jsx'
 import Projects from './common/Projects'
 import Skills from './common/Skills'
 
