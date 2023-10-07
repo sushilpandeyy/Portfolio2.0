@@ -1,0 +1,76 @@
+.connect{
+    height: 100%;
+    width: 100%;
+}
+.box-atom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+.center{
+    height: 6em;
+    width: 6em;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+   right: 50%;
+   top: 260px;
+}
+.nucleus1{
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.6em solid white;
+  border-top: 1.5em solid white;
+  border-bottom: 1.5em solid white; 
+  box-shadow: 0 0 10px white, inset 0 0 20px white; 
+  height: 30em;
+  width: 5em;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-direction: column;
+}
+.nucleus2{
+    transform: rotate(45deg);
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.6em solid white;
+    border-top: 1.5em solid white;
+    border-bottom: 1.5em solid rgb white; 
+    box-shadow: 0 0 10px white, inset 0 0 20px white; 
+    height: 30em;
+    width: 5em;
+  }
+  .nucleus3{
+    transform: rotate(90deg);
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.6em solid white;
+    border-top: 1.5em solid white;
+    border-bottom: 1.5em solid rgb white; 
+    box-shadow: 0 0 10px white, inset 0 0 20px white; 
+    height: 30em;
+    width: 5em;
+  }
+  .nucleus4{
+    transform: rotate(135deg);
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.6em solid white;
+    border-top: 1.5em solid white;
+    border-bottom: 1.5em solid rgb white; 
+    box-shadow: 0 0 10px white, inset 0 0 20px white; 
+    height: 30em;
+    width: 5em;
+  }
+  .img-prop{
+    height: 30px;
+
+  }

@@ -22,7 +22,7 @@ function vity(toggle){
 
 const Activity = () => {
     const [toggle, settogle]=useState('pro')
-
+    
   return (
     <div className="bioo">
         <h2>Activity</h2>
