@@ -101,7 +101,7 @@ h2{
     border-width: 0.5px;
     border-style: solid;
     border-radius: 10px;
-   
+   border-color: #efeeed;
 }
 .card-para{
     margin: 10px;
@@ -135,7 +135,7 @@ h2{
 }
 .projectbox{
     margin: 20px;
-    border-color: black;
+    border-color: #efeeed;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
@@ -171,7 +171,7 @@ h3{
     width: 200px;
     margin: 20px;
     border-radius: 10px;
-    border-color: black;
+    border-color: #efeeed;
     border-style: solid;
     border-width: 1px;
 }
