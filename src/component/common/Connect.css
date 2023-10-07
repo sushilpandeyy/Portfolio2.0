@@ -30,9 +30,8 @@
   height: 30em;
   width: 5em;
   display: flex;
-  justify-content: center;
-  align-items:flex-start;
   flex-direction: column;
+  justify-content: space-between;
 }
 .nucleus2{
     transform: rotate(45deg);
@@ -45,6 +44,9 @@
     box-shadow: 0 0 10px white, inset 0 0 20px white; 
     height: 30em;
     width: 5em;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   }
   .nucleus3{
     transform: rotate(90deg);
@@ -57,6 +59,9 @@
     box-shadow: 0 0 10px white, inset 0 0 20px white; 
     height: 30em;
     width: 5em;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   }
   .nucleus4{
     transform: rotate(135deg);
@@ -69,8 +74,13 @@
     box-shadow: 0 0 10px white, inset 0 0 20px white; 
     height: 30em;
     width: 5em;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   }
   .img-prop{
     height: 30px;
-
+    width: 30px;
+    margin: 20px;
+    border-radius: 5px;
   }
