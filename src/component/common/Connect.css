@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: mymove1 16s infinite;
 }
 .nucleus2{
     transform: rotate(45deg);
@@ -47,6 +48,7 @@
     display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: mymove2 20s infinite;
   }
   .nucleus3{
     transform: rotate(90deg);
@@ -62,6 +64,7 @@
     display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: mymove3 24s infinite;
   }
   .nucleus4{
     transform: rotate(135deg);
@@ -77,10 +80,24 @@
     display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: mymove4 28s infinite;
   }
   .img-prop{
     height: 30px;
     width: 30px;
     margin: 20px;
     border-radius: 5px;
+  }
+
+  @keyframes mymove1 {
+    100% {transform: rotate(360deg);}
+  }
+  @keyframes mymove2 {
+    100% {transform: rotate(405deg);}
+  }
+  @keyframes mymove3 {
+    100% {transform: rotate(450deg);}
+  }
+  @keyframes mymove4 {
+    100% {transform: rotate(495deg);}
   }
