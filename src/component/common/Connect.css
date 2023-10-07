@@ -12,7 +12,9 @@
 .center{
     height: 6em;
     width: 6em;
-    background-color: red;
+    background-color: black;
+    border: 0.1em solid white;
+    box-shadow: 0 0 10px white, inset 0 0 20px white; 
     border-radius: 100%;
     position: absolute;
     left: 50%;
@@ -32,7 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: mymove1 16s infinite;
+  animation: mymove1 24s infinite;
 }
 .nucleus2{
     transform: rotate(45deg);
@@ -48,7 +50,7 @@
     display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: mymove2 20s infinite;
+  animation: mymove2 24s infinite;
   }
   .nucleus3{
     transform: rotate(90deg);
@@ -80,7 +82,7 @@
     display: flex;
   flex-direction: column;
   justify-content: space-between;
-  animation: mymove4 28s infinite;
+  animation: mymove4 24s infinite;
   }
   .img-prop{
     height: 30px;
@@ -101,3 +103,34 @@
   @keyframes mymove4 {
     100% {transform: rotate(495deg);}
   }
+
+.allring:hover .nucleus1{
+    animation: none;
+}
+.allring:hover .nucleus2{
+    animation: none;
+}
+.allring:hover .nucleus3{
+    animation: none;
+}
+.allring:hover .nucleus4{
+    animation: none;
+}
+#sus-img{
+    transform: rotate(-135deg);
+}
+#what-img{
+    transform: rotate(-135deg);
+}
+#link-img{
+    transform: rotate(-90deg);
+}
+#mail-img{
+    transform: rotate(-90deg);
+}
+#git-img{
+    transform: rotate(-45deg);
+}
+#med-img{
+    transform: rotate(-45deg);
+}
