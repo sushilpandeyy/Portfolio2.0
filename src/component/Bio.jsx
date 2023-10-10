@@ -2,13 +2,14 @@ import React from 'react'
 import '../App.css'
 import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
+import assests from '../assets/all'
 const Bio = () => {
   return (<div className='bioo'>
     <div className="headimage">
-        <img className='headimage-img' src='https://wallpaperaccess.com/full/2641074.gif'/>
+        <img className='headimage-img' src={assests.headergif}/>
     </div>
     <div className="profilepic">
-        <img className='profilepic-img' src='https://media.licdn.com/dms/image/C4D03AQFj1UEp1hibQA/profile-displayphoto-shrink_200_200/0/1662981447177?e=1701907200&v=beta&t=nAQkppRVV8iJqW0zZU8g9WigAa04eZh58z0lNY1GJzI'/>
+        <img className='profilepic-img' src={assests.profile}/>
     </div>
     <div className="space"></div>
     <div className="biodetails">

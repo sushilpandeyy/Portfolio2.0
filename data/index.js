@@ -1,3 +1,4 @@
+import assests from "../src/assets/all.js"
 const data = [{
     id: "1",
     type: "Resume",
@@ -59,7 +60,7 @@ const Cert = [
         org:"Dr. Angela Yu",
         date:"Aug 2023",
         Cred: "UC-78169afe-f46b-4fdf-9812-802a737b84d9",
-        img: "https://play-lh.googleusercontent.com/wKwW77zj6Gd-llTDakdjSDnWUPKSMDGXhnZSXel3A3qQSiM1cbDvuspBpQk15tiT9ik",
+        img: assests.ude,
         skills: "ReactJS, ExpressJS, NodeJS, MongoDB, MYSQL"
     },
     {
@@ -76,27 +77,27 @@ const frontskill = [
     {
         id:"1f",
         title: "HTML CSS",
-        img: "https://ez-snippet.vercel.app/_next/image?url=%2Ftech%2Ffrontend%2Fhtmlcss.jpeg&w=1920&q=75"
+        img: assests.htc
     },
     {
         id: "2f",
         title: "Javascript",
-        img: "https://miro.medium.com/v2/resize:fit:991/1*IZBNrGFzTkPOmnGS69_O0w.png"
+        img: assests.js
     },
     {
         id: "3f",
         title: "ReactJS",
-        img: "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1279225/retina_1708x683_0521-react-redux-and-immutablejs-Waldek_Newsletter-993b50f4ae56e9ee6e024a309c23a6c4.png"
+        img: assests.react
     },
     {
         id: "4f",
         title: "Material UI",
-        img: "https://blog.openreplay.com/images/why-should-you-use-material-ui/images/hero.png"
+        img: assests.mui
     },
     {
     id: "5f",
         title: "Nivo",
-        img: "https://blog.openreplay.com/images/building-and-rendering-charts-with-nivo-in-react/images/hero.png"
+        img: assests.nivo
     },
 ]
 const backskill = [
@@ -127,17 +128,17 @@ const program = [
     {
         id:"1p",
         title: "C",
-        img: "https://miro.medium.com/v2/resize:fit:750/0*tc5hGik294F0OmbC"
+        img: assests.c
     },
     {
         id: "2p",
         title: "C++",
-        img: "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1289560/regular_1708x683_cover-0828_AfterAllTheseYearstheWorldisStillPoweredbyCProgramming_Razvan_Newsletter-2b9ea38294bb08c5aea1f0c1cb06732f.png"
+        img: assests.cpp
     },
     {
         id: "2p",
         title: "Javascript",
-        img: "https://miro.medium.com/v2/resize:fit:991/1*IZBNrGFzTkPOmnGS69_O0w.png"
+        img: assests.js
     },
 ]
 const other = [
