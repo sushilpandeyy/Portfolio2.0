@@ -95,6 +95,7 @@ h2{
     margin: 10px;
 }
 .card-feat{
+    width: fit-content;
     margin-left: 20px;
     border-width: 0.5px;
     border-style: solid;
@@ -223,5 +224,7 @@ p{
     .bioname{
         width: 100%;
     }
-    
+    .card-img{
+        aspect-ratio: 1;
+    }
 }
