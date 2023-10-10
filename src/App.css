@@ -89,13 +89,12 @@ h2{
 .feat-card{
    display: flex;
    overflow-x: auto;
-   
 }
 .card-des{
     margin: 10px;
 }
 .card-feat{
-    width: fit-content;
+    
     margin-left: 20px;
     border-width: 0.5px;
     border-style: solid;
@@ -224,7 +223,8 @@ p{
     .bioname{
         width: 100%;
     }
-    .card-img{
-        aspect-ratio: 1;
+    .card-feat{
+        width: 200px;
     }
+    
 }
