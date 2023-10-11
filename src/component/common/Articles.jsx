@@ -7,12 +7,12 @@ function bring(tr){
   type={tr.pubDate}
   img={tr.thumbnail}
   info={tr.title}
+  link={tr.link}
   />
 }
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
-  
   useEffect(() => {
     const fetchArticles = async () => {
       try {
@@ -21,13 +21,11 @@ const Articles = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        console.log(data.items)
         setArticles(data.items);
       } catch (error) {
         console.error('Error fetching articles:', error);
       }
     };
-    
     fetchArticles();
   }, []);
 
