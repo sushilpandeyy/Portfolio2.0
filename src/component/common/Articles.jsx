@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Card from '../common/Card'
+import ReactLoading from 'react-loading'
 
 function bring(tr){
   return <Card 
@@ -32,7 +33,7 @@ const Articles = () => {
   return (
     <>
     <div className="articles">
-      {articles.map(bring)}
+      {(articles.length==0)?<ReactLoading type="bars" color="black" height={'50px'} width={'50px'} />:articles.map(bring)}
       </div>
     </>
   );
