@@ -10,6 +10,7 @@ function add(info){
       skills={info.skills}
       cred={info.Cred}
       date={info.date}
+      link={info.link}
   />
 }
 

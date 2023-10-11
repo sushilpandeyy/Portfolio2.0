@@ -213,6 +213,9 @@ p{
 .toggle:hover{
     cursor: pointer;
 }
+.projectbox:hover{
+    cursor: pointer;
+}
 
 
 
