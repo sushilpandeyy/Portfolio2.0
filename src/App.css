@@ -5,6 +5,9 @@
     background-color: white;
     margin: 0px;
 }
+body:hover{
+    cursor: default;
+}
 .dark-bright{
     width: 35px;
 }
@@ -113,6 +116,9 @@ h2{
     width: 240px;
     padding: 0px;
 }
+.card-feat:hover{
+  cursor: pointer;  
+}
 .card-para{
     margin: 10px;
 }
@@ -204,6 +210,10 @@ p{
 .about-p{
     margin: 20px;
 }
+.toggle:hover{
+    cursor: pointer;
+}
+
 
 
 /* MOBILE SIZE */
@@ -265,5 +275,5 @@ p{
         
         margin-left: 10px;
     }
-    
+
 }

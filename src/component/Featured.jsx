@@ -8,6 +8,7 @@ return <Card
       type={contact.type}
       img={contact.image}
       info={contact.info}
+      link={contact.link}
       />
 }
 
