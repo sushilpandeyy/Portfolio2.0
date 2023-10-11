@@ -7,9 +7,9 @@ const List = (props) => {
             <img className="project-image-propp" src={props.img} alt={props.title} />
         </div>
         <div className="project-info">
-            <h3>{props.title}</h3>
-            <p>{props.info}</p>
-            <p><b>Skills: </b>{props.skills}</p>
+            <h3 className='pro-h3-mobile'>{props.title}</h3>
+            <p className='pro-p-mobile'>{props.info}</p>
+            <p className='pro-p-mobile'><b>Skills: </b>{props.skills}</p>
         </div>
         
     </div>
