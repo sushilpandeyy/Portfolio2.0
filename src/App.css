@@ -103,14 +103,14 @@ h2{
 }
 .card-feat{
     display: inline-block;
-    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
     border-width: 0.5px;
     border-style: solid;
     border-radius: 10px;
-   border-color: #efeeed;
-   width: 240px;
-  
+    border-color: #efeeed;
+    width: 240px;
+    padding: 0px;
 }
 .card-para{
     margin: 10px;
