@@ -195,6 +195,7 @@ const exp = [
         dur: "Mar 2020 - Present",
         info: "",
         skill: "Web Development, MERN Stack, Wordpress, SEO",
+        link: "mailto:contact.sushilpandey@gmail.com?subject=Hey%F0%9F%91%8B%2C%20I%20would%20like%20to%20hire%20you",
         img: "https://media.licdn.com/dms/image/C4E0BAQH3nUDO57s78A/company-logo_100_100/0/1531936161449?e=1704931200&v=beta&t=pxusR1Tr_H5-6_J6r6nulYIV2BDyRokJSCYdB5XqKbs"
     },
     {
@@ -204,6 +205,7 @@ const exp = [
         dur: "Aug 2021 - Jan 2023",
         info: "",
         skill: "MIT App Inventor, Digital Marketing, Designing",
+        link: "https://play.google.com/store/apps/details?id=com.dukan.every",
         img: "https://media.licdn.com/dms/image/C4E0BAQHQQMv0LVsWlQ/company-logo_100_100/0/1630741395294?e=1704931200&v=beta&t=BkzXbbLVUKwt6iqEOVc19gD-mKK62Bc8WRsAYAlYLMg"
     },
 ]
