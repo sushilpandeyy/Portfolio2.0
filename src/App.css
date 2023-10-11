@@ -97,6 +97,7 @@ h2{
 .vertical-al{
     vertical-align: baseline;
     overflow-x: auto;
+    
 }
 .card-des{
     margin: 10px;
@@ -257,11 +258,12 @@ p{
      width: max-content;   
     }
     .pro-h3-mobile{
-        font-size: 18px;
+        
         margin-left: 10px;
     }
     .pro-p-mobile{
-        font-size: 18px;
+        
         margin-left: 10px;
     }
+    
 }

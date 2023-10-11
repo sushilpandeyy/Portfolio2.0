@@ -27,6 +27,7 @@ const Layout = () => {
    <div className="featurebox">
     <Education/>
    </div>
+   <div className="space"></div>
    </>
   )
 }
