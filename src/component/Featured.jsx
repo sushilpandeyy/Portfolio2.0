@@ -15,8 +15,10 @@ const Featured = () => {
   return (
     <div className="bioo">
         <h2>Featured</h2>
-        <div className="feat-card">
+        <div className='vertical-al'>
+          <ul className="feat-card">
             {data.map(createcard)}
+            </ul>
         </div>
     </div>
   )
