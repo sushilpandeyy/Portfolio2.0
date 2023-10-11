@@ -17,18 +17,6 @@ const data = [{
     image: "https://github.blog/wp-content/uploads/2022/12/1200x640-1.png",
     info: "Check all of my Projects"
 },
-{
-id: "4",
-type: "GitHub",
-image: "https://github.blog/wp-content/uploads/2022/12/1200x640-1.png",
-info: "Check all of my Projects"
-},
-{
-id: "5",
-type: "GitHub",
-image: "https://github.blog/wp-content/uploads/2022/12/1200x640-1.png",
-info: "Check all of my Projects"
-},
 
 ]
 
