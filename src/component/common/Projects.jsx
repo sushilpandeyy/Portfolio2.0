@@ -9,6 +9,7 @@ function list(pro){
       img={pro.img}
       info={pro.description}
       skills={pro.skills}
+      link={pro.link}
   />
 }
 

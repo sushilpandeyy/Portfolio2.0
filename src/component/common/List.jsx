@@ -1,8 +1,12 @@
 import React from 'react'
 
 const List = (props) => {
+
+  const handleCardClick = () => {
+    window.open(props.link, '_blank');
+  };
   return (
-    <div className="projectbox">
+    <div className="projectbox" onClick={handleCardClick}>
         <div className="project-image">
             <img className="project-image-propp" src={props.img} alt={props.title} />
         </div>
