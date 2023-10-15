@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className='fullmain' style={{
-      backgroundColor: (currentMode === "Light") ? "white" : "#1B1F23"
+      backgroundColor: (currentMode === "Light") ? "#F4F2EE" : "#1B1F23"
     }}>
       <Header/>
       <Outlet/>
