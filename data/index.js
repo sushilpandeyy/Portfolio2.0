@@ -189,6 +189,16 @@ const other = [
 ]
 const exp = [
     {
+        id: "3m",
+        title: "Full Stack Web Development Intern",
+        org: "Myraa Technologies",
+        dur: "Oct 2023 - Present",
+        info: "",
+        skill: "AWS, Python, Tornado",
+        link: "https://www.myraatechnologies.com/",
+        img: "https://www.myraatechnologies.com/SP/img/logo.png"
+    },
+    {
         id: "1e",
         title: "Freelancer",
         org: "Self Employed",
@@ -207,7 +217,7 @@ const exp = [
         skill: "MIT App Inventor, Digital Marketing, Designing",
         link: "https://play.google.com/store/apps/details?id=com.dukan.every",
         img: "https://media.licdn.com/dms/image/C4E0BAQHQQMv0LVsWlQ/company-logo_100_100/0/1630741395294?e=1704931200&v=beta&t=BkzXbbLVUKwt6iqEOVc19gD-mKK62Bc8WRsAYAlYLMg"
-    },
+    }
 ]
 
 export  {data, Proj, Cert, frontskill, backskill, database, program, other, exp};

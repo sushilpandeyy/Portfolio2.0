@@ -1,6 +1,8 @@
 import React from 'react'
 import {exp} from "../../data/index"
 import Liste from './common/Liste'
+import { useSelector } from 'react-redux';
+
 function create(info){
     return <Liste
     key={info.id}
@@ -14,9 +16,13 @@ function create(info){
 }
 
 const Exp = () => {
+  const currentMode = useSelector((state) => state.mode.current);
+
   return (
     <div className="bioo">
-        <h2>Experience</h2>
+        <h2 style={{
+              color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
+            }}>Experience</h2>
         {exp.map(create)}
     </div>
   )
