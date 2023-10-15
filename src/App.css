@@ -1,3 +1,7 @@
+.fullmain{
+    height: 100%;
+    width: 100%;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -12,13 +16,16 @@ body:hover{
 }
 .bioo{
     padding-bottom: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #EFEEED;
 }
 .biobox{
     margin: 30px;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 10px;
-    background-color: white;
 }
 
 .biodetails{
@@ -130,7 +137,6 @@ ul{
     width: 240px;
 }
 .card-des{
-    background-color: #f8fafd;
     text-wrap: wrap;
 }
 .act-button{
@@ -191,7 +197,6 @@ h3{
     width: 200px;
     margin: 20px;
     border-radius: 10px;
-    border-color: #efeeed;
     border-style: solid;
     border-width: 1px;
 }
