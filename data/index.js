@@ -211,3 +211,4 @@ const exp = [
 ]
 
 export  {data, Proj, Cert, frontskill, backskill, database, program, other, exp};
+
