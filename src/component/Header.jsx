@@ -23,7 +23,7 @@ const Header = () => {
          backgroundColor: (curr === "Light") ? "white" : "#1B1F23"
       }}>
         <div className="logo">
-            <a href="https://contactsushil.vercel.app/"><img src={reactsvg}></img></a>
+            <a href="https://contactsushil.vercel.app/"><img src="https://media.licdn.com/dms/image/C4D03AQFj1UEp1hibQA/profile-displayphoto-shrink_100_100/0/1662981447177?e=1703116800&v=beta&t=Ujw7V62UVI8laxyP-UPToac0VL6LcK1cCU0UKBekxy4"></img></a>
             {console.log(currentMode)}
         </div>
         <div className="menu"><img className='dark-bright' src={(curr=="Light")?Night:Day} onClick={setMode} alt=""/></div>
