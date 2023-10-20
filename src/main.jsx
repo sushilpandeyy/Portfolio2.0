@@ -7,7 +7,9 @@ import Layout from './component/Layout.jsx'
 import Connect from './component/Connect.jsx'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
+import { inject } from '@vercel/analytics';
 
+inject();
 const router= createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
