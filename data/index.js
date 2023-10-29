@@ -10,7 +10,7 @@ const data = [{
     id: "2",
     type: "Fascia",
     image: "https://i.pngimg.me/thumb/f/720/e89f8ed9b7db4863a408.jpg",
-    info: "Checkout my recent Project Fascia",
+    info: "Checkout my recent Project Fascia", 
     link: "https://github.com/sushilpandeyy/Fascia"
 },
 {
