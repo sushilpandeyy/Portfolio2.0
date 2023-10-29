@@ -9,8 +9,8 @@ const data = [{
 {
     id: "2",
     type: "Fascia",
-    image: "https://em-content.zobj.net/socialmedia/apple/271/money-bag_1f4b0.png",
-    info: "Checkout my recent Project Fascia",
+    image: "https://i.pngimg.me/thumb/f/720/e89f8ed9b7db4863a408.jpg",
+    info: "Checkout my recent Project Fascia", 
     link: "https://github.com/sushilpandeyy/Fascia"
 },
 {
@@ -34,7 +34,7 @@ const Proj = [
     },
     {
         id: "1112",
-        img: "https://em-content.zobj.net/socialmedia/apple/271/money-bag_1f4b0.png",
+        img: "https://i.pngimg.me/thumb/f/720/e89f8ed9b7db4863a408.jpg",
         title: "Fascia",
         description: "Fascia is a ReactJS based dashboard which uses MERN Stack.",
         skills: "ReactJS, NodeJS, ExpressJS, MongoDB, Material UI, Nivo Chart, HTML, CSS, Javascript",
@@ -189,16 +189,6 @@ const other = [
 ]
 const exp = [
     {
-        id: "3m",
-        title: "Full Stack Web Development Intern",
-        org: "Myraa Technologies",
-        dur: "Oct 2023 - Present",
-        info: "",
-        skill: "AWS, Python, Tornado",
-        link: "https://www.myraatechnologies.com/",
-        img: "https://www.myraatechnologies.com/SP/img/logo.png"
-    },
-    {
         id: "1e",
         title: "Freelancer",
         org: "Self Employed",
@@ -217,7 +207,7 @@ const exp = [
         skill: "MIT App Inventor, Digital Marketing, Designing",
         link: "https://play.google.com/store/apps/details?id=com.dukan.every",
         img: "https://media.licdn.com/dms/image/C4E0BAQHQQMv0LVsWlQ/company-logo_100_100/0/1630741395294?e=1704931200&v=beta&t=BkzXbbLVUKwt6iqEOVc19gD-mKK62Bc8WRsAYAlYLMg"
-    }
+    },
 ]
 
 export  {data, Proj, Cert, frontskill, backskill, database, program, other, exp};
