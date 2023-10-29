@@ -9,7 +9,7 @@ const data = [{
 {
     id: "2",
     type: "Fascia",
-    image: "https://em-content.zobj.net/socialmedia/apple/271/money-bag_1f4b0.png",
+    image: "https://i.pngimg.me/thumb/f/720/e89f8ed9b7db4863a408.jpg",
     info: "Checkout my recent Project Fascia",
     link: "https://github.com/sushilpandeyy/Fascia"
 },
@@ -34,7 +34,7 @@ const Proj = [
     },
     {
         id: "1112",
-        img: "https://em-content.zobj.net/socialmedia/apple/271/money-bag_1f4b0.png",
+        img: "https://i.pngimg.me/thumb/f/720/e89f8ed9b7db4863a408.jpg",
         title: "Fascia",
         description: "Fascia is a ReactJS based dashboard which uses MERN Stack.",
         skills: "ReactJS, NodeJS, ExpressJS, MongoDB, Material UI, Nivo Chart, HTML, CSS, Javascript",
