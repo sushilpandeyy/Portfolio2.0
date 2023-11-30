@@ -27,9 +27,9 @@ const Proj = [
     {
         id: "1111",
         img: "https://cdni.iconscout.com/illustration/premium/thumb/job-recruitment-application-5374048-4500227.png?f=webp",
-        title: "JobZap",
-        description: "Job Zap is a mobile application built on React Native.",
-        skills: "React Native, HTML, CSS, Javascript",
+        title: "IHH Player",
+        description: "IHH Player is a developing project, a music player only for Indian Hip Hop.",
+        skills: "React, Tailwind CSS, ExpressJS, MongoDB",
         link: "https://github.com/sushilpandeyy/"
     },
     {
