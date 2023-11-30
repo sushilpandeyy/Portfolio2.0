@@ -26,7 +26,7 @@ const data = [{
 const Proj = [  
     {
         id: "1111",
-        img: "https://cdni.iconscout.com/illustration/premium/thumb/job-recruitment-application-5374048-4500227.png?f=webp",
+        img: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/3/8/vycpwzww6qw9lfgqhszi/seedhe-maut",
         title: "IHH Player",
         description: "IHH Player is a developing project, a music player only for Indian Hip Hop.",
         skills: "React, Tailwind CSS, ExpressJS, MongoDB",
