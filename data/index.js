@@ -30,7 +30,7 @@ const Proj = [
         title: "IHH Player",
         description: "IHH Player is a developing project, a music player only for Indian Hip Hop.",
         skills: "React, Tailwind CSS, ExpressJS, MongoDB",
-        link: "https://github.com/sushilpandeyy/"
+        link: "https://ihh-player.vercel.app/"
     },
     {
         id: "1112",
