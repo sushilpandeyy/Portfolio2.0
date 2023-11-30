@@ -1,8 +1,10 @@
 import React from 'react'
 import { frontskill, backskill, database, program, other } from '../../../data'
 import Cardskill from './Cardskill'
+import { useSelector } from 'react-redux';
 
 function createc(item){
+  
   return <Cardskill
   key={item.id}
   img={item.img}
@@ -11,25 +13,37 @@ function createc(item){
 }
 
 const Skills = () => {
+  const currentMode = useSelector((state) => state.mode.current);
+
   return (
    <>
-   <h3>Programming Languages</h3>
+   <h3 style={{
+              color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
+            }}>Programming Languages</h3>
    <div className="skill-cards">
    {program.map(createc)}
    </div>
-   <h3>Frontend</h3>
+   <h3 style={{
+              color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
+            }}>Frontend</h3>
    <div className="skill-cards">
    {frontskill.map(createc)}
    </div>
-   <h3>Backend</h3>
+   <h3 style={{
+              color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
+            }}>Backend</h3>
    <div className="skill-cards">
    {backskill.map(createc)}
    </div>
-   <h3>Database</h3>
+   <h3 style={{
+              color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
+            }}>Database</h3>
    <div className="skill-cards">
    {database.map(createc)}
    </div>
-   <h3>Other</h3>
+   <h3 style={{
+              color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
+            }}>Other</h3>
    <div className="skill-cards">
    {other.map(createc)}
    </div>

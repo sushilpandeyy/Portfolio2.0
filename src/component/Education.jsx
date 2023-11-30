@@ -1,10 +1,15 @@
 import React from 'react'
 import Liste from './common/Liste'
+import { useSelector } from 'react-redux';
 
 const Education = () => {
+  const currentMode = useSelector((state) => state.mode.current);
+
   return (
     <div className="bioo">
-    <h2>Education</h2>
+    <h2 style={{
+              color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
+            }}>Education</h2>
     <Liste
     key="srm"
     org="Bachelor of Technology - B.Tech, Computer Science"
