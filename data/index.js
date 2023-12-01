@@ -15,6 +15,13 @@ const data = [{
 },
 {
     id: "3",
+    image: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/3/8/vycpwzww6qw9lfgqhszi/seedhe-maut",
+    type: "IHH Player",
+    info: "Audio playing application",
+    link: "https://ihh-player.vercel.app/"
+},
+{
+    id: "4",
     type: "GitHub",
     image: "https://github.blog/wp-content/uploads/2022/12/1200x640-1.png",
     info: "Check all of my Projects",
@@ -188,6 +195,16 @@ const other = [
     },
 ]
 const exp = [
+    {
+        id: "2e",
+        title: "Full Stack Development Intern",
+        org: "Myraa Technologies",
+        dur: "Oct 2023 - Present",
+        info: "",
+        skill: "Tornado, Python, HTML, CSS, Javascript, AWS, EC2, S3 Bucket",
+        link: "",
+        img: "https://media.licdn.com/dms/image/C4E0BAQHQQMv0LVsWlQ/company-logo_100_100/0/1630741395294?e=1704931200&v=beta&t=BkzXbbLVUKwt6iqEOVc19gD-mKK62Bc8WRsAYAlYLMg"
+    }, 
     {
         id: "1e",
         title: "Freelancer",
