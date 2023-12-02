@@ -5,6 +5,7 @@ import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './component/Layout.jsx'
 import Connect from './component/Connect.jsx'
+import View from './component/View.jsx'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 import { inject } from '@vercel/analytics';
@@ -16,6 +17,7 @@ const router= createBrowserRouter(
     <Route path='/' element={<App/>}>
       <Route path='' element={<Layout/>}/>
       <Route path='connect' element={<Connect/>}/>
+      <Route path='view' element={<View/>}/>
     </Route>
   )
 )

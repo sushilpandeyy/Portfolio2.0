@@ -4,7 +4,7 @@ const data = [{
     type: "Resume",
     image: "https://static.vecteezy.com/system/resources/previews/003/464/704/original/resume-writing-concept-businessman-new-career-path-illustration-vector.jpg",
     info: "Click to check my  Resume",
-    link: "https://drive.google.com/file/d/1IHie2TUlCBBpiKh2UI8EqKhTKcfWtJwa/view"
+    link: "https://drive.google.com/file/d/1Xarp-eHr1uoLSKFdc6D4UAZE_KbM_CWd/view?usp=sharing"
 },
 {
     id: "2",
@@ -203,7 +203,7 @@ const exp = [
         info: "",
         skill: "Tornado, Python, HTML, CSS, Javascript, AWS, EC2, S3 Bucket",
         link: "",
-        img: "https://media.licdn.com/dms/image/C4E0BAQHQQMv0LVsWlQ/company-logo_100_100/0/1630741395294?e=1704931200&v=beta&t=BkzXbbLVUKwt6iqEOVc19gD-mKK62Bc8WRsAYAlYLMg"
+        img: "https://www.myraatechnologies.com/images/Myraa-Logo-footer.png"
     }, 
     {
         id: "1e",
@@ -224,6 +224,17 @@ const exp = [
         skill: "MIT App Inventor, Digital Marketing, Designing",
         link: "https://play.google.com/store/apps/details?id=com.dukan.every",
         img: "https://media.licdn.com/dms/image/C4E0BAQHQQMv0LVsWlQ/company-logo_100_100/0/1630741395294?e=1704931200&v=beta&t=BkzXbbLVUKwt6iqEOVc19gD-mKK62Bc8WRsAYAlYLMg"
+    },
+]
+
+const view = [
+    {
+        id: "fascia",
+        title: "Fascia",
+        img: ""
+    },
+    {
+
     },
 ]
 

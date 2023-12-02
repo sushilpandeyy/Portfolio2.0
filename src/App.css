@@ -172,8 +172,17 @@ ul{
     display: flex;
     align-items: center;
 }
-
+.head-view-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view-sel-head{
+    font-size: x-large;
+    margin: 10px;
+}
 .project-image-propp{
+    aspect-ratio: auto;
     height: 100px;
     width: 100px;
     margin: 20px;
@@ -224,8 +233,17 @@ p{
 .projectbox:hover{
     cursor: pointer;
 }
-
-
+.outer-view{
+    border: black solid 1px;
+    margin:10px;
+    border-radius: 10px;
+}
+.view-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
 
 /* MOBILE SIZE */
 @media (max-width: 767px){
@@ -276,6 +294,7 @@ p{
         align-items: center;
     }
     .project-image-propp{
+        aspect-ratio: auto;
      width: max-content;   
     }
     .pro-h3-mobile{

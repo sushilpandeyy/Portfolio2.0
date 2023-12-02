@@ -10,8 +10,7 @@ const About = () => {
             }}>About </h2>
         <p className='about-p' style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>Hi there! I'm Sushil Pandey, a first-year Computer Science Engineering student at SRM AP. 
-            I'm a passionate learner, always seeking new technologies to master. From participating in hackathons and taking on leadership roles to freelancing in my spare time, I'm fully immersed in the world of technology.</p>
+            }}>Hi there! I'm Sushil Pandey, second-year Computer Science Engineering student currently interning as a Full Stack Developer at Myraa Technologies, dedicated to building a new healthcare product. Proficient in Full Stack technologies. Committed to contributing innovative solutions in the tech industry.</p>
     </div>
   )
 }
