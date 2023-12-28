@@ -4,7 +4,7 @@ const data = [{
     type: "Resume",
     image: "https://static.vecteezy.com/system/resources/previews/003/464/704/original/resume-writing-concept-businessman-new-career-path-illustration-vector.jpg",
     info: "Click to check my  Resume",
-    link: "https://drive.google.com/file/d/1Xarp-eHr1uoLSKFdc6D4UAZE_KbM_CWd/view?usp=sharing"
+    link: "https://drive.google.com/file/d/1kMkrptWTRhco4sMppkAIUMbeEiYHZak-/view"
 },
 {
     id: "2",

@@ -177,6 +177,21 @@ ul{
     justify-content: center;
     align-items: center;
 }
+.logo-pp{
+    border-radius: 100%;
+}
+.head-view-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view-btn{
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
+    border: #1876D2 solid 2px;
+    font-size: x-large;
+}
 .view-sel-head{
     font-size: x-large;
     margin: 10px;

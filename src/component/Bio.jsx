@@ -4,6 +4,7 @@ import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import assests from '../assets/all'
 import { useSelector } from 'react-redux';
+import {data} from '../../data/index'
 
 const Bio = () => {
 
@@ -39,8 +40,8 @@ const Bio = () => {
         </div>
     </div>
     <div className="bio-buttons">
-            <div className="connectbutton"><Link to={"/connect"}><Button variant="contained">Connect</Button></Link></div>
-            <div className="resumebutton"><Link to={"https://drive.google.com/file/d/1IHie2TUlCBBpiKh2UI8EqKhTKcfWtJwa/view?usp=sharing"}><Button variant="outlined">Resume</Button></Link></div>
+            <div className="connectbutton"><Link to={"https://linktr.ee/contact.sushil"}><Button variant="contained">Connect</Button></Link></div>
+            <div className="resumebutton"><Link to={data[0].link}><Button variant="outlined">Resume</Button></Link></div>
     </div>
     </div>
   )

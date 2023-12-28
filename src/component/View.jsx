@@ -10,7 +10,7 @@ const View = () => {
                 <h3 className='view-sel-head'>HEY</h3>
             </div>
             <div className="head-view-btn">
-                <button> View </button>
+                <button className='view-btn'> View </button>
             </div>
         </div>
         <div className="view-description"></div>
