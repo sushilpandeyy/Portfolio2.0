@@ -238,5 +238,17 @@ const view = [
     },
 ]
 
-export  {data, Proj, Cert, frontskill, backskill, database, program, other, exp};
+const languages = [
+    { message: "नमस्ते" },
+    { message: "Hello" },
+    { message: "Bonjour" },
+    { message: "Hola" },
+    { message: "ہیلو" },
+    { message: "salve" },
+    { message: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ" },
+    { message: "Ciao" },
+    { message: "おい" },
+  ];
+
+export  {languages, data, Proj, Cert, frontskill, backskill, database, program, other, exp};
 
