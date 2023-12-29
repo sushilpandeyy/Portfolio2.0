@@ -5,7 +5,7 @@
 .logo-pp{
     width: 50px;
     height: 50px;
-    border-radious: 50%;
+    border-radius: 50%;
 }
 .header{
     display: flex;
@@ -13,6 +13,16 @@
     padding: 10px;
     margin: 0px;
 }
+.dark_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #EFEEED;
+}
+
 body:hover{
     cursor: default;
 }
@@ -72,7 +82,7 @@ body:hover{
     border-radius: 10px;
 }
 .space{
-    height: 80px;
+    height: 50px;
 }
 .profilepic-img{
     position: absolute;
@@ -162,6 +172,9 @@ ul{
     border-color: #808080;
     border-style: solid;
     
+}
+.h3skills{
+    margin: 10px;
 }
 .projectbox{
     margin: 20px;
@@ -277,8 +290,8 @@ p{
         height: 150px;
     }
     .biobox{
-        margin: 0px;
-    }
+        margin: 10px;
+       }
     .featurebox{
         margin: 10px;
     }
@@ -286,14 +299,14 @@ p{
         position: absolute;
         border-radius: 100%;
         height: 100px;
-        top: 160px;
-        left: 10px;
+        top: 180px;
+        left: 17px;
     }
     .bioname{
         margin: 20px;
     }
     .space{
-        height: 50px;
+        height: 20px;
     }
     .biodetails{
         display: block;
@@ -313,6 +326,7 @@ p{
     }
     .projectbox{
         display: block;
+        padding: 10px;
     }
     .project-image{
         display: flex;
@@ -324,11 +338,11 @@ p{
      width: max-content;   
     }
     .pro-h3-mobile{
-        
+        margin-bottom: 10px;
         margin-left: 10px;
     }
     .pro-p-mobile{
-        
+        margin-bottom: 10px;
         margin-left: 10px;
     }
 

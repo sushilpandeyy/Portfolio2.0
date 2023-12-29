@@ -238,6 +238,48 @@ const view = [
     },
 ]
 
+//Manually Adding MEDIUM THUMBNAILS API ERROR
+
+const thumb = [
+    {
+        title: "What is Huffman Text Compression?",
+        src: "https://miro.medium.com/v2/resize:fit:2000/format:webp/0*zzbKBY7Qe8eqwif1.jpg",
+        guid: "WIHTC?",
+        pubDate: "2 September 2023",
+        link: "https://medium.com/@contactsushil/what-is-huffman-compression-3b4d22b61f11",
+
+
+    },
+    {
+        title: "Experience of Participating in Online Hackathon",
+        src: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*uo_MHY3Nurp1S_u1.png",
+        guid: "EOPIOH",
+        pubDate: "24 July 2023",
+        link: "https://medium.com/@contactsushil/experience-of-participating-in-online-hackathon-c58987dc45ea",
+        
+
+    },
+    {
+        title: "Building My First Chrome Extension",
+        src: "https://miro.medium.com/v2/resize:fit:640/format:webp/0*xDGh3knm5vDmDkOq.jpg",
+        guid: "BMFCE",
+        pubDate: "12 May 2023",
+        link: "https://contactsushil.medium.com/building-my-first-chrome-extension-8b97594494ec",
+        
+
+    }, 
+    {
+        title: "How to Make a Gesture Based Intelligent Appliance Control Robot",
+        src: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*ZsT0Gzfertftg-SPEEQoxQ.jpeg",
+        guid: "HTMAGBIACR",
+        pubDate: "05 April 2023",
+        link: "https://contactsushil.medium.com/how-to-make-a-gesture-based-intelligent-appliance-control-robot-75e26eee8b10",
+        
+
+    },    
+
+]
+
 const languages = [
     { message: "नमस्ते" },
     { message: "Hello" },
@@ -250,5 +292,7 @@ const languages = [
     { message: "おい" },
   ];
 
-export  {languages, data, Proj, Cert, frontskill, backskill, database, program, other, exp};
+//
+
+export  {thumb, languages, data, Proj, Cert, frontskill, backskill, database, program, other, exp};
 

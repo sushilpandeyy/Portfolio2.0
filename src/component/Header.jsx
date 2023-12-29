@@ -19,9 +19,9 @@ const Header = () => {
 
   return (
     <>
-    <div className="header" style={{
-         backgroundColor: (curr === "Light") ? "white" : "#1B1F23"
-      }}>
+    <div 
+    className={curr === "Light" ? "header" : "dark_header"} 
+    style={{ backgroundColor: curr === "Light" ? "white" : "#1B1F23" }}>
         <div className="logo">
             <a href="https://contactsushil.vercel.app/"><img className="logo-pp" src="https://ihhplayer.s3.ap-south-1.amazonaws.com/Posters/PROFILE.jpeg"></img></a>
             {console.log(currentMode)}
