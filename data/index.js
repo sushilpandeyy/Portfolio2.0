@@ -52,7 +52,7 @@ const Proj = [
         img: "https://devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F785a82c3cced4c8980cdda1c74a0250e%2Fprojects%2F40957aac2dd14f08ba4229ae91bd6391%2Fed750f67-bd87-42c3-9bfa-c293ea293831.jpeg&w=1440&q=75",
         title: "Diss-Tract",
         description: "Developed Diss-Tract Chrome Extension with website blocking, tasks, streaks, and user-friendly UI using HTML, CSS, and JavaScript.",
-        skills: "ReactJS, NodeJS, ExpressJS, MongoDB, Material UI, Nivo Chart, HTML, CSS, Javascript",
+        skills: "HTML, CSS, Vanilla Javascript",
         link: "https://chrome.google.com/webstore/detail/disstract/pglfgdgdfkkklgfiikjilgjdbpfmioli"
     }
 ]
