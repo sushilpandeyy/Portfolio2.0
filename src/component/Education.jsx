@@ -17,7 +17,7 @@ const Education = () => {
     dur = "2022-2026"
     info=""
     skill=""
-    img="https://media.licdn.com/dms/image/C4D0BAQFVkDMh7oXtqw/company-logo_100_100/0/1521545868930?e=1704931200&v=beta&t=ZnrhoL6y9w8yRLlxW0wihb1k9ID_Q5GaZOiKpxH8p8I"
+    img="https://upload.wikimedia.org/wikipedia/en/6/6e/SRM_University%2C_Andhra_Pradesh_logo.png"
     />
     </div>
   )

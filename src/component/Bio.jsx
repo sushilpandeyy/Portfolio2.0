@@ -29,13 +29,14 @@ const Bio = () => {
             }}>Passionate about Learning and Leading | Seeking Opportunities in Technology</p>
         </div>
         <div className="biowidget">
+        
           <div className="widgets-image">
-            <img src='https://media.licdn.com/dms/image/C4E0BAQH3nUDO57s78A/company-logo_100_100/0/1531936161449?e=1704326400&v=beta&t=SdN2FjxolzlkmOCswdVOgbu1XdG5-iK23NLSyBC1PoE' height='50px' width='50px'/>
+            <Link to={"https://ihh-player.vercel.app"}><img src='https://ihh-player.vercel.app/assets/ihhlogo-b6b00025.png' height='50px' width='50px'/></Link>
           </div>
           <div className="widget-title">
             <h3 style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>Self-Employed</h3>
+            }}>IHH Player</h3>
           </div>
         </div>
     </div>
