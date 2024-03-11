@@ -2,32 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.boxdle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.boxdlee{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.s1{
+    width: 50%;
+}
+.s2{
+    width: 50%;
+}
+.menubox{
+    border: 1px solid #e6e6e6;
+    border-radius: 30px;
+    padding: 2px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0px 24px 21px -21px rgba(0,0,0,0.75);
+}
+.smit{
+    width: 100px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+.mit{
+    color: #999999;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+article{
+    color: #a3a3a3; 
+}
+.blackpp{
+    color: black;
+}
+.aboutsh{
+    font-family: '__Fraunces_994440', '__Fraunces_Fallback_994440';
+    color: #999999;
+}
+.grow{
+   /** background-color: rgb(115 115 115);**/
+}
+.grow img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: transform 0.2s ease; 
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  
+  .grow img {
+    transition: transform 0.2s ease;
   }
+.imageihh{
+     padding: 40px;
+    box-shadow: 0px 35px 37px 6px rgba(0,0,0,0.75);
+
 }
