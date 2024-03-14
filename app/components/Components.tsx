@@ -57,10 +57,11 @@ function Gallery() {
     const [hovered, setHovered] = useState<boolean>(false);
       
     return (
-        <div className="relative bg-gray-200 h-1/6 group h-full w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100">
+        <div className="relative bg-gray-200 group h-auto w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100">
             <div className="relative h-5/6" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
                 <div className={`absolute top-0 left-0 w-full transition-opacity duration-500 ${hovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <Minimenu 
+                key="VARANSIARTI"
                 Title="Projects"
                 URL="/projects"
                 Pro="https://ihh-player.vercel.app"
@@ -77,6 +78,7 @@ function IhhComp() {
     return (
         <div className="group w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 flex-col">
             <Minimenu 
+                key="IHHPLAy"
                 Title="Projects"
                 URL="/projects"
                 Pro="https://ihh-player.vercel.app"
@@ -89,4 +91,23 @@ function IhhComp() {
     );
 }
 
-export {Twitter, Resume, Gallery, Description, IhhComp}
+function FasciaComp() {
+    const [hovered, setHovered] = useState<boolean>(false);
+     
+    return (
+        <div className="m-3 group w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100">
+            <Minimenu 
+                key="FASCIA"
+                Title="Projects"
+                URL="/projects"
+                Pro="https://ihh-player.vercel.app"
+                Side="IHH Player"
+            />
+            <div className={`relative overflow-hidden transition-transform px-2 duration-500 ${hovered ? '' : 'translate-y-6'}`} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+                <img src="https://camo.githubusercontent.com/f1e17d3bd0b19438a0c6a68182006984dda52089ce0f0592eaabc4f74feae236/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646a7567387a6675372f696d6167652f75706c6f61642f665f6175746f2c715f6175746f2f757a6f767671396173396f327a65736d34767a71" alt="IHH Player" style={{ position: 'relative', top: hovered ? '10px' : '30px' }} />
+            </div>
+        </div>
+    );
+}
+
+export {Twitter, Resume, Gallery, Description, IhhComp, FasciaComp}

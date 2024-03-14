@@ -5,6 +5,7 @@ interface MinimenuProps {
     URL: string;
     Side: string;
     Pro: string;
+    key: string
 }
 
 const Minimenu: React.FC<MinimenuProps> = ({ Title, URL, Side, Pro }) => {
@@ -21,5 +22,7 @@ const Minimenu: React.FC<MinimenuProps> = ({ Title, URL, Side, Pro }) => {
         </>
     );
 };
+
+
 
 export { Minimenu };

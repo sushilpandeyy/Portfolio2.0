@@ -1,6 +1,6 @@
 "use client";
 import About from "./components/About";
-import { Gallery } from "./components/Components";
+import { Gallery, FasciaComp } from "./components/Components";
 import Menuhead from "./components/Menuhead";
 
 
@@ -19,8 +19,8 @@ export default function Home() {
     <About/>
     </div>
     <div className="flex flex-row h-auto">
-      <div className="basis-1/4"><Gallery/></div>
-      <div className="basis-1/2">b</div>
+      <div className="basis-1/4 h-64	"><Gallery/></div>
+      <div className="basis-1/2"><FasciaComp/></div>
       <div className="basis-1/4">c</div>
     </div>
     </div>
