@@ -50,8 +50,8 @@ article{
     font-family: '__Fraunces_994440', '__Fraunces_Fallback_994440';
     color: #999999;
 }
-.grow{
-   /** background-color: rgb(115 115 115);**/
+.tweetfont{
+   font-family: 'Times New Roman', serif;
 }
 .grow img:hover {
     -webkit-transform: scale(1.1);
@@ -67,4 +67,37 @@ article{
      padding: 40px;
     box-shadow: 0px 35px 37px 6px rgba(0,0,0,0.75);
 
+}
+/**TWITTER ANIMATION **/
+.twitterbox {
+    position: relative;
+    overflow: hidden;
+}
+
+.twitterbox .content {
+    position: relative;
+    z-index: 1; /* Ensure content stays above overlay */
+}
+
+.twitterbox:before {
+    content: "";
+    position: absolute;
+    top: 20%; /* Position the overlay below the content */
+    left: 90%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 150%;
+    height: 150%;
+    background: #64c8fa;
+    transition: transform 1s ease;
+    border-radius: 50%;
+}
+
+.twitterbox:hover:before {
+    transform: translate(-50%, -50%) scale(2);
+}
+.twitterbox:hover .tweet {
+    color: white; 
+}
+.tweet{
+    z-index: 10;
 }
