@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&display=swap');
+
 .boxdle{
     display: flex;
     align-items: center;
@@ -100,4 +102,21 @@ article{
 }
 .tweet{
     z-index: 10;
+}
+
+.fblog{
+    font-family: '__Fraunces_994440', '__Fraunces_Fallback_994440';
+    font-weight: 300;
+    font-size: 30px;
+}
+.fiiblog{
+    font-family: "__Fraunces_994440', '__Fraunces_Fallback_994440";
+    font-size: 16px;
+    font-weight: 400;
+}
+.fiblog{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px;
 }

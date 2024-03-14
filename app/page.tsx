@@ -25,11 +25,7 @@ const sampleData: Array<{
     id: 2,
     name: 'Jane Smith',
     designation: 'UI/UX Designer',
-    content: (
-      <div>
-        <p>This is Jane Smith's content.</p>
-      </div>
-    ),
+    content: "HEY THERE",
   },
   // Add more sample data as needed
 ];
@@ -55,7 +51,8 @@ export default function Home() {
         <Blogcard 
         key="SOLANA"
         Title="Online Hackathon Experience"
-        Description="In this blog i explained about my first online hackathon event"
+        Date="July 24, 2023"
+        Description="Experience at HackSRM 4.0, where we, a bunch of first-year enthusiasts, formed a team named ‘The Dictators.’ The 24-hour hackathon took place from 19th to 20th May 2023,"
         URL="https://Medium.com/@contactsushil"
         />
         </div>

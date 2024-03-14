@@ -27,13 +27,14 @@ interface BlogProps {
     key: string;
     Title: string;
     URL: string;
+    Date: string;
     Description: string;
 }
 
-const Blogcard: React.FC<BlogProps> = ({Title, URL, Description}) => {
+const Blogcard: React.FC<BlogProps> = ({Title, URL, Description, Date}) => {
     return (
         <>
-        <div className="rounded-md p-3 h-full rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 flex-col">
+        <div className="rounded-md p-3 h-full rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 ">
         <Minimenu 
                 key="FASCIA"
                 Title="Projects"
@@ -41,8 +42,11 @@ const Blogcard: React.FC<BlogProps> = ({Title, URL, Description}) => {
                 Pro="https://ihh-player.vercel.app"
                 Side="IHH Player"
             />
-        <h2 className='text-xl'>{Title}</h2>
-        <p className="description">{Description}</p>
+        <div className='flex flex-col h-4/5 content-end justify-end '>    
+        <h2 className='text-xl fblog'>{Title}</h2>
+        <h3 className='text-sm m-0.5 fiblog'>{Date}</h3>
+        <p className="description fiiblog">{Description}</p>
+        </div>
         </div>
         </>
     )
