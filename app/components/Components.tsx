@@ -57,12 +57,17 @@ function Gallery() {
     const [hovered, setHovered] = useState<boolean>(false);
       
     return (
-        <div className="relative bg-gray-200 h-1/6">
-            <div className={`absolute top-0 left-0 w-full transition-transform duration-500 transform ${hovered ? '-translate-y-full' : 'translate-y-0'}`}>
-                <p className="bg-gray-200 p-2 rounded-t-lg">Content above image</p>
-            </div>
+        <div className="relative bg-gray-200 h-1/6 group h-full w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100">
             <div className="relative h-5/6" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-                <Image src={Varansi} alt="" className="rounded-md h-auto" />
+                <div className={`absolute top-0 left-0 w-full transition-opacity duration-500 ${hovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <Minimenu 
+                Title="Projects"
+                URL="/projects"
+                Pro="https://ihh-player.vercel.app"
+                Side="IHH Player"
+            />
+                </div>
+                <Image src={Varansi} alt="" className={`rounded-md h-auto transition-transform duration-500 transform ${hovered ? 'translate-y-10' : 'translate-y-0'}`} />
             </div>
         </div>
     );

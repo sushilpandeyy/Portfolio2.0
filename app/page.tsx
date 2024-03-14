@@ -19,7 +19,7 @@ export default function Home() {
     <About/>
     </div>
     <div className="flex flex-row h-auto">
-      <div className="basis-1/4 m-2"><Gallery/></div>
+      <div className="basis-1/4"><Gallery/></div>
       <div className="basis-1/2">b</div>
       <div className="basis-1/4">c</div>
     </div>
