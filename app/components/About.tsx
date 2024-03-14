@@ -1,5 +1,5 @@
 import { Resume, Twitter } from "./Components";
-import { Minimenu } from "./Headercomp"
+import { Minimenu } from "./Propcomp"
 import Image from 'next/image';
 import { Description, IhhComp } from "./Components";
 

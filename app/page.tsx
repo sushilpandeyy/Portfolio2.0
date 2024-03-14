@@ -2,7 +2,37 @@
 import About from "./components/About";
 import { Gallery, FasciaComp } from "./components/Components";
 import Menuhead from "./components/Menuhead";
+import { Blogcard } from "./components/Propcomp";
+import { CardStack } from "./components/card-stack";
 
+const sampleData: Array<{
+  id: number;
+  name: string;
+  designation: string;
+  content: React.ReactNode;
+}> = [
+  {
+    id: 1,
+    name: 'John Doe',
+    designation: 'Software Engineer',
+    content: (
+      <div>
+        <p>This is John Doe's content.</p>
+      </div>
+    ),
+  },
+  {
+    id: 2,
+    name: 'Jane Smith',
+    designation: 'UI/UX Designer',
+    content: (
+      <div>
+        <p>This is Jane Smith's content.</p>
+      </div>
+    ),
+  },
+  // Add more sample data as needed
+];
 
 export default function Home() {
   //MENU
@@ -18,10 +48,24 @@ export default function Home() {
     <div>
     <About/>
     </div>
-    <div className="flex flex-row h-auto">
-      <div className="basis-1/4 h-64	"><Gallery/></div>
-      <div className="basis-1/2"><FasciaComp/></div>
-      <div className="basis-1/4">c</div>
+    <div className="flex flex-row h-auto justify-items-center content-start">
+      <div className="basis-1/4 m-1"><Gallery/></div>
+      <div className="basis-1/2 m-1"><FasciaComp/></div>
+      <div className="basis-1/4 m-1">
+        <Blogcard 
+        key="SOLANA"
+        Title="Online Hackathon Experience"
+        Description="In this blog i explained about my first online hackathon event"
+        URL="https://Medium.com/@contactsushil"
+        />
+        </div>
+    </div>
+
+    <div className="cardstest">
+      <CardStack
+      items={sampleData}
+      
+      />
     </div>
     </div>
     </>

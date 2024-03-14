@@ -1,4 +1,4 @@
-import { Minimenu } from "./Headercomp"
+import { Minimenu } from "./Propcomp"
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Varansi from "../../assets/Varansi.jpg"
@@ -6,7 +6,7 @@ import Varansi from "../../assets/Varansi.jpg"
 
 function Twitter(){
     return (
-    <div className="twitterbox rounded-md w-auto border border-zinc-50 p-4 m-2">
+    <div className="twitterbox rounded-md w-auto border border-zinc-50 p-4 m-2 bg-neutral-50">
     <div className="content tweet flex flex-nowrap content-start justify-between">
         <div className="w-1/2">
             <div className="flex">
@@ -68,7 +68,7 @@ function Gallery() {
                 Side="IHH Player"
             />
                 </div>
-                <Image src={Varansi} alt="" className={`rounded-md h-auto transition-transform duration-500 transform ${hovered ? 'translate-y-10' : 'translate-y-0'}`} />
+                <Image src={Varansi} alt="" className={`rounded-md h-80 transition-transform duration-500 transform ${hovered ? 'translate-y-10' : 'translate-y-0'}`} />
             </div>
         </div>
     );
@@ -95,7 +95,7 @@ function FasciaComp() {
     const [hovered, setHovered] = useState<boolean>(false);
      
     return (
-        <div className="m-3 group w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100">
+        <div className="group h-80 w-full overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100">
             <Minimenu 
                 key="FASCIA"
                 Title="Projects"
@@ -109,5 +109,6 @@ function FasciaComp() {
         </div>
     );
 }
+
 
 export {Twitter, Resume, Gallery, Description, IhhComp, FasciaComp}

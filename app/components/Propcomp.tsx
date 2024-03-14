@@ -23,6 +23,30 @@ const Minimenu: React.FC<MinimenuProps> = ({ Title, URL, Side, Pro }) => {
     );
 };
 
+interface BlogProps {
+    key: string;
+    Title: string;
+    URL: string;
+    Description: string;
+}
+
+const Blogcard: React.FC<BlogProps> = ({Title, URL, Description}) => {
+    return (
+        <>
+        <div className="rounded-md p-3 h-full rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 flex-col">
+        <Minimenu 
+                key="FASCIA"
+                Title="Projects"
+                URL="/projects"
+                Pro="https://ihh-player.vercel.app"
+                Side="IHH Player"
+            />
+        <h2 className='text-xl'>{Title}</h2>
+        <p className="description">{Description}</p>
+        </div>
+        </>
+    )
+}
 
 
-export { Minimenu };
+export { Minimenu, Blogcard };
