@@ -42,7 +42,7 @@ const Blogcard: React.FC<BlogProps> = ({Title, URL, Description, Date}) => {
                 Pro="https://ihh-player.vercel.app"
                 Side="IHH Player"
             />
-        <div className='flex flex-col h-4/5 content-end justify-end '>    
+        <div className='flex flex-col h-4/5 content-end justify-end mt-10'>    
         <h2 className='text-xl fblog'>{Title}</h2>
         <h3 className='text-sm m-0.5 fiblog'>{Date}</h3>
         <p className="description fiiblog">{Description}</p>

@@ -52,7 +52,7 @@ export default function Home() {
     Title="Sushil"
     />
     <About/>
-    <div className="flex flex-row h-auto justify-items-center content-start">
+    <div className="lg:flex flex-row h-auto justify-items-center content-start">
       <div className="basis-1/4 m-1"><Gallery/></div>
       <div className="basis-1/2 m-1"><FasciaComp/></div>
       <div className="basis-1/4 m-1">
