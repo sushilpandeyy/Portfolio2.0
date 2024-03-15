@@ -14,12 +14,6 @@
     align-items: flex-start;
     justify-content: center;
 }
-.s1{
-    width: 50%;
-}
-.s2{
-    width: 50%;
-}
 .menubox{
     border: 1px solid #e6e6e6;
     border-radius: 30px;
@@ -105,12 +99,11 @@ article{
 }
 
 .fblog{
-    font-family: '__Fraunces_994440', '__Fraunces_Fallback_994440';
     font-weight: 300;
     font-size: 30px;
 }
 .fiiblog{
-    font-family: "__Fraunces_994440', '__Fraunces_Fallback_994440";
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
 }

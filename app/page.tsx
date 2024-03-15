@@ -30,6 +30,16 @@ const sampleData: Array<{
   // Add more sample data as needed
 ];
 
+const ab = () => {
+  return (
+    <div className="cardstest">
+      <CardStack
+      items={sampleData}
+      />
+    </div>
+  )
+}
+
 export default function Home() {
   //MENU
   //ABOUT SECTION
@@ -41,9 +51,7 @@ export default function Home() {
     key="SUSHIL"
     Title="Sushil"
     />
-    <div>
     <About/>
-    </div>
     <div className="flex flex-row h-auto justify-items-center content-start">
       <div className="basis-1/4 m-1"><Gallery/></div>
       <div className="basis-1/2 m-1"><FasciaComp/></div>
@@ -56,13 +64,6 @@ export default function Home() {
         URL="https://Medium.com/@contactsushil"
         />
         </div>
-    </div>
-
-    <div className="cardstest">
-      <CardStack
-      items={sampleData}
-      
-      />
     </div>
     </div>
     </>
