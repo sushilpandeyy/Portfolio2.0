@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 interface MenuProps {
     Title: string;
 }
@@ -15,24 +17,28 @@ const Menuhead: React.FC<MenuProps> = ({ Title }) => {
 };
 
 const Menuitems: React.FC<MenuProps> = ({ Title }) => {
-    const name = ["Sushil", "Work", "Project", "Contact"];
+    const name = ["Sushil", "Work", "Contact"];
 
     function List(item: String){
         if(item==Title){
         return (
             <>
+           
             <div className="menuopt">
                 <center><p className="smit">{item}</p></center>
             </div>
+            
             </>
         )
         }
         else{
             return (
                 <>
+                <Link href={"/"+item}>
                 <div className="menuopt">
                     <center><p className="mit">{item}</p></center>
                 </div>
+                </Link>
                 </>
             )
         }
