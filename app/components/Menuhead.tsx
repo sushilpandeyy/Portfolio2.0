@@ -17,7 +17,7 @@ const Menuhead: React.FC<MenuProps> = ({ Title }) => {
 };
 
 const Menuitems: React.FC<MenuProps> = ({ Title }) => {
-    const name = ["Sushil", "Work", "Contact"];
+    const name = ["Sushil", "Work", "Article", "Contact"];
 
     function List(item: String){
         if(item==Title){
