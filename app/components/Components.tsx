@@ -2,44 +2,57 @@ import { Minimenu } from "./Propcomp"
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Varansi from "../../assets/Varansi.jpg"
- 
+import Folder from "../../assets/Folder.jpeg"
 
-function Twitter(){
+function Twitter() {
     return (
-    <div className="twitterbox rounded-md w-auto border border-zinc-50 p-4 m-2 bg-neutral-50">
-    <div className="content tweet flex flex-nowrap content-start justify-between">
-        <div className="w-1/2">
-            <div className="flex">
-                <img src="https://pbs.twimg.com/profile_images/1666401418104934402/2YENIgPj_400x400.jpg" className="rounded-full h-12 w-12" />
-                <div className="flex flex-col p-1">
-                    <span className="text-sm">Sushil Pandey</span>
-                    <span className="text-xs text-neutral-500">@contactsushill</span><br/>
-                </div>
-            </div>
-        </div>
-        <div className="w-1/2 flex justify-end content-center ">
-            <img src="https://uploads-ssl.webflow.com/62c89bdb7c26b515f632de67/630d83f5a3b284176ffe8b1b_twitter-icon-min.png" className="rounded-full h-12 w-12 bg-sky-400" />
-        </div>
+      <div className="twitterbox rounded-md border border-zinc-50 p-4 m-2 bg-neutral-50 w-auto sm:w-auto">
+        <div className="content tweet flex flex-col lg:flex-row lg:items-center justify-between">
+        <div className="flex items-center justify-between mb-2 lg:mb-0">
+  <div className="flex items-center">
+    <img
+      src="https://pbs.twimg.com/profile_images/1666401418104934402/2YENIgPj_400x400.jpg"
+      className="rounded-full h-12 w-12 mr-2 lg:mr-4"
+    />
+    <div className="flex flex-col">
+      <span className="text-sm">Sushil Pandey</span>
+      <span className="text-xs text-neutral-500">@contactsushill</span>
     </div>
-    <div className="content tweet text-base tweetfont">
-        Just dove 🕊️ into TypeScript!
-    </div>
-    <div className="content tweet flex justify-center content-center">
-        <a href="https://twitter.com/contactsushill"><div className="flex rounded-lg border p-1 m-2">Tweets <img src="https://uploads-ssl.webflow.com/62c89bdb7c26b515f632de67/62ca186ae691b25b1768cbfe_arrow-angle.svg" alt="" className="tweet" /></div></a>
-    </div>
-    <div className="overlay"></div>
+  </div>
+  <div className="flex items-center pl-10">
+    <img
+      src="https://uploads-ssl.webflow.com/62c89bdb7c26b515f632de67/630d83f5a3b284176ffe8b1b_twitter-icon-min.png"
+      className=" rounded-full h-12 w-12 bg-sky-400"
+    />
+  </div>
 </div>
-    )
-}
 
-function Resume(){
-    return(
-        <div className="imgbox group h-full w-auto overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 flex-col">
-            <div>
-            <img src="https://res.cloudinary.com/djug8zfu7/image/upload/v1710359240/znusmcunhvfb5c1lgsx5.png"/>
-            </div>
         </div>
-    )
+        <div className="content tweet text-base tweetfont">
+          Just dove 🕊️ into TypeScript!
+        </div>
+        <div className="content tweet flex justify-center">
+          <a href="https://twitter.com/contactsushill" className="flex rounded-lg border p-1 m-2">
+            <span>Tweets</span>
+            <img
+              src="https://uploads-ssl.webflow.com/62c89bdb7c26b515f632de67/62ca186ae691b25b1768cbfe_arrow-angle.svg"
+              alt=""
+              className="h-4 w-4 ml-1"
+            />
+          </a>
+        </div>
+        <div className="overlay"></div>
+      </div>
+    );
+  }
+  
+
+function Resume() {
+  return (
+    <div className="imgbox group m-2 p-4 h-full w-1/2 overflow-hidden rounded-lg bg-neutral-50 transition-colors focus-within:bg-neutral-100 hover:bg-neutral-100 flex-col">
+      <img className="w-auto" src="https://photos5.appleinsider.com/gallery/49598-97114-Files-app-xl.jpg" alt="" />
+    </div>
+  );
 }
 
 function Description(){

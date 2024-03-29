@@ -13,7 +13,10 @@ export default function About(){
     </div>
     <div className="s2 lg:w-1/2">
     <IhhComp/>
+    <div className="sm:block lg:flex content-start justify-between">
+    <Resume/>
     <Twitter/>
+    </div>
     </div>
     </div>
     </>)

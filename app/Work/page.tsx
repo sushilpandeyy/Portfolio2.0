@@ -1,4 +1,5 @@
 import Menuhead from "../components/Menuhead";
+import Workcard from "../components/Workcard"
 
 export default function Work() {
   
@@ -11,6 +12,10 @@ export default function Work() {
     Title="Work"
     />
     </div>
+    <Workcard
+    Title="HEY"
+    Subtitle="THEY ARE HERE"
+    />
     </>
     </>
   );
