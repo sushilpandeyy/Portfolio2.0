@@ -270,16 +270,16 @@ const exp = [
         link: "https://play.google.com/store/apps/details?id=com.dukan.every",
         img: "https://play-lh.googleusercontent.com/yeiKvJm7eMM97edS0RTUnNFIxkqHdEoT1zdfSNUS0swfG4y76lB7r9YLtPg74l16RQ"
     },
-    {
-        id: "23",
-        title: "Developer & Founding Member",
-        org: "Prakash News Of India",
-        dur: "May 2018 - March 2022",
-        info: "",
-        skill: "CMS Development, Digital Marketing, SEO",
-        link: "https://www.prakashnewsofindia.in/",
-        img: "https://1.bp.blogspot.com/-M9n8cE8-LBA/YQVWPsbJqcI/AAAAAAAAGrc/HgGz4YDbcLondjrwdSenR0YZQUiAW8jGwCLcBGAsYHQ/s1920/logo%2B5.7.png"
-    },
+   // {
+   //     id: "23",
+   //     title: "Developer & Founding Member",
+   //     org: "Prakash News Of India",
+   //     dur: "May 2018 - March 2022",
+   //     info: "",
+   //     skill: "CMS Development, Digital Marketing, SEO",
+   //     link: "https://www.prakashnewsofindia.in/",
+   //     img: "https://1.bp.blogspot.com/-M9n8cE8-LBA/YQVWPsbJqcI/AAAAAAAAGrc/HgGz4YDbcLondjrwdSenR0YZQUiAW8jGwCLcBGAsYHQ/s1920/logo%2B5.7.png"
+   // },
 ]
 
 const view = [
