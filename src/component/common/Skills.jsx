@@ -36,9 +36,9 @@ const Skills = () => {
    <div className="skill-cards">
    {backskill.map(createc)}
    </div>
-   <div classname="h3skills" style={{
+   <h2 style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>Database</div>
+            }}>Database</h2>
    <div className="skill-cards">
    {database.map(createc)}
    </div>

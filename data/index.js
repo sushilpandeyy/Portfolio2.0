@@ -52,7 +52,7 @@ const Proj = [
         img: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/3/8/vycpwzww6qw9lfgqhszi/seedhe-maut",
         title: "IHH Player",
         description: "IHH Player is a developing project, a music player only for Indian Hip Hop.",
-        skills: "React, Tailwind CSS, ExpressJS, PostgresSQL, AWS",
+        skills: "React, Tailwind CSS, ExpressJS, PostgreSQL, AWS",
         link: "https://ihh-player.vercel.app/"
     },
     {
@@ -146,6 +146,11 @@ const backskill = [
 ]
 const database = [
     {
+        id:"1psql",
+        title: "PostgreSQL",
+        img: "https://miro.medium.com/v2/resize:fit:610/1*mMq3Bem9r8ASAn1YwcTbEw.png"
+    },
+    {
         id:"1d",
         title: "MySql",
         img: "https://beehosting.pro/wp-content/uploads/2022/06/mysql_database_large.jpg"
@@ -220,7 +225,7 @@ const exp = [
         id: "2e",
         title: "Full Stack Development Intern",
         org: "Myraa Technologies",
-        dur: "Oct 2023 - Present",
+        dur: "Oct 2023 - Jan 2024",
         info: "",
         skill: "Tornado, Python, HTML, CSS, Javascript, AWS, EC2, S3 Bucket",
         link: "",
@@ -263,13 +268,20 @@ const view = [
 
 const thumb = [
     {
+        title: "Full Stack Development Intern Experience",
+        src: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zkAvD1X8H_vu2mbmfDNKwg.png",
+        guid: "WIHTC?",
+        pubDate: "2 April 2024",
+        link: "https://contactsushil.medium.com/full-stack-development-intern-experience-e5bf1a3625bb",
+
+
+    },
+    {
         title: "What is Huffman Text Compression?",
         src: "https://miro.medium.com/v2/resize:fit:2000/format:webp/0*zzbKBY7Qe8eqwif1.jpg",
         guid: "WIHTC?",
         pubDate: "2 September 2023",
         link: "https://medium.com/@contactsushil/what-is-huffman-compression-3b4d22b61f11",
-
-
     },
     {
         title: "Experience of Participating in Online Hackathon",
