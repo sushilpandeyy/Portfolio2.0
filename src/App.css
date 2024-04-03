@@ -174,7 +174,9 @@ ul{
     
 }
 .h3skills{
+    padding-left: 3px;
     margin: 10px;
+    font-weight: 800;
 }
 .projectbox{
     margin: 20px;
@@ -303,7 +305,7 @@ p{
         left: 17px;
     }
     .bioname{
-        margin: 20px;
+        /**margin: 20px;**/
     }
     .space{
         height: 20px;
@@ -315,7 +317,7 @@ p{
         display: none;
     }
     .bioname{
-        width: 100%;
+       /** width: 100%;**/
     }
     .act-button{
         align-items: stretch;

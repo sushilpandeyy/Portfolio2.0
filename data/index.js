@@ -32,11 +32,27 @@ const data = [{
 
 const Proj = [  
     {
+        id: "111",
+        img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710962200/zng2ogv0tnab6mnoqtit.png",
+        title: "Skoop",
+        description: "A decentralized news application incorporating a layer of ML model.",
+        skills: "React, Tailwind CSS, Solidity, TensorFlow",
+        link: "https://github.com/sushilpandeyy/skoop"
+    },
+    {
+        id: "11321",
+        img: "https://img.freepik.com/free-vector/vector-illustration-retro-style-hand-giving-money-other-hand_1284-42589.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1711756800&semt=ais",
+        title: "Borrow Bridge",
+        description: "A Micro-Investment Platform for Tier-1 City Audience to invest in tier-3 cities.",
+        skills: "React, Tailwind CSS, Mongodb, ExpressJS, Solidity",
+        link: "https://github.com/sushilpandeyy/borrowbridge"
+    },
+    {
         id: "1111",
         img: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/3/8/vycpwzww6qw9lfgqhszi/seedhe-maut",
         title: "IHH Player",
         description: "IHH Player is a developing project, a music player only for Indian Hip Hop.",
-        skills: "React, Tailwind CSS, ExpressJS, MongoDB",
+        skills: "React, Tailwind CSS, ExpressJS, PostgresSQL, AWS",
         link: "https://ihh-player.vercel.app/"
     },
     {
@@ -64,7 +80,7 @@ const Cert = [
         org:"Flipkart",
         date:"Sep 2023",
         Cred: "18b0ed89-d7a7-483d-a18b-5416c1c097adCredential ID 18b0ed89-d7a7-483d-a18b-5416c1c097ad",
-        img: "https://media.licdn.com/dms/image/C560BAQF6H8gAs-JyFg/company-logo_100_100/0/1627543110554?e=1704326400&v=beta&t=NHIVRixx3fJu3Y0s668d0azjhXlakNIy4_Vm_DRT2z0",
+        img: "https://yt3.googleusercontent.com/cT40lDWqE99Ch52R3ftuAExjmjF-yZiY5rUSv_0Q3NXhcqzmiax8ReXuS4Qe53Fizcaw4hEX=s900-c-k-c0x00ffffff-no-rj",
         skills: "Data Structures, Algorithms",
         link: "https://unstop.com/certificate-preview/18b0ed89-d7a7-483d-a18b-5416c1c097ad?utm_campaign=site-emails"
     },
@@ -84,7 +100,7 @@ const Cert = [
         org:"Agoda",
         date:"Apr 2023",
         Cred: "d3d54e02-0e52-4755-9994-d018ec033ab5",
-        img: "https://media.licdn.com/dms/image/C4D0BAQGBa_7QNZNwpw/company-logo_100_100/0/1656643826125?e=1704326400&v=beta&t=YSrSgYmAGlhd0WM8RifS0zPn37Lvp0NjganUa0QRWPI",
+        img: "https://www.agoda.com/wp-content/uploads/2022/07/Codegoda-logo-blue.png",
         skills: "Data Structures, Algorithms",
         link: "https://unstop.com/certificate-preview/d3d54e02-0e52-4755-9994-d018ec033ab5?utm_campaign=site-emails"
     }
@@ -94,11 +110,6 @@ const frontskill = [
         id:"1f",
         title: "HTML CSS",
         img: assests.htc
-    },
-    {
-        id: "2f",
-        title: "Javascript",
-        img: assests.js
     },
     {
         id: "3f",
@@ -126,6 +137,11 @@ const backskill = [
         id: "2b",
         title: "ExpressJS",
         img: "https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA"
+    },
+    {
+        id: "2b",
+        title: "FastAPI",
+        img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/FastAPI_b.jpg"
     },
 ]
 const database = [
@@ -155,6 +171,11 @@ const program = [
         id: "2p",
         title: "Javascript",
         img: assests.js
+    },
+    {
+        id: "2p",
+        title: "Typescript",
+        img: "https://www.datocms-assets.com/48401/1628645197-learn-typescript.png"
     },
 ]
 const other = [
