@@ -26,7 +26,7 @@ const Bio = () => {
             }}>Sushil Pandey</h1>
             <p style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>Full Stack Developer | Ex Myraa Technologies | Proficient in Next, MERN Stack, Typescript, AWS, Docker</p>
+            }}>Full Stack Developer | Formerly with Myraa Technologies | Seeking Internship Opportunities</p>
         </div>
         <div className="biowidget">
         
