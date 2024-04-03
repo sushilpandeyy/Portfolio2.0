@@ -1,31 +1,24 @@
 import assests from "../src/assets/all.js"
 const data = [{
     id: "1",
-    type: "Resume",
-    image: "https://static.vecteezy.com/system/resources/previews/003/464/704/original/resume-writing-concept-businessman-new-career-path-illustration-vector.jpg",
-    info: "Click to check my  Resume",
-    link: "https://ihhplayer.s3.ap-south-1.amazonaws.com/Sushil+Pandey+Resume3.5.pdf"
+    type: "IHH Player",
+    image: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710139256/x9ziaczvderovrbyd39p.png",
+    info: "Audio Streaming Application",
+    link: "https://ihh.contactsushil.me"
 },
 {
     id: "2",
-    type: "Fascia",
-    image: "https://i.pngimg.me/thumb/f/720/e89f8ed9b7db4863a408.jpg",
-    info: "Checkout my recent Project Fascia", 
+    type: "Skoop",
+    image: "https://firebasestorage.googleapis.com/v0/b/portfolio2-5eab3.appspot.com/o/SKOOPNEWS.png?alt=media&token=f3a907ec-296b-42eb-93af-eea15a017203",
+    info: "Decentralized News Application", 
     link: "https://github.com/sushilpandeyy/Fascia"
 },
 {
     id: "3",
-    image: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/3/8/vycpwzww6qw9lfgqhszi/seedhe-maut",
-    type: "IHH Player",
-    info: "Audio playing application",
-    link: "https://ihh-player.vercel.app/"
-},
-{
-    id: "4",
-    type: "GitHub",
-    image: "https://github.blog/wp-content/uploads/2022/12/1200x640-1.png",
-    info: "Check all of my Projects",
-    link: "https://github.com/sushilpandeyy/"
+    type: "Myraa Technologies",
+    image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zkAvD1X8H_vu2mbmfDNKwg.png",
+    info: "Full Stack Internship Experience", 
+    link: "https://contactsushil.medium.com/full-stack-development-intern-experience-e5bf1a3625bb"
 },
 
 ]
@@ -107,6 +100,16 @@ const Cert = [
 ]
 const frontskill = [
     {
+        id:"iop",
+        title: "NextJS",
+        img: "https://miro.medium.com/v2/resize:fit:1000/1*v3XndYeIsBtk4CkpMf7vmA.jpeg"
+    },
+    {
+        id:"ijk",
+        title: "Tailwind CSS",
+        img: "https://picperf.io/https://laravelnews.s3.amazonaws.com/images/tailwindcss-1633184775.jpg"
+    },
+    {
         id:"1f",
         title: "HTML CSS",
         img: assests.htc
@@ -142,6 +145,11 @@ const backskill = [
         id: "2b",
         title: "FastAPI",
         img: "https://www.simplilearn.com/ice9/free_resources_article_thumb/FastAPI_b.jpg"
+    },
+    {
+        id: "2bs",
+        title: "Tornado",
+        img: "https://www.python-me.org/assets/img/uploads/tornado-web-server.png"
     },
 ]
 const database = [
@@ -186,18 +194,23 @@ const program = [
 const other = [
     {
         id:"0o",
-        title: "React Native",
-        img: "https://pagepro.co/blog/wp-content/uploads/2021/05/ReactNativepicture.png"
+        title: "AWS",
+        img: "https://www.watermarkinsights.com/wp-content/uploads/2024/01/Amazon_Web_Services-Logo.wine_.png"
     },
     {
         id:"1o",
-        title: "Expo",
-        img: "https://global-uploads.webflow.com/618fa90c201104b94458e1fb/64fec4335268299cec06a9a8_expo-git_Main-Image.jpg"
+        title: "Zustand",
+        img: "https://tsh.io/wp-content/uploads/2023/02/zustand-react-small.png"
     },
     {
         id: "2o",
         title: "Redux",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgtalDmuNSRPvgttO-aML8rdgSI9meYdHnqQ&usqp=CAU"
+    },
+    {
+        id: "6o",
+        title: "Web3JS",
+        img: "https://raw.githubusercontent.com/ChainSafe/web3.js/HEAD/assets/logo/web3js.jpg"
     },
     {
         id: "3o",
@@ -214,13 +227,19 @@ const other = [
         title: "Github",
         img: "https://www.techwar.gr/wp-content/uploads/2023/06/GitHub__headpic.jpg"
     },
-    {
-        id: "6o",
-        title: "Figma",
-        img: "https://cdn.mos.cms.futurecdn.net/TWZ3c7ANbf3zUV6YWFPi8a.jpg"
-    },
+    
 ]
 const exp = [
+    {
+        id: "3e",
+        title: "Associate",
+        org: "Next Tech Lab",
+        dur: "Feb 2024 - Present",
+        info: "",
+        skill: "Solidity, Web3",
+        link: "",
+        img: "https://media.licdn.com/dms/image/C510BAQGikFtlBr3v3A/company-logo_200_200/0/1631390746545?e=1720051200&v=beta&t=UbxnNXUMY0up7cc7I7JIV2qU9wn4wAqMuoD0ZWYkvQM"
+    }, 
     {
         id: "2e",
         title: "Full Stack Development Intern",
@@ -243,13 +262,23 @@ const exp = [
     },
     {
         id: "2e",
-        title: "Cheif Builder",
+        title: "Founder",
         org: "EveryDukan",
         dur: "Aug 2021 - Jan 2023",
         info: "",
         skill: "MIT App Inventor, Digital Marketing, Designing",
         link: "https://play.google.com/store/apps/details?id=com.dukan.every",
         img: "https://play-lh.googleusercontent.com/yeiKvJm7eMM97edS0RTUnNFIxkqHdEoT1zdfSNUS0swfG4y76lB7r9YLtPg74l16RQ"
+    },
+    {
+        id: "23",
+        title: "Developer & Founding Member",
+        org: "Prakash News Of India",
+        dur: "May 2018 - March 2022",
+        info: "",
+        skill: "CMS Development, Digital Marketing, SEO",
+        link: "https://www.prakashnewsofindia.in/",
+        img: "https://1.bp.blogspot.com/-M9n8cE8-LBA/YQVWPsbJqcI/AAAAAAAAGrc/HgGz4YDbcLondjrwdSenR0YZQUiAW8jGwCLcBGAsYHQ/s1920/logo%2B5.7.png"
     },
 ]
 

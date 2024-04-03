@@ -18,21 +18,22 @@ const Skills = () => {
 
   return (
    <>
-   <div classname="h3skills" style={{
+   <h2 style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>Programming Languages</div>
+            }}>Programming Language</h2>
    <div className="skill-cards">
    {program.map(createc)}
    </div>
-   <div classname="h3skills" style={{
+   <h2 style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>Frontend</div>
+            }}>Frontend</h2>
+
    <div className="skill-cards">
    {frontskill.map(createc)}
    </div>
-   <div classname="h3skills" style={{
+            <h2 style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>Backend</div>
+            }}>Backend</h2>
    <div className="skill-cards">
    {backskill.map(createc)}
    </div>
@@ -42,9 +43,9 @@ const Skills = () => {
    <div className="skill-cards">
    {database.map(createc)}
    </div>
-   <div classname="h3skills" style={{
+   <h2 style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>Other</div>
+            }}>Other</h2>
    <div className="skill-cards">
    {other.map(createc)}
    </div>

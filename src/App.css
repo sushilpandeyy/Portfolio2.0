@@ -133,11 +133,11 @@ h2{
     border-style: solid;
     border-radius: 10px;
     border-color: #efeeed;
-    width: 240px;
     padding: 0px;
 }
 .card-feat:hover{
   cursor: pointer;  
+  animation: forwards;
 }
 .card-para{
     margin: 10px;
@@ -147,8 +147,8 @@ ul{
     padding-inline-end: 20px;
 }
 .card-img{
-    height: 200px;
-    width: 240px;
+    height: 200px; 
+    width: auto;
 }
 .card-des{
     text-wrap: wrap;

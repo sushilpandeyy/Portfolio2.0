@@ -31,18 +31,18 @@ const Bio = () => {
         <div className="biowidget">
         
           <div className="widgets-image">
-            <Link to={"https://ihh-player.vercel.app"}><img src='https://ihh-player.vercel.app/assets/ihhlogo-b6b00025.png' height='50px' width='50px'/></Link>
+            <Link to={"https://skoop1.vercel.app"}><img src='https://res.cloudinary.com/djug8zfu7/image/upload/v1710962200/zng2ogv0tnab6mnoqtit.png' height='50px' width='50px'/></Link>
           </div>
           <div className="widget-title">
-            <h3 style={{
+          <Link to={"https://skoop1.vercel.app"}> <h3 style={{
               color: (currentMode === "Light") ? "#191919" : "#E9E9E9"
-            }}>IHH Player</h3>
+            }}>Skoop</h3></Link>
           </div>
         </div>
     </div>
     <div className="bio-buttons">
             <div className="connectbutton"><Link to={"https://linktr.ee/contact.sushil"}><Button variant="contained">Connect</Button></Link></div>
-            <div className="resumebutton"><Link to={data[0].link}><Button variant="outlined">Resume</Button></Link></div>
+            <div className="resumebutton"><Link to={"https://drive.google.com/file/d/1gPY2fjEthdYI9AWzWo4PdR4JaGG50hBE/view"}><Button variant="outlined">Resume</Button></Link></div>
     </div>
     </div>
   )
