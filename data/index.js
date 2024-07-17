@@ -25,6 +25,22 @@ const data = [{
 
 const Proj = [  
     {
+        id: "110",
+        img: "https://cdn.myanimelist.net/images/characters/9/198885.jpg",
+        title: "Korosuke",
+        description: "A platform which always organizations/companies to create their own ML models based on their important data.",
+        skills: "React, FastAPI",
+        link: ""
+    },
+    {
+        id: "109",
+        img: "https://symbl-world.akamaized.net/i/webp/49/b0c6a200505aea34d6f48f8b0a0e54.webp",
+        title: "Shiver",
+        description: "A Platform for multiple professions under a roof.",
+        skills: "React, FastAPI, Gemini API",
+        link: ""
+    },
+    {
         id: "111",
         img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710962200/zng2ogv0tnab6mnoqtit.png",
         title: "Skoop",
@@ -238,7 +254,7 @@ const exp = [
         info: "",
         skill: "Solidity, Web3",
         link: "",
-        img: "https://media.licdn.com/dms/image/C510BAQGikFtlBr3v3A/company-logo_200_200/0/1631390746545?e=1720051200&v=beta&t=UbxnNXUMY0up7cc7I7JIV2qU9wn4wAqMuoD0ZWYkvQM"
+        img: "https://media.licdn.com/dms/image/C510BAQGikFtlBr3v3A/company-logo_200_200/0/1631390746545?e=2147483647&v=beta&t=lsbetbfgbmruFsl84eWyA4Kvsbknpqhxhkm-kuhlmVU"
     }, 
     {
         id: "2e",
