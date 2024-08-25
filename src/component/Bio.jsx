@@ -42,7 +42,7 @@ const Bio = () => {
     </div>
     <div className="bio-buttons">
             <div className="connectbutton"><Link to={"https://linktr.ee/contact.sushil"}><Button variant="contained">Connect</Button></Link></div>
-            <div className="resumebutton"><Link to={"https://drive.google.com/file/d/1fseEQpzB7TtwqWi-vwugLTjb1k6cIoxE/view?usp=sharing"}><Button variant="outlined">Resume</Button></Link></div>
+            <div className="resumebutton"><Link to={"https://drive.google.com/file/d/14_DwlH74vO0QRFN6ir005uTV7ep4k0f2/view?usp=sharing"}><Button variant="outlined">Resume</Button></Link></div>
     </div>
     </div>
   )
