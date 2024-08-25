@@ -26,9 +26,16 @@
 body:hover{
     cursor: default;
 }
-.dark-bright{
+.dark-bright {
     width: 35px;
+    transition: transform 0.3s ease; /* Smooth transition for the pop-up effect */
 }
+
+.dark-bright:hover, .dark-bright:active {
+    transform: scale(1.2); /* Scale the image up to 120% of its original size */
+}
+
+
 .bioo{
     padding-bottom: 20px;
     border-radius: 10px;
@@ -349,3 +356,6 @@ p{
     }
 
 }
+
+
+
