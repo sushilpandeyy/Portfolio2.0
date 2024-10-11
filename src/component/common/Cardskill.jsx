@@ -6,12 +6,12 @@ const Cardskill = (props) => {
 
   return (
     <div
-      className={`skillcard p-4 rounded-lg border cursor-pointer transition-transform transform hover:scale-105 hover:z-10 overflow-hidden ${
+      className={`skillcard p-2 sm:p-3 md:p-4 rounded-lg border cursor-pointer transition-transform transform hover:scale-105 hover:z-10 overflow-hidden ${
         currentMode === 'Light' ? 'bg-white border-gray-200' : 'bg-gray-800 border-gray-700'
       }`}
     >
       {/* Adjusted image size and layout */}
-      <div className="w-full h-40 mb-4">
+      <div className="w-full h-20 sm:h-28 md:h-36 mb-2">
         <img
           className="sk-img w-full h-full object-contain rounded-lg"
           src={props.img}
@@ -19,7 +19,7 @@ const Cardskill = (props) => {
         />
       </div>
       <h4
-        className={`text-lg font-semibold ${
+        className={`text-sm sm:text-md md:text-lg font-semibold ${
           currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'
         }`}
       >
