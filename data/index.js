@@ -248,7 +248,7 @@ const other = [
 ]
 const exp = [
     {
-        id: "3e",
+        id: "2e",
         title: "Co-Lead",
         org: "GDG oncampus SRMUAP",
         dur: "Sep 2023 - Present",

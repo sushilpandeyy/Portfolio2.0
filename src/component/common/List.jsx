@@ -50,7 +50,7 @@ const List = ({ items }) => {
                 color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
               }}
             >
-              {item.info}
+              {item.description}
             </p>
             <p
               className="pro-p-mobile text-sm md:text-base"
