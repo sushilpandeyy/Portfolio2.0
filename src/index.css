@@ -40,4 +40,25 @@ body{
   .animate-fadeIn {
     animation: fadeIn 1s ease-in-out;
   }
+
+/* Carousel CSS */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: 100%;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(100% / 3); /* Shows 3 items at a time, adjust for responsiveness */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    cursor: pointer;
+  }
   

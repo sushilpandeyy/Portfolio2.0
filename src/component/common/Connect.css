@@ -144,3 +144,161 @@
    bottom: 100px;
    width: 100%;
 }
+
+.projectbox {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-image {
+  height: 200px; /* Fallback */
+}
+
+.project-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .projectbox {
+    margin-bottom: 1rem;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-info h3 {
+    font-size: 1rem;
+  }
+
+  .project-info p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .project-image {
+    height: 180px;
+  }
+
+  .project-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .projectbox {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  .project-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-info p {
+    font-size: 1.125rem;
+  }
+}
+
+.projectbox {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image-propp {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin: 20px;
+  border-radius: 50%; /* Make it circular */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image-propp:hover {
+  transform: scale(1.1);
+}
+
+.project-info {
+  text-align: left;
+}
+
+/* For iPads and medium devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projectbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-image {
+    margin-right: 1rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+  }
+}
+
+/* General Responsive Adjustments */
+@media (max-width: 640px) {
+  .projectbox {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .project-info h3 {
+    font-size: 1rem;
+  }
+
+  .project-info p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .projectbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-info p {
+    font-size: 1.125rem;
+  }
+}

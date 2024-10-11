@@ -1,51 +1,83 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-const List = (props) => {
+const List = ({ items }) => {
   const currentMode = useSelector((state) => state.mode.current);
-  
-  const handleCardClick = () => {
-    window.open(props.link, '_blank');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 3; // Set the number of items per page
+
+  // Calculate the current page's items
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+
+  // Calculate total pages
+  const totalPages = Math.ceil(items.length / itemsPerPage);
+
+  // Handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
   };
 
   return (
-    <div
-      className="projectbox transition-transform transform hover:scale-105 hover:shadow-lg hover:z-10" 
-      onClick={handleCardClick}
-    >
-      <div className="project-image overflow-hidden">
-        <img
-          className="project-image-propp transition-transform duration-300 ease-in-out hover:scale-110"
-          src={props.img}
-          alt={props.title}
-        />
-      </div>
-      <div className="project-info">
-        <h3
-          className="pro-h3-mobile"
-          style={{
-            color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
-          }}
+    <div>
+      {/* Render the current page's items */}
+      {currentItems.map((item) => (
+        <div
+          key={item.id}
+          className="projectbox transition-transform transform hover:scale-105 hover:shadow-lg hover:z-10 p-4 flex flex-col sm:flex-row items-center"
+          onClick={() => window.open(item.link, '_blank')}
         >
-          {props.title}
-        </h3>
-        <p
-          className="pro-p-mobile"
-          style={{
-            color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
-          }}
-        >
-          {props.info}
-        </p>
-        <p
-          className="pro-p-mobile"
-          style={{
-            color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
-          }}
-        >
-          <b>Skills: </b>
-          {props.skills}
-        </p>
+          <div className="project-image flex-shrink-0 overflow-hidden">
+            <img
+              className="project-image-propp w-[100px] h-[100px] object-cover transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+              src={item.img}
+              alt={item.title}
+            />
+          </div>
+          <div className="project-info mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left">
+            <h3
+              className="pro-h3-mobile text-lg md:text-xl font-bold mb-2"
+              style={{
+                color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
+              }}
+            >
+              {item.title}
+            </h3>
+            <p
+              className="pro-p-mobile text-sm md:text-base"
+              style={{
+                color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
+              }}
+            >
+              {item.info}
+            </p>
+            <p
+              className="pro-p-mobile text-sm md:text-base"
+              style={{
+                color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
+              }}
+            >
+              <b>Skills: </b>
+              {item.skills}
+            </p>
+          </div>
+        </div>
+      ))}
+
+      {/* Pagination controls */}
+      <div className="pagination mt-6 flex justify-center space-x-2">
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => handlePageChange(index + 1)}
+            className={`py-2 px-4 rounded-full ${
+              currentPage === index + 1 ? 'bg-green-700 text-white' : 'bg-gray-300 text-black'
+            }`}
+          >
+            {index + 1}
+          </button>
+        ))}
       </div>
     </div>
   );

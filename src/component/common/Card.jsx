@@ -14,17 +14,19 @@ const Card = (props) => {
       onClick={handleCardClick}
       style={{ zIndex: 1 }}
     >
-      <div className="card-para mb-2">
-        <h4 className={`text-lg font-semibold ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'}`}>
+      {/* Title */}
+      <div className="card-para mb-2 text-center">
+        <h4 className={`text-lg sm:text-xl font-semibold ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'}`}>
           {props.type}
         </h4>
       </div>
-      <img className="card-img w-full h-40 object-cover rounded-lg mb-2" src={props.img} alt="" />
-      <div className="card-des">
-        <p className={`text-base ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-300'}`}>
-          {props.info}
-        </p>
-      </div>
+      
+      {/* Image */}
+      <img
+        className="card-img w-full h-[200px] sm:h-[220px] object-cover rounded-lg"
+        src={props.img}
+        alt={props.title}
+      />
     </li>
   );
 };

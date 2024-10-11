@@ -22,37 +22,44 @@ const Activity = () => {
     const currentMode = useSelector((state) => state.mode.current);
 
     return (
-        <div className="p-6 rounded-lg border" style={{ backgroundColor: '#101826', borderColor: currentMode === "Light" ? "gray-200" : "gray-700" }}>
+        <div 
+            className={`p-6 rounded-lg border transition-colors duration-500 ${currentMode === "Light" ? "bg-white border-gray-200" : "bg-gray-900 border-gray-700"}`}
+            style={{ backgroundColor: '#101826' }}  // Maintain custom bg color
+        >
             <h2 className="text-3xl font-bold mb-6 text-white">
                 Activity
             </h2>
-            <div className="flex space-x-4 mb-6">
+
+            {/* Toggle Buttons */}
+            <div className="flex flex-wrap justify-start gap-4 mb-6">
                 <button
-                    className={`py-2 px-4 rounded-full font-medium ${toggle === 'pro' ? 'bg-green-700 text-white' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
+                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'pro' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
                     onClick={() => setToggle('pro')}
                 >
                     Projects
                 </button>
                 <button
-                    className={`py-2 px-4 rounded-full font-medium ${toggle === 'art' ? 'bg-green-700 text-white' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
+                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'art' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
                     onClick={() => setToggle('art')}
                 >
                     Articles
                 </button>
                 <button
-                    className={`py-2 px-4 rounded-full font-medium ${toggle === 'cert' ? 'bg-green-700 text-white' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
+                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'cert' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
                     onClick={() => setToggle('cert')}
                 >
                     Certificates
                 </button>
                 <button
-                    className={`py-2 px-4 rounded-full font-medium ${toggle === 'skil' ? 'bg-green-700 text-white' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
+                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'skil' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
                     onClick={() => setToggle('skil')}
                 >
                     Skills
                 </button>
             </div>
-            <div>
+
+            {/* Section Content */}
+            <div className="transition-opacity duration-500 ease-in-out">
                 {vity(toggle)}
             </div>
         </div>

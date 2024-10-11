@@ -23,64 +23,65 @@ const data = [{
 
 ]
 
-const Proj = [  
+const Proj = [
     {
-        id: "110",
-        img: "https://cdn.myanimelist.net/images/characters/9/198885.jpg",
-        title: "Korosuke",
-        description: "A platform which always organizations/companies to create their own ML models based on their important data.",
-        skills: "React, FastAPI",
-        link: ""
+      id: "110",
+      img: "https://cdn.myanimelist.net/images/characters/9/198885.jpg",
+      title: "Korosuke",
+      description: "Enabling organizations to create ML models based on their data.",
+      skills: "React, FastAPI",
+      link: ""
     },
     {
-        id: "109",
-        img: "https://symbl-world.akamaized.net/i/webp/49/b0c6a200505aea34d6f48f8b0a0e54.webp",
-        title: "Shiver",
-        description: "A Platform for multiple professions under a roof.",
-        skills: "React, FastAPI, Gemini API",
-        link: ""
+      id: "109",
+      img: "https://symbl-world.akamaized.net/i/webp/49/b0c6a200505aea34d6f48f8b0a0e54.webp",
+      title: "Shiver",
+      description: "Platform uniting multiple professions under one roof.",
+      skills: "React, FastAPI, Gemini API",
+      link: ""
     },
     {
-        id: "111",
-        img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710962200/zng2ogv0tnab6mnoqtit.png",
-        title: "Skoop",
-        description: "A decentralized news application incorporating a layer of ML model.",
-        skills: "React, Tailwind CSS, Solidity, TensorFlow",
-        link: "https://github.com/sushilpandeyy/skoop"
+      id: "111",
+      img: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710962200/zng2ogv0tnab6mnoqtit.png",
+      title: "Skoop",
+      description: "Decentralized news app with ML integration.",
+      skills: "React, Tailwind CSS, Solidity, TensorFlow",
+      link: "https://github.com/sushilpandeyy/skoop"
     },
     {
-        id: "11321",
-        img: "https://img.freepik.com/free-vector/vector-illustration-retro-style-hand-giving-money-other-hand_1284-42589.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1711756800&semt=ais",
-        title: "Borrow Bridge",
-        description: "A Micro-Investment Platform for Tier-1 City Audience to invest in tier-3 cities.",
-        skills: "React, Tailwind CSS, Mongodb, ExpressJS, Solidity",
-        link: "https://github.com/sushilpandeyy/borrowbridge"
+      id: "11321",
+      img: "https://img.freepik.com/free-vector/vector-illustration-retro-style-hand-giving-money-other-hand_1284-42589.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1711756800&semt=ais",
+      title: "Borrow Bridge",
+      description: "Micro-investment platform for urban investors.",
+      skills: "React, Tailwind CSS, MongoDB, ExpressJS, Solidity",
+      link: "https://github.com/sushilpandeyy/borrowbridge"
     },
     {
-        id: "1111",
-        img: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/3/8/vycpwzww6qw9lfgqhszi/seedhe-maut",
-        title: "IHH Player",
-        description: "IHH Player is a developing project, a music player only for Indian Hip Hop.",
-        skills: "React, Tailwind CSS, ExpressJS, PostgreSQL, AWS",
-        link: "https://ihh-player.vercel.app/"
+      id: "1111",
+      img: "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2022/3/8/vycpwzww6qw9lfgqhszi/seedhe-maut",
+      title: "IHH Player",
+      description: "Music player focused on Indian Hip Hop.",
+      skills: "React, Tailwind CSS, ExpressJS, PostgreSQL, AWS",
+      link: "https://ihh-player.vercel.app/"
     },
     {
-        id: "1112",
-        img: "https://i.pngimg.me/thumb/f/720/e89f8ed9b7db4863a408.jpg",
-        title: "Fascia",
-        description: "Fascia is a ReactJS based dashboard which uses MERN Stack.",
-        skills: "ReactJS, NodeJS, ExpressJS, MongoDB, Material UI, Nivo Chart, HTML, CSS, Javascript",
-        link: "https://fascia-nu.vercel.app/"
+      id: "1112",
+      img: "https://i.pngimg.me/thumb/f/720/e89f8ed9b7db4863a408.jpg",
+      title: "Fascia",
+      description: "MERN-based dashboard for data visualization.",
+      skills: "ReactJS, NodeJS, MongoDB, Material UI",
+      link: "https://fascia-nu.vercel.app/"
     },
     {
-        id: "1113",
-        img: "https://devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F785a82c3cced4c8980cdda1c74a0250e%2Fprojects%2F40957aac2dd14f08ba4229ae91bd6391%2Fed750f67-bd87-42c3-9bfa-c293ea293831.jpeg&w=1440&q=75",
-        title: "Diss-Tract",
-        description: "Developed Diss-Tract Chrome Extension with website blocking, tasks, streaks, and user-friendly UI using HTML, CSS, and JavaScript.",
-        skills: "HTML, CSS, Vanilla Javascript",
-        link: "https://chrome.google.com/webstore/detail/disstract/pglfgdgdfkkklgfiikjilgjdbpfmioli"
+      id: "1113",
+      img: "https://devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2F785a82c3cced4c8980cdda1c74a0250e%2Fprojects%2F40957aac2dd14f08ba4229ae91bd6391%2Fed750f67-bd87-42c3-9bfa-c293ea293831.jpeg&w=1440&q=75",
+      title: "Diss-Tract",
+      description: "Chrome extension for blocking distractions.",
+      skills: "HTML, CSS, JavaScript",
+      link: "https://chrome.google.com/webstore/detail/disstract/pglfgdgdfkkklgfiikjilgjdbpfmioli"
     }
-]
+  ];
+  
 
 const Cert = [
     {
