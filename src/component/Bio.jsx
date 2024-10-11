@@ -31,24 +31,24 @@ const Bio = () => {
             Sushil Pandey
           </h1>
           <p className={`mt-1 sm:mt-2 text-sm sm:text-base transition-all duration-300 ease-in-out ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'}`}>
-            Full Stack Developer | Formerly with Myraa Technologies | Seeking Internship Opportunities
+          GDG on Campus Co-Lead | Member at <br/>Next Tech Lab | Pre-Final Year | Full Stack Developer
           </p>
         </div>
 
         {/* Skoop widget is hidden on small and medium screens */}
         <div className="biowidget flex items-center justify-center m-2 sm:m-5 hidden lg:flex transition-opacity duration-500 ease-in-out">
           <div className="widgets-image">
-            <Link to="https://skoop1.vercel.app">
+            <Link to="https://blog.contactsushil.me/blog/korosukefirst/">
               <img
                 className="w-[50px] h-[50px] object-cover"
-                src="https://res.cloudinary.com/djug8zfu7/image/upload/v1710962200/zng2ogv0tnab6mnoqtit.png"
-                alt="Skoop"
+                src="https://static.wikia.nocookie.net/kiteretsu/images/3/34/Orangekorosukelarge1200_%281%29.png"
+                alt="Korosuke"
               />
             </Link>
           </div>
           <div className="widget-title ml-2">
-            <Link to="https://skoop1.vercel.app">
-              <h3 className={`text-xl ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'}`}>Skoop</h3>
+            <Link to="https://blog.contactsushil.me/blog/korosukefirst">
+              <h3 className={`text-xl ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'}`}>Korosuke</h3>
             </Link>
           </div>
         </div>
@@ -56,8 +56,8 @@ const Bio = () => {
 
       <div className="bio-buttons flex flex-row mt-4 justify-start">
         <div className="connectbutton bg-[#0B65C2] rounded-lg ml-2 sm:ml-5 transition-transform duration-300 ease-in-out hover:scale-105">
-          <Link to="https://linktr.ee/contact.sushil">
-            <Button variant="contained" className="w-full">Connect</Button>
+          <Link to="https://blog.contactsushil.me/">
+            <Button variant="contained" className="w-full">Blog</Button>
           </Link>
         </div>
         <div className="resumebutton ml-2 sm:ml-5 transition-transform duration-300 ease-in-out hover:scale-105">

@@ -44,7 +44,7 @@ const Proj = [
       title: "Korosuke",
       description: "Enabling organizations to create ML models based on their data.",
       skills: "React, FastAPI",
-      link: ""
+      link: "https://blog.contactsushil.me/blog/korosukefirst/"
     },
     {
       id: "109",
@@ -76,7 +76,7 @@ const Proj = [
       title: "IHH Player",
       description: "Music player focused on Indian Hip Hop.",
       skills: "React, Tailwind CSS, ExpressJS, PostgreSQL, AWS",
-      link: "https://ihh-player.vercel.app/"
+      link: "https://ihh.contactsushil.me/"
     },
     {
       id: "1112",
