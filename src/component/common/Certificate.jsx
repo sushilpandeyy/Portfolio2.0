@@ -1,8 +1,10 @@
-import React from 'react'
-import { Cert } from '../../../data'
-import Listc from './Listc'
-function add(info){
-  return <Listc 
+import React from 'react';
+import { Cert } from '../../../data';
+import Listc from './Listc';
+
+function add(info) {
+  return (
+    <Listc
       key={info.id}
       title={info.title}
       img={info.img}
@@ -11,15 +13,16 @@ function add(info){
       cred={info.Cred}
       date={info.date}
       link={info.link}
-  />
+    />
+  );
 }
 
 const Certificate = () => {
   return (
-    <>
-    {Cert.map(add)}
-    </>
-  )
+    <div className="certificate-container p-4 space-y-4 overflow-visible">
+      {Cert.map(add)}
+    </div>
+  );
 }
 
-export default Certificate
+export default Certificate;

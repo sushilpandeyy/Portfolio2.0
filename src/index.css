@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body{
     background-color: #F4F2EE;
     margin: 0px;
@@ -9,3 +14,17 @@ body{
 *{
     font-family: 'Libre Baskerville', serif;
 }
+
+/* Ensure the loading screen takes full width and height of the viewport */
+.fullmainload {
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically and horizontally */
+  }
+  
+  .fullmain {
+    min-height: 100vh;
+  }
+  

@@ -281,13 +281,18 @@ p{
     align-items: flex-start;
     margin: 20px;
 }
-.boxload{
+/* Ensure the loading screen takes full width and height of the viewport */
+.boxload {
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
     display: flex;
-    align-items: end;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;      /* Vertically center the content */
+    flex-direction: column;   /* Stack items vertically */
+    text-align: center;       /* Center the text */
+    padding: 20px;
+  }
+  
 .fullmainload{
     height: 300px;
     width: 100%;
