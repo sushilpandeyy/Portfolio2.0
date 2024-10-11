@@ -25,19 +25,19 @@ const List = ({ items }) => {
       {currentItems.map((item) => (
         <div
           key={item.id}
-          className="projectbox transition-transform transform hover:scale-105 hover:shadow-lg hover:z-10 p-4 flex flex-col sm:flex-row items-center"
+          className="projectbox transition-transform transform hover:scale-105 hover:shadow-lg hover:z-10 p-2 sm:p-4 flex flex-col sm:flex-row items-center"
           onClick={() => window.open(item.link, '_blank')}
         >
           <div className="project-image flex-shrink-0 overflow-hidden">
             <img
-              className="project-image-propp w-[100px] h-[100px] object-cover transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
+              className="project-image-propp w-[120px] h-[120px] sm:w-[100px] sm:h-[100px] object-cover transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
               src={item.img}
               alt={item.title}
             />
           </div>
-          <div className="project-info mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left">
+          <div className="project-info mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left w-full sm:w-auto">
             <h3
-              className="pro-h3-mobile text-lg md:text-xl font-bold mb-2"
+              className="pro-h3-mobile text-base sm:text-lg md:text-xl font-bold mb-1 sm:mb-2"
               style={{
                 color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
               }}
@@ -45,7 +45,7 @@ const List = ({ items }) => {
               {item.title}
             </h3>
             <p
-              className="pro-p-mobile text-sm md:text-base"
+              className="pro-p-mobile text-xs sm:text-sm md:text-base mb-1"
               style={{
                 color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
               }}
@@ -53,7 +53,7 @@ const List = ({ items }) => {
               {item.description}
             </p>
             <p
-              className="pro-p-mobile text-sm md:text-base"
+              className="pro-p-mobile text-xs sm:text-sm md:text-base"
               style={{
                 color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
               }}
