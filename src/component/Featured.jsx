@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { data } from "../../data";
 import Card from './common/Card';
 import { useSelector } from 'react-redux';
@@ -23,6 +23,10 @@ const Featured = () => {
   const totalSlides = data.length;
   const visibleSlides = 3; // Number of visible slides (can adjust for responsive)
 
+  // Variables to track touch start position and swipe distance
+  const startX = useRef(0);
+  const moveX = useRef(0);
+
   // Function to move to the previous slide
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? totalSlides - visibleSlides : prev - 1));
@@ -30,7 +34,29 @@ const Featured = () => {
 
   // Function to move to the next slide
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === totalSlides - visibleSlides ? 0 : prev + 1));
+    setCurrentSlide((prev) => (prev + visibleSlides >= totalSlides ? 0 : prev + 1));
+  };
+
+  // Handle touch start
+  const handleTouchStart = (e) => {
+    startX.current = e.touches[0].clientX;
+  };
+
+  // Handle touch move
+  const handleTouchMove = (e) => {
+    moveX.current = e.touches[0].clientX;
+  };
+
+  // Handle touch end to determine swipe direction
+  const handleTouchEnd = () => {
+    const swipeDistance = startX.current - moveX.current;
+    const minSwipeDistance = 50; // Minimum swipe distance to trigger a slide
+
+    if (swipeDistance > minSwipeDistance) {
+      nextSlide(); // Swipe left to move to the next slide
+    } else if (swipeDistance < -minSwipeDistance) {
+      prevSlide(); // Swipe right to move to the previous slide
+    }
   };
 
   return (
@@ -41,12 +67,18 @@ const Featured = () => {
         Featured
       </h2>
 
-      <div className="carousel-container relative">
+      <div
+        className="carousel-container relative overflow-hidden"
+        onTouchStart={handleTouchStart}  // Touch start event
+        onTouchMove={handleTouchMove}    // Touch move event
+        onTouchEnd={handleTouchEnd}      // Touch end event
+      >
         {/* Carousel Items */}
         <div
           className="carousel-inner flex transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentSlide * (100 / visibleSlides)}%)`,
+            width: `${(totalSlides / visibleSlides) * 100}%`,
           }}
         >
           {data.map(createcard)}
@@ -70,6 +102,6 @@ const Featured = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Featured;

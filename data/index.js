@@ -20,6 +20,20 @@ const data = [{
     info: "Full Stack Internship Experience", 
     link: "https://contactsushil.medium.com/full-stack-development-intern-experience-e5bf1a3625bb"
 },
+{
+    id: "4",
+    type: "Skoop",
+    image: "https://firebasestorage.googleapis.com/v0/b/portfolio2-5eab3.appspot.com/o/SKOOPNEWS.png?alt=media&token=f3a907ec-296b-42eb-93af-eea15a017203",
+    info: "Decentralized News Application", 
+    link: "https://github.com/sushilpandeyy/Fascia"
+},
+{
+    id: "5",
+    type: "Myraa Technologies",
+    image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zkAvD1X8H_vu2mbmfDNKwg.png",
+    info: "Full Stack Internship Experience", 
+    link: "https://contactsushil.medium.com/full-stack-development-intern-experience-e5bf1a3625bb"
+},
 
 ]
 
