@@ -23,14 +23,14 @@ const Card = (props) => {
       
       {/* Image */}
       <img
-        className="card-img w-full h-[200px] sm:h-[220px] object-cover rounded-lg mb-2"
+        className="card-img w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg mb-2"
         src={props.img}
-        alt={props.title}
+        alt=""
       />
       
       {/* Description */}
       <div className="card-des">
-        <p className={`text-sm sm:text-base ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-300'}`}>
+        <p className={`text-sm sm:text-base md:text-lg ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-300'}`}>
           {props.info}
         </p>
       </div>

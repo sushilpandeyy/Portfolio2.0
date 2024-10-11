@@ -23,35 +23,34 @@ const Activity = () => {
 
     return (
         <div 
-            className={`p-6 rounded-lg border transition-colors duration-500 ${currentMode === "Light" ? "bg-white border-gray-200" : "bg-gray-900 border-gray-700"}`}
-            style={{ backgroundColor: '#101826' }}  // Maintain custom bg color
+            className={`p-6 rounded-lg border transition-colors duration-500 ${currentMode === "Light" ? "bg-white border-gray-200 text-gray-900" : "bg-gray-900 border-gray-700 text-gray-200"}`}
         >
-            <h2 className="text-3xl font-bold mb-6 text-white">
+            <h2 className={`text-3xl font-bold mb-6 ${currentMode === 'Light' ? 'text-gray-900' : 'text-white'}`}>
                 Activity
             </h2>
 
             {/* Toggle Buttons */}
             <div className="flex flex-wrap justify-start gap-4 mb-6">
                 <button
-                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'pro' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
+                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'pro' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-800 text-gray-300'}`}
                     onClick={() => setToggle('pro')}
                 >
                     Projects
                 </button>
                 <button
-                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'art' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
+                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'art' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-800 text-gray-300'}`}
                     onClick={() => setToggle('art')}
                 >
                     Articles
                 </button>
                 <button
-                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'cert' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
+                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'cert' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-800 text-gray-300'}`}
                     onClick={() => setToggle('cert')}
                 >
                     Certificates
                 </button>
                 <button
-                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'skil' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-900 text-gray-300'}`}
+                    className={`py-2 px-4 rounded-full font-medium transition-all duration-300 transform ${toggle === 'skil' ? 'bg-green-700 text-white scale-110' : currentMode === 'Light' ? 'bg-white text-gray-600' : 'bg-gray-800 text-gray-300'}`}
                     onClick={() => setToggle('skil')}
                 >
                     Skills

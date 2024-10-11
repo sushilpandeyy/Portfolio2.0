@@ -246,88 +246,92 @@ const other = [
     },
     
 ]
+
+
 const exp = [
     {
-        id: "2e",
-        title: "Co-Lead",
-        org: "GDG oncampus SRMUAP",
-        dur: "Sep 2023 - Present",
-        info: "",
-        skill: "",
-        link: "",
-        img: "https://i.ytimg.com/vi/UOhkdowmdnU/sddefault.jpg"
-    }, 
-    {
-        id: "3e",
-        title: "Associate",
-        org: "Next Tech Lab",
-        dur: "Feb 2024 - Present",
-        info: "",
-        skill: "Solidity, Web3",
-        link: "",
-        img: "https://media.licdn.com/dms/image/C510BAQGikFtlBr3v3A/company-logo_200_200/0/1631390746545?e=2147483647&v=beta&t=lsbetbfgbmruFsl84eWyA4Kvsbknpqhxhkm-kuhlmVU"
-    }, 
-    {
-        id: "2e",
-        title: "Full Stack Development Intern",
-        org: "Myraa Technologies",
-        dur: "Oct 2023 - Jan 2024",
-        info: "",
-        skill: "Tornado, Python, HTML, CSS, Javascript, AWS, EC2, S3 Bucket",
-        link: "",
-        img: "https://www.myraatechnologies.com/images/Myraa-Logo-footer.png"
-    }, 
-    {
-        id: "1e",
+        id: "exp_1",
         title: "Freelancer",
         org: "Self Employed",
         dur: "Mar 2020 - Present",
-        info: "",
+        info: "Providing web development services to clients using MERN stack and SEO optimization.",
         skill: "Web Development, MERN Stack, Wordpress, SEO",
         link: "mailto:contact.sushilpandey@gmail.com?subject=Hey%F0%9F%91%8B%2C%20I%20would%20like%20to%20hire%20you",
         img: "https://media.licdn.com/dms/image/C4E0BAQH3nUDO57s78A/company-logo_200_200/0/1631370638108/indpendent_contractor_logo?e=2147483647&v=beta&t=FbMDR4MarTAJ5cSWyxjjcPbuKucYw_ppQUP1TIOYmHw"
     },
     {
-        id: "2e",
+        id: "exp_2",
+        title: "Co-Lead",
+        org: "GDG oncampus SRMUAP",
+        dur: "Sep 2023 - Present",
+        info: "Leading a developer community to organize events and hands-on sessions.",
+        skill: "",
+        link: "",
+        img: "https://i.ytimg.com/vi/UOhkdowmdnU/sddefault.jpg"
+    },
+    {
+        id: "exp_3",
+        title: "Associate",
+        org: "Next Tech Lab",
+        dur: "Feb 2024 - Present",
+        info: "Working on blockchain and Web3 solutions for decentralized applications.",
+        skill: "Solidity, Web3",
+        link: "",
+        img: "https://media.licdn.com/dms/image/C510BAQGikFtlBr3v3A/company-logo_200_200/0/1631390746545?e=2147483647&v=beta&t=lsbetbfgbmruFsl84eWyA4Kvsbknpqhxhkm-kuhlmVU"
+    },
+    {
+        id: "exp_4",
+        title: "Full Stack Development Intern",
+        org: "Myraa Technologies",
+        dur: "Oct 2023 - Jan 2024",
+        info: "Built and maintained full stack applications using Tornado and AWS from scratch.",
+        skill: "Tornado, Python, HTML, CSS, Javascript, AWS, EC2, S3 Bucket",
+        link: "",
+        img: "https://www.myraatechnologies.com/images/Myraa-Logo-footer.png"
+    },
+    {
+        id: "exp_5",
         title: "Founder",
         org: "EveryDukan",
         dur: "Aug 2021 - Jan 2023",
-        info: "",
+        info: "Launched a shopping application which allows users to compare prices across different marketplaces and order.",
         skill: "MIT App Inventor, Digital Marketing, Designing",
         link: "https://play.google.com/store/apps/details?id=com.dukan.every",
         img: "https://play-lh.googleusercontent.com/yeiKvJm7eMM97edS0RTUnNFIxkqHdEoT1zdfSNUS0swfG4y76lB7r9YLtPg74l16RQ"
     },
     {
-        id: "21",
+        id: "exp_6",
         title: "Founder",
         org: "WeJobStation",
-        dur: "May 2018 - March 2022",
-        info: "",
+        dur: "May 2018 - Mar 2022",
+        info: "Developed a platform for government job information.",
         skill: "Kotlin, Wordpress, Airtable",
         link: "",
         img: "/wejobstation.png"
     },
     {
-        id: "22",
-        title: "Wordsmith Foundation",
-        org: "Technical Lead",
-        dur: "Jan 2023 - Feb 2022",
-        info: "",
-        skill: "CMS Development, Internal Tools, Wordpress, SEO",
-        link: "",
-        img: "/wf.jpg"
-    },
-    {
-        id: "23",
+        id: "exp_7",
         title: "Developer & Founding Member",
         org: "Prakash News Of India",
-        dur: "May 2018 - March 2022",
-        info: "",
+        dur: "May 2018 - Mar 2022",
+        info: "Built and moved an offline newspaper to an online platform.",
         skill: "CMS Development, Digital Marketing, SEO",
         link: "",
         img: "https://1.bp.blogspot.com/-M9n8cE8-LBA/YQVWPsbJqcI/AAAAAAAAGrc/HgGz4YDbcLondjrwdSenR0YZQUiAW8jGwCLcBGAsYHQ/s1920/logo%2B5.7.png"
     },
-]
+    {
+        id: "exp_8",
+        title: "Technical Lead",
+        org: "Wordsmith Foundation",
+        dur: "Jan 2022 - Feb 2022",
+        info: "Led the technical team in developing internal tools for efficient content management.",
+        skill: "CMS Development, Internal Tools, Wordpress, SEO",
+        link: "",
+        img: "/wf.jpg"
+    }
+];
+
+
 
 const view = [
     {

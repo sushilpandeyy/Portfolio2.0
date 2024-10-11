@@ -8,7 +8,7 @@ const Exp = () => {
 
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 4;
   const [currentItems, setCurrentItems] = useState([]);
 
   // Get current items for the page
