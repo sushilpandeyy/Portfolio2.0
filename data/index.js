@@ -249,6 +249,16 @@ const other = [
 const exp = [
     {
         id: "3e",
+        title: "Co-Lead",
+        org: "GDG oncampus SRMUAP",
+        dur: "Sep 2023 - Present",
+        info: "",
+        skill: "",
+        link: "",
+        img: "https://i.ytimg.com/vi/UOhkdowmdnU/sddefault.jpg"
+    }, 
+    {
+        id: "3e",
         title: "Associate",
         org: "Next Tech Lab",
         dur: "Feb 2024 - Present",
@@ -287,16 +297,36 @@ const exp = [
         link: "https://play.google.com/store/apps/details?id=com.dukan.every",
         img: "https://play-lh.googleusercontent.com/yeiKvJm7eMM97edS0RTUnNFIxkqHdEoT1zdfSNUS0swfG4y76lB7r9YLtPg74l16RQ"
     },
-   // {
-   //     id: "23",
-   //     title: "Developer & Founding Member",
-   //     org: "Prakash News Of India",
-   //     dur: "May 2018 - March 2022",
-   //     info: "",
-   //     skill: "CMS Development, Digital Marketing, SEO",
-   //     link: "https://www.prakashnewsofindia.in/",
-   //     img: "https://1.bp.blogspot.com/-M9n8cE8-LBA/YQVWPsbJqcI/AAAAAAAAGrc/HgGz4YDbcLondjrwdSenR0YZQUiAW8jGwCLcBGAsYHQ/s1920/logo%2B5.7.png"
-   // },
+    {
+        id: "21",
+        title: "Founder",
+        org: "WeJobStation",
+        dur: "May 2018 - March 2022",
+        info: "",
+        skill: "Kotlin, Wordpress, Airtable",
+        link: "",
+        img: "/wejobstation.png"
+    },
+    {
+        id: "22",
+        title: "Wordsmith Foundation",
+        org: "Technical Lead",
+        dur: "Jan 2023 - Feb 2022",
+        info: "",
+        skill: "CMS Development, Internal Tools, Wordpress, SEO",
+        link: "",
+        img: "/wf.jpg"
+    },
+    {
+        id: "23",
+        title: "Developer & Founding Member",
+        org: "Prakash News Of India",
+        dur: "May 2018 - March 2022",
+        info: "",
+        skill: "CMS Development, Digital Marketing, SEO",
+        link: "",
+        img: "https://1.bp.blogspot.com/-M9n8cE8-LBA/YQVWPsbJqcI/AAAAAAAAGrc/HgGz4YDbcLondjrwdSenR0YZQUiAW8jGwCLcBGAsYHQ/s1920/logo%2B5.7.png"
+    },
 ]
 
 const view = [
