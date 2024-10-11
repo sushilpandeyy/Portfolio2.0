@@ -15,31 +15,31 @@ const Layout = () => {
 
   return (
     <>
-      <div className={`biobox p-6 rounded-lg border ${containerClasses} border-gray-300`}>
+      <div className={`biobox p-4 sm:p-6 rounded-lg border ${containerClasses} border-gray-300`}>
         <Bio />
       </div>
       
-      <div className={`featurebox p-6 rounded-lg border mt-6 ${containerClasses} border-gray-300`}>
+      <div className={`featurebox p-4 sm:p-6 rounded-lg border mt-4 sm:mt-6 ${containerClasses} border-gray-300`}>
         <Featured />
       </div>
       
-      <div className={`featurebox p-6 rounded-lg border mt-6 ${containerClasses} border-gray-300`}>
+      <div className={`featurebox p-4 sm:p-6 rounded-lg border mt-4 sm:mt-6 ${containerClasses} border-gray-300`}>
         <Activity />
       </div>
       
-      <div className={`featurebox p-6 rounded-lg border mt-6 ${containerClasses} border-gray-300`}>
+      <div className={`featurebox p-4 sm:p-6 rounded-lg border mt-4 sm:mt-6 ${containerClasses} border-gray-300`}>
         <About />
       </div>
       
-      <div className={`featurebox p-6 rounded-lg border mt-6 ${containerClasses} border-gray-300`}>
+      <div className={`featurebox p-4 sm:p-6 rounded-lg border mt-4 sm:mt-6 ${containerClasses} border-gray-300`}>
         <Exp />
       </div>
       
-      <div className={`featurebox p-6 rounded-lg border mt-6 ${containerClasses} border-gray-300`}>
+      <div className={`featurebox p-4 sm:p-6 rounded-lg border mt-4 sm:mt-6 ${containerClasses} border-gray-300`}>
         <Education />
       </div>
       
-      <div className="space h-12"></div>
+      <div className="space h-12 sm:h-16"></div>
     </>
   );
 }
