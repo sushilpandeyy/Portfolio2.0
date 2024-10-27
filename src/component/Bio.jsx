@@ -61,7 +61,7 @@ const Bio = () => {
           </Link>
         </div>
         <div className="resumebutton ml-2 sm:ml-5 transition-transform duration-300 ease-in-out hover:scale-105">
-          <Link to="https://drive.google.com/file/d/14_DwlH74vO0QRFN6ir005uTV7ep4k0f2/view?usp=sharing">
+          <Link to="https://contactsushil.me/sushilpandey.pdf">
             <Button variant="outlined" className="w-full">Resume</Button>
           </Link>
         </div>
