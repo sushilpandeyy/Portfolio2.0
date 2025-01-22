@@ -16,32 +16,54 @@ const Header = () => {
     setcurr(newMode);
   };
 
-  return (
-    <div
-      className={`flex justify-between items-center p-4 ${curr === 'Light' ? 'bg-white' : 'bg-gray-900 border-b border-gray-700'}`}
-    >
-      {/* Logo Section */}
-      <div className="logo">
-        <a href="https://contactsushil.vercel.app/">
-          <img
-            className="logo-pp w-[50px] h-[50px] rounded-full"
-            src="https://ihhplayer.s3.ap-south-1.amazonaws.com/Posters/PROFILE.jpeg"
-            alt="Profile"
-          />
-        </a>
-        {console.log(currentMode)}
-      </div>
+  const isDark = curr !== 'Light';
 
-      {/* Mode Toggle Section */}
-      <div className="menu">
-        <img
-          className="dark-bright w-[35px] cursor-pointer transition-transform duration-300 transform hover:scale-110"
-          src={curr === 'Light' ? Night : Day}
-          onClick={setMode}
-          alt="Toggle Mode"
-        />
+  return (
+    <header 
+      className={`sticky top-0 z-50 w-full transition-colors duration-300
+        ${isDark 
+          ? 'bg-gray-900 border-b border-gray-800' 
+          : 'bg-white border-b border-gray-100'
+        }`}
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo Section */}
+          <div className="flex-shrink-0">
+            <a 
+              href="https://contactsushil.vercel.app/"
+              className="block transition-transform duration-300 hover:scale-105"
+            >
+              <img
+                className="w-10 h-10 rounded-full shadow-md ring-2 ring-offset-2
+                  ${isDark ? 'ring-gray-700' : 'ring-gray-200'}"
+                src="https://blog.contactsushil.me/static/images/sushil.png"
+                alt="Sushil Pandey"
+              />
+            </a>
+          </div>
+
+          {/* Mode Toggle Section */}
+          <div className="flex items-center">
+            <button
+              onClick={setMode}
+              className={`p-2 rounded-full transition-all duration-300
+                ${isDark 
+                  ? 'bg-gray-800 hover:bg-gray-700' 
+                  : 'bg-gray-100 hover:bg-gray-200'
+                }`}
+              aria-label={`Switch to ${isDark ? 'Light' : 'Dark'} Mode`}
+            >
+              <img
+                className="w-6 h-6 transition-transform duration-300 hover:scale-110"
+                src={isDark ? Day : Night}
+                alt={`Switch to ${isDark ? 'Light' : 'Dark'} Mode`}
+              />
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
 

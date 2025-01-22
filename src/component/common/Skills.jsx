@@ -4,67 +4,81 @@ import { useSelector } from 'react-redux';
 
 const SkillCard = ({ img, title }) => {
   const currentMode = useSelector((state) => state.mode.current);
+  const isDark = currentMode !== 'Light';
 
   return (
-    <div
-      className={`skill-card p-2 sm:p-4 md:p-6 rounded-lg border shadow-md transition-transform transform hover:scale-105 hover:shadow-lg ${
-        currentMode === 'Light' ? 'bg-white border-gray-100' : 'bg-gray-900 border-gray-700'
-      }`}
+    <div className={`group p-4 rounded-xl transition-all duration-300
+      ${isDark 
+        ? 'bg-gray-800 hover:bg-gray-700 border border-gray-700' 
+        : 'bg-white hover:bg-gray-50 border border-gray-200'} 
+      hover:shadow-lg hover:-translate-y-1`}
     >
-      <div className="w-full h-24 sm:h-32 md:h-40 mb-3">
-        <img className="w-full h-full object-contain rounded-lg" src={img} alt={title} />
+      <div className="w-full aspect-square flex items-center justify-center p-4
+        rounded-lg transition-colors duration-300
+        ${isDark ? 'bg-gray-900' : 'bg-gray-50'}">
+        <img 
+          className="w-full h-full object-contain transition-transform duration-300 
+            group-hover:scale-110 filter
+            ${isDark ? 'brightness-90 group-hover:brightness-100' : 'brightness-100'}"
+          src={img} 
+          alt={title} 
+        />
       </div>
-      <h4
-        className={`text-sm sm:text-md md:text-lg font-semibold ${
-          currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'
-        }`}
-      >
+      <h4 className={`mt-4 text-center font-medium transition-colors duration-300
+        ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
         {title}
       </h4>
     </div>
   );
 };
 
-const Skills = () => {
+const SkillSection = ({ title, skills }) => {
   const currentMode = useSelector((state) => state.mode.current);
-
-  const headingClass = `text-lg sm:text-xl md:text-2xl font-bold mb-6 ${
-    currentMode === 'Light' ? 'text-gray-800' : 'text-gray-100'
-  }`;
-
-  const renderSkills = (skills) => (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-      {skills.map((skill) => (
-        <SkillCard key={skill.id} img={skill.img} title={skill.title} />
-      ))}
-    </div>
-  );
+  const isDark = currentMode !== 'Light';
 
   return (
-    <div className="skills-container px-4 sm:px-6 md:px-8 py-8 space-y-10">
-      <div>
-        <h2 className={headingClass}>Programming Languages</h2>
-        {renderSkills(program)}
+    <div className="space-y-6">
+      <div className="flex items-center">
+        <h2 className={`text-xl sm:text-2xl font-bold transition-colors duration-300
+          ${isDark ? 'text-gray-100' : 'text-gray-900'}`}>
+          {title}
+        </h2>
+        <div className={`ml-4 flex-grow h-px transition-colors duration-300
+          ${isDark ? 'bg-gray-800' : 'bg-gray-200'}`} />
       </div>
-
-      <div>
-        <h2 className={headingClass}>Frontend</h2>
-        {renderSkills(frontskill)}
+      
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        {skills.map((skill) => (
+          <SkillCard key={skill.id} img={skill.img} title={skill.title} />
+        ))}
       </div>
+    </div>
+  );
+};
 
-      <div>
-        <h2 className={headingClass}>Backend</h2>
-        {renderSkills(backskill)}
-      </div>
+const Skills = () => {
+  const currentMode = useSelector((state) => state.mode.current);
+  const isDark = currentMode !== 'Light';
 
-      <div>
-        <h2 className={headingClass}>Database</h2>
-        {renderSkills(database)}
-      </div>
+  const sections = [
+    { title: 'Programming Languages', skills: program },
+    { title: 'Frontend Development', skills: frontskill },
+    { title: 'Backend Development', skills: backskill },
+    { title: 'Database Management', skills: database },
+    { title: 'Other Skills', skills: other }
+  ];
 
-      <div>
-        <h2 className={headingClass}>Other Skills</h2>
-        {renderSkills(other)}
+  return (
+    <div className={`w-full rounded-xl shadow-lg transition-colors duration-300 overflow-hidden
+      ${isDark ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'}`}>
+      <div className="p-6 sm:p-8 space-y-12">
+        {sections.map((section, index) => (
+          <SkillSection 
+            key={index}
+            title={section.title} 
+            skills={section.skills}
+          />
+        ))}
       </div>
     </div>
   );

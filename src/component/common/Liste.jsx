@@ -3,39 +3,70 @@ import { useSelector } from 'react-redux';
 
 const Liste = (props) => {
   const currentMode = useSelector((state) => state.mode.current);
+  const isDark = currentMode !== 'Light';
 
   return (
-    <div
-      className="projectbox transition-transform transform hover:scale-105 hover:shadow-lg hover:z-10 p-2 sm:p-3 md:p-4 flex flex-col sm:flex-row items-center"
-    >
-      {/* Image container */}
-      <div className="project-image flex-shrink-0 overflow-hidden w-full sm:w-1/4 mb-3 sm:mb-0">
-        <img
-          className="project-image-propp w-auto h-auto max-w-[100px] max-h-[100px] object-contain rounded-lg transition-transform duration-300 ease-in-out hover:scale-110"
-          src={props.img}
-          alt={props.title}
-        />
-      </div>
+    <div className={`group p-4 rounded-xl transition-all duration-300
+      ${isDark 
+        ? 'bg-gray-800 hover:bg-gray-700' 
+        : 'bg-white hover:bg-gray-50'}
+      border hover:shadow-lg hover:-translate-y-1
+      ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
+      
+      <div className="flex flex-col sm:flex-row items-start gap-4">
+        {/* Image Section */}
+        <div className="flex-shrink-0 w-full sm:w-auto flex justify-center sm:justify-start">
+          <div className={`w-24 h-24 rounded-xl overflow-hidden
+            transition-transform duration-300 group-hover:scale-105
+            ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
+            <img
+              src={props.img}
+              alt={props.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-      {/* Info container */}
-      <div className="project-info text-center sm:text-left sm:ml-4 w-full sm:w-3/4">
-        <h3 className="text-md sm:text-lg font-semibold mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          {props.title}
-        </h3>
-        <p className="text-xs sm:text-sm mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          {props.org}
-        </p>
-        <p className="text-xs sm:text-sm mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          {props.dur}
-        </p>
-        <p className="text-xs sm:text-sm mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          {props.info}
-        </p>
-        {props.skill && (
-          <p className="text-xs sm:text-sm" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-            <b>Skills: </b>{props.skill}
+        {/* Content Section */}
+        <div className="flex-grow space-y-2 w-full text-center sm:text-left">
+          {/* Title */}
+          <h3 className={`text-lg font-bold transition-colors duration-300
+            ${isDark ? 'text-gray-100' : 'text-gray-900'}`}>
+            {props.title}
+          </h3>
+
+          {/* Organization */}
+          <p className={`text-sm font-medium transition-colors duration-300
+            ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+            {props.org}
           </p>
-        )}
+
+          {/* Duration */}
+          <div className={`inline-block px-3 py-1 rounded-full text-sm
+            ${isDark ? 'bg-gray-900 text-gray-300' : 'bg-gray-100 text-gray-700'}`}>
+            {props.dur}
+          </div>
+
+          {/* Description */}
+          <p className={`text-sm transition-colors duration-300 mt-2
+            ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+            {props.info}
+          </p>
+
+          {/* Skills */}
+          {props.skill && (
+            <div className="mt-3">
+              <p className={`text-sm transition-colors duration-300
+                ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                <span className={`font-semibold
+                  ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Skills:{' '}
+                </span>
+                {props.skill}
+              </p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

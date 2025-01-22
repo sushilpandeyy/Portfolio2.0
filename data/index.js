@@ -1,34 +1,36 @@
 import assests from "../src/assets/all.js"
-const data = [{
-    id: "1",
-    type: "IHH Player",
-    image: "https://res.cloudinary.com/djug8zfu7/image/upload/v1710139256/x9ziaczvderovrbyd39p.png",
-    info: "Audio Streaming Application",
-    link: "https://ihh.contactsushil.me"
+const data = [
+    
+{
+    id: "32311",
+    type: "NyxAPI",
+    image: "https://blog.contactsushil.me/static/images/nyxapifirstinp.png",
+    info: "Mock API Generator for Faster Development",
+    link: "https://github.com/sushilpandeyy/NyxAPI"
 },
 {
-    id: "2",
-    type: "Skoop",
-    image: "https://firebasestorage.googleapis.com/v0/b/portfolio2-5eab3.appspot.com/o/SKOOPNEWS.png?alt=media&token=f3a907ec-296b-42eb-93af-eea15a017203",
-    info: "Decentralized News Application", 
-    link: "https://github.com/sushilpandeyy/Fascia"
+    id: "3123122",
+    type: "Korosuke",
+    image: "https://blog.contactsushil.me/static/images/Korosukefirstflow.jpeg",
+    info: "A Hardware Device for Centralized Organizational Information Access", 
+    link: "https://blog.contactsushil.me/blog/korosukefirst/"
 },
 {
-    id: "3",
-    type: "Myraa Technologies",
-    image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zkAvD1X8H_vu2mbmfDNKwg.png",
-    info: "Full Stack Internship Experience", 
-    link: "https://contactsushil.medium.com/full-stack-development-intern-experience-e5bf1a3625bb"
+    id: "31231",
+    type: "Qliq",
+    image: "https://devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2Fbeea3a652dd04c86b1890bd76bca5451%2Fprojects%2F40957aac2dd14f08ba4229ae91bd6391%2F7e784994-fd12-474c-8bb6-01bc0454c2d6.jpeg&w=1440&q=75",
+    info: "Web 3 Advetising Platform", 
+    link: "https://devfolio.co/projects/quilq-39ee"
 },
 {
-    id: "4",
-    type: "Skoop",
-    image: "https://firebasestorage.googleapis.com/v0/b/portfolio2-5eab3.appspot.com/o/SKOOPNEWS.png?alt=media&token=f3a907ec-296b-42eb-93af-eea15a017203",
-    info: "Decentralized News Application", 
-    link: "https://github.com/sushilpandeyy/Fascia"
+    id: "1231234",
+    type: "EveryDukan",
+    image: "https://play-lh.googleusercontent.com/1YDIze2-_YL8BBB_99cuUpJc4GvSfHYQ5cHnAUAmEUSddjV5C4k2SgXXP8_cee_1w4k=w3840-h2160-rw",
+    info: "All Deals Mobile APP", 
+    link: "https://github.com/sushilpandeyy/EveryDukan"
 },
 {
-    id: "5",
+    id: "12321315",
     type: "Myraa Technologies",
     image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zkAvD1X8H_vu2mbmfDNKwg.png",
     info: "Full Stack Internship Experience", 
@@ -38,6 +40,22 @@ const data = [{
 ]
 
 const Proj = [
+    {
+        id: "110",
+        img: "https://devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2Fbeea3a652dd04c86b1890bd76bca5451%2Fprojects%2F40957aac2dd14f08ba4229ae91bd6391%2F90bf238d-fc17-4720-8650-d6bae7ccead5.jpeg&w=1440&q=75",
+        title: "Qliq",
+        description: "Web3 Advertising Platform.",
+        skills: "React, Solidity, Express, IPFS",
+        link: "https://devfolio.co/projects/quilq-39ee"
+      },
+    {
+        id: "110",
+        img: "https://firebasestorage.googleapis.com/v0/b/govtjobinfo.firebasestorage.app/o/2119cd81-d7e2-437c-928e-121f716213e3%20(1).webp?alt=media&token=78bca9d2-1b9a-4102-9809-6cadba34f598",
+        title: "NyxAPI",
+        description: "Mock API Generator for Faster Development.",
+        skills: "React, Javascritp, NodeJS, Postgresql, Express",
+        link: "https://github.com/sushilpandeyy/NyxAPI"
+      },
     {
       id: "110",
       img: "https://cdn.myanimelist.net/images/characters/9/198885.jpg",

@@ -1,86 +1,113 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const List = ({ items }) => {
   const currentMode = useSelector((state) => state.mode.current);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3; // Set the number of items per page
+  const itemsPerPage = 3;
+  const isDark = currentMode !== 'Light';
 
-  // Calculate the current page's items
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
-
-  // Calculate total pages
   const totalPages = Math.ceil(items.length / itemsPerPage);
 
-  // Handle page change
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
   return (
-    <div>
-      {/* Render the current page's items */}
-      {currentItems.map((item) => (
-        <Link to={item.link} key={item.id}>
-          <div
-            className="projectbox transition-transform transform hover:scale-105 hover:shadow-lg hover:z-10 p-2 sm:p-4 flex flex-col sm:flex-row items-center"
-          >
-            <div className="project-image flex-shrink-0 overflow-hidden">
-              <img
-                className="project-image-propp w-[120px] h-[120px] sm:w-[100px] sm:h-[100px] object-cover transition-transform duration-300 ease-in-out hover:scale-110 rounded-full"
-                src={item.img}
-                alt={item.title}
-              />
-            </div>
-            <div className="project-info mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left w-full sm:w-auto">
-              <h3
-                className="pro-h3-mobile text-base sm:text-lg md:text-xl font-bold mb-1 sm:mb-2"
-                style={{
-                  color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
-                }}
-              >
-                {item.title}
-              </h3>
-              <p
-                className="pro-p-mobile text-xs sm:text-sm md:text-base mb-1"
-                style={{
-                  color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
-                }}
-              >
-                {item.description}
-              </p>
-              <p
-                className="pro-p-mobile text-xs sm:text-sm md:text-base"
-                style={{
-                  color: currentMode === 'Light' ? '#191919' : '#E9E9E9',
-                }}
-              >
-                <b>Skills: </b>
-                {item.skills}
-              </p>
-            </div>
-          </div>
-        </Link>
-      ))}
+    <div className="space-y-6">
+      {/* Project List */}
+      <div className="space-y-4">
+        {currentItems.map((item) => (
+          <Link to={item.link} key={item.id}>
+            <div className={`group p-4 rounded-xl transition-all duration-300
+              ${isDark 
+                ? 'bg-gray-800 hover:bg-gray-700' 
+                : 'bg-white hover:bg-gray-50'} 
+              border hover:shadow-lg hover:-translate-y-1
+              ${isDark ? 'border-gray-700' : 'border-gray-200'}`}
+            >
+              <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                {/* Project Image */}
+                <div className="flex-shrink-0">
+                  <div className={`w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden
+                    transition-transform duration-300 group-hover:scale-105
+                    ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
+                    <img
+                      className="w-full h-full object-cover"
+                      src={item.img}
+                      alt={item.title}
+                    />
+                  </div>
+                </div>
 
-
-      {/* Pagination controls */}
-      <div className="pagination mt-6 flex justify-center space-x-2">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index}
-            onClick={() => handlePageChange(index + 1)}
-            className={`py-2 px-4 rounded-full ${
-              currentPage === index + 1 ? 'bg-green-700 text-white' : 'bg-gray-300 text-black'
-            }`}
-          >
-            {index + 1}
-          </button>
+                {/* Project Info */}
+                <div className="flex-grow text-center sm:text-left">
+                  <h3 className={`text-lg sm:text-xl font-bold mb-2 transition-colors duration-300
+                    ${isDark ? 'text-gray-100' : 'text-gray-900'}`}>
+                    {item.title}
+                  </h3>
+                  
+                  <p className={`text-sm sm:text-base mb-3 transition-colors duration-300
+                    ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                    {item.description}
+                  </p>
+                  
+                  <div className={`text-sm sm:text-base font-medium transition-colors duration-300
+                    ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+                    <span className={`font-semibold ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+                      Skills:
+                    </span>{' '}
+                    {item.skills}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex justify-center items-center gap-2 pt-4">
+          <button
+            onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
+            disabled={currentPage === 1}
+            className={`p-2 rounded-lg transition-colors duration-300
+              ${isDark ? 'hover:bg-gray-800 disabled:bg-gray-800' : 'hover:bg-gray-100 disabled:bg-gray-100'}
+              ${isDark ? 'text-gray-400 disabled:text-gray-600' : 'text-gray-600 disabled:text-gray-400'}`}
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+
+          {Array.from({ length: totalPages }).map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => handlePageChange(idx + 1)}
+              className={`w-8 h-8 rounded-lg transition-all duration-300
+                ${currentPage === idx + 1 
+                  ? (isDark ? 'bg-blue-600 text-white' : 'bg-blue-600 text-white')
+                  : (isDark ? 'text-gray-400 hover:bg-gray-800' : 'text-gray-600 hover:bg-gray-100')}`}
+            >
+              {idx + 1}
+            </button>
+          ))}
+
+          <button
+            onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+            disabled={currentPage === totalPages}
+            className={`p-2 rounded-lg transition-colors duration-300
+              ${isDark ? 'hover:bg-gray-800 disabled:bg-gray-800' : 'hover:bg-gray-100 disabled:bg-gray-100'}
+              ${isDark ? 'text-gray-400 disabled:text-gray-600' : 'text-gray-600 disabled:text-gray-400'}`}
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+      )}
     </div>
   );
 };

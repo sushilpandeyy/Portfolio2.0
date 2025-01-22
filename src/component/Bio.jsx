@@ -6,63 +6,88 @@ import { useSelector } from 'react-redux';
 
 const Bio = () => {
   const currentMode = useSelector((state) => state.mode.current);
+  const isDark = currentMode !== 'Light';
 
   return (
-    <div 
-      className={`pb-5 rounded-lg border ${currentMode === 'Light' ? 'bg-white border-gray-200' : 'bg-gray-900 border-gray-700'} animate-fadeIn`}
-    >
-      <div className="headimage h-[150px] sm:h-[281px]">
-        <img className="w-full h-full object-cover rounded-lg" src={assests.headergif} alt="Header" />
-      </div>
-
-      <div className="relative profilepic transition-transform duration-500 ease-in-out hover:scale-105">
-        <img
-          className="absolute top-[-70px] sm:top-[-140px] left-[10px] sm:left-[26px] w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] rounded-full object-cover border-4 border-white"
-          src={assests.profile}
-          alt="Profile"
+    <div className={`rounded-xl shadow-lg overflow-hidden transition-colors duration-300
+      ${isDark ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'}`}>
+      
+      {/* Header Image */}
+      <div className="relative h-[150px] sm:h-[280px] w-full">
+        <img 
+          className="w-full h-full object-cover"
+          src={assests.headergif} 
+          alt="Header Cover"
         />
+
+        {/* Profile Picture */}
+        <div className="absolute left-6 transform -translate-y-1/2">
+          <div className="relative group">
+            <div className={`rounded-full p-1 transition-transform duration-300 group-hover:scale-105
+              ${isDark ? 'bg-gray-900' : 'bg-white'}`}>
+              <img
+                className="w-[100px] h-[100px] sm:w-[180px] sm:h-[180px] rounded-full object-cover
+                  ring-4 ring-offset-2 transition-all duration-300
+                  ${isDark ? 'ring-gray-800 ring-offset-gray-900' : 'ring-white ring-offset-white'}"
+                src={assests.profile}
+                alt="Sushil Pandey"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="space h-[20px] sm:h-[50px]"></div>
+      {/* Content Section */}
+      <div className="px-6 pt-16 sm:pt-24 pb-6">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+          {/* Bio Details */}
+          <div className="flex-grow">
+            <h1 className={`text-2xl sm:text-3xl font-bold transition-colors duration-300
+              ${isDark ? 'text-gray-100' : 'text-gray-900'}`}>
+              Sushil Pandey
+            </h1>
+            <p className={`mt-2 text-sm sm:text-base font-medium transition-colors duration-300
+              ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+              GDG on Campus Co-Lead | Member at <br/>
+              Next Tech Lab | Pre-Final Year | Full Stack Developer
+            </p>
+          </div>
 
-      <div className="biodetails flex flex-col sm:flex-row">
-        <div className="bioname w-full sm:w-[70%] m-2 sm:m-5">
-          <h1 className={`text-xl sm:text-3xl font-bold transition-all duration-300 ease-in-out ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'}`}>
-            Sushil Pandey
-          </h1>
-          <p className={`mt-1 sm:mt-2 text-sm sm:text-base transition-all duration-300 ease-in-out ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'}`}>
-          GDG on Campus Co-Lead | Member at <br/>Next Tech Lab | Pre-Final Year | Full Stack Developer
-          </p>
-        </div>
-
-        {/* Skoop widget is hidden on small and medium screens */}
-        <div className="biowidget flex items-center justify-center m-2 sm:m-5 hidden lg:flex transition-opacity duration-500 ease-in-out">
-          <div className="widgets-image">
-            <Link to="https://blog.contactsushil.me/blog/korosukefirst/">
+          {/* Korosuke Widget */}
+          <div className="hidden lg:flex items-center mt-4 sm:mt-0 p-3 rounded-lg transition-all duration-300
+            ${isDark ? 'hover:bg-gray-800' : 'hover:bg-gray-50'}">
+            <Link to="https://blog.contactsushil.me/blog/korosukefirst/" 
+              className="flex items-center gap-3">
               <img
-                className="w-[50px] h-[50px] object-cover"
+                className="w-12 h-12 rounded-lg object-cover"
                 src="https://static.wikia.nocookie.net/kiteretsu/images/3/34/Orangekorosukelarge1200_%281%29.png"
                 alt="Korosuke"
               />
-            </Link>
-          </div>
-          <div className="widget-title ml-2">
-            <Link to="https://blog.contactsushil.me/blog/korosukefirst">
-              <h3 className={`text-xl ${currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'}`}>Korosuke</h3>
+              <h3 className={`text-lg font-medium transition-colors duration-300
+                ${isDark ? 'text-gray-200' : 'text-gray-900'}`}>
+                Korosuke
+              </h3>
             </Link>
           </div>
         </div>
-      </div>
 
-      <div className="bio-buttons flex flex-row mt-4 justify-start">
-        <div className="connectbutton bg-[#0B65C2] rounded-lg ml-2 sm:ml-5 transition-transform duration-300 ease-in-out hover:scale-105">
-          <Link to="https://blog.contactsushil.me/">
-            <Button variant="contained" className="w-full">Blog</Button>
+        {/* Action Buttons */}
+        <div className="flex gap-4 mt-6">
+          <Link to="https://blog.contactsushil.me/" className="flex-1 sm:flex-none">
+            <Button 
+              variant="contained" 
+              className="w-full sm:w-auto px-8 py-2 bg-blue-600 hover:bg-blue-700
+                transition-all duration-300 normal-case text-base font-medium">
+              Blog
+            </Button>
           </Link>
-        </div>
-        <div className="resumebutton ml-2 sm:ml-5 transition-transform duration-300 ease-in-out hover:scale-105">
-          <Link to="https://drive.google.com/file/d/1tZS-ykEI_jjeQcyedojApieYP2ldK37A/view?usp=sharing">
-            <Button variant="outlined" className="w-full">Resume</Button>
+          <Link to="https://drive.google.com/file/d/1tZS-ykEI_jjeQcyedojApieYP2ldK37A/view?usp=sharing" 
+            className="flex-1 sm:flex-none">
+            <Button 
+              variant="outlined"
+              className="w-full sm:w-auto px-8 py-2 border-2 normal-case text-base font-medium">
+              Resume
+            </Button>
           </Link>
         </div>
       </div>

@@ -1,35 +1,90 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { Twitter, Instagram, Github, Linkedin } from 'lucide-react';
 
 const Footer = () => {
+  const currentMode = useSelector((state) => state.mode.current);
+  const isDark = currentMode !== 'Light';
+
+  const socialLinks = [
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/contactsushill',
+      icon: <Twitter className="w-5 h-5" />
+    },
+    {
+      name: 'Instagram',
+      url: 'https://instagram.com/contactsushil',
+      icon: <Instagram className="w-5 h-5" />
+    },
+    {
+      name: 'GitHub',
+      url: 'https://github.com/sushilpandeyy',
+      icon: <Github className="w-5 h-5" />
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://linkedin.com/in/contactsushil',
+      icon: <Linkedin className="w-5 h-5" />
+    }
+  ];
+
   return (
-    <footer className="bg-gray-800 text-white p-6">
-      <div className="container mx-auto flex flex-col items-center space-y-4 md:flex-row md:justify-between md:space-y-0">
-        
-        {/* Social Media Links */}
-        <div className="flex space-x-4">
-          <Link to="https://twitter.com/contactsushill" className="hover:text-gray-400">
-            <img className="w-6 h-6" src="https://seeklogo.com/images/T/twitter-new-logo-8A0C4E0C58-seeklogo.com.png?v=638258088440000000" alt="Twitter" />
-          </Link>
-          <Link to="https://instagram.com/contactsushil" className="hover:text-gray-400">
-            <img className="w-6 h-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png?20200512141346" alt="Instagram" />
-          </Link>
-          <Link to="https://github.com/sushilpandeyy" className="hover:text-gray-400">
-            <img className="w-6 h-6" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub" />
-          </Link>
-          <Link to="https://linkedin.com/in/contactsushil" className="hover:text-gray-400">
-            <img className="w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
-          </Link>
-        </div>
+    <footer className={`w-full py-8 px-6 transition-colors duration-300
+      ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
+      <div className="max-w-6xl mx-auto">
+        <div className="flex flex-col items-center space-y-6 md:flex-row md:justify-between md:space-y-0">
+          
+          {/* Social Links */}
+          <div className="flex items-center space-x-4">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`p-2 rounded-full transition-all duration-300
+                  ${isDark 
+                    ? 'text-gray-400 hover:text-gray-200 hover:bg-gray-800' 
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200'
+                  }`}
+                aria-label={social.name}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
 
-        {/* Copyright Info */}
-        <div className="text-sm">
-          <p>&copy; 2024 Sushil Pandey. All rights reserved.</p>
-        </div>
+          {/* Copyright */}
+          <div className={`text-sm font-medium
+            ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+            <p>© {new Date().getFullYear()} Sushil Pandey. All rights reserved.</p>
+          </div>
 
-        {/* Footer Links */}
-        <div className="flex space-x-4">
-           
+          {/* Quick Links */}
+          <div className="flex items-center space-x-6">
+            <Link
+              to="/about"
+              className={`text-sm font-medium transition-colors duration-300
+                ${isDark 
+                  ? 'text-gray-400 hover:text-gray-200' 
+                  : 'text-gray-600 hover:text-gray-900'
+                }`}
+            >
+              About
+            </Link>
+            <Link
+              to="/contact"
+              className={`text-sm font-medium transition-colors duration-300
+                ${isDark 
+                  ? 'text-gray-400 hover:text-gray-200' 
+                  : 'text-gray-600 hover:text-gray-900'
+                }`}
+            >
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

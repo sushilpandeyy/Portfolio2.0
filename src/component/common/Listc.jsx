@@ -1,8 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { ExternalLink } from 'lucide-react';
 
 const Listc = (props) => {
   const currentMode = useSelector((state) => state.mode.current);
+  const isDark = currentMode !== 'Light';
   
   const handleCardClick = () => {
     window.open(props.link, '_blank');
@@ -10,35 +12,81 @@ const Listc = (props) => {
 
   return (
     <div 
-      className="projectbox transition-transform transform hover:scale-105 hover:shadow-lg hover:z-10 p-2 sm:p-4 md:p-5 flex flex-col sm:flex-row items-center"
       onClick={handleCardClick}
+      className={`group p-6 rounded-xl transition-all duration-300 cursor-pointer
+        ${isDark 
+          ? 'bg-gray-800 hover:bg-gray-700' 
+          : 'bg-white hover:bg-gray-50'} 
+        border hover:shadow-lg hover:-translate-y-1
+        ${isDark ? 'border-gray-700' : 'border-gray-200'}`}
     >
-      {/* Image section */}
-      <div className="project-image flex-shrink-0 overflow-hidden w-full sm:w-1/4 lg:w-1/5 mb-3 sm:mb-0">
-        <img
-          className="project-image-propp w-auto h-auto max-w-[100px] max-h-[100px] sm:max-w-[120px] sm:max-h-[120px] object-contain rounded-lg transition-transform duration-300 ease-in-out hover:scale-110"
-          src={props.img}
-          alt={props.title}
-        />
-      </div>
+      <div className="flex flex-col sm:flex-row items-center gap-6">
+        {/* Certificate Image */}
+        <div className="flex-shrink-0 mb-4 sm:mb-0">
+          <div className={`w-28 h-28 rounded-xl overflow-hidden
+            transition-transform duration-300 group-hover:scale-105
+            ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
+            <img
+              src={props.img}
+              alt={props.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-      {/* Information section */}
-      <div className="project-info text-center sm:text-left sm:ml-4 lg:ml-6 w-full sm:w-3/4 lg:w-4/5">
-        <h3 className="text-md sm:text-lg font-semibold mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          {props.title}
-        </h3>
-        <h4 className="text-sm sm:text-base mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          Issued by: {props.org}
-        </h4>
-        <p className="text-xs sm:text-sm mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          <b>On: </b>{props.date}
-        </p>
-        <p className="text-xs sm:text-sm mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          <b>Credential ID: </b>{props.cred}
-        </p>
-        <p className="text-xs sm:text-sm mb-1" style={{ color: currentMode === 'Light' ? '#191919' : '#E9E9E9' }}>
-          <b>Skills: </b>{props.skills}
-        </p>
+        {/* Certificate Details */}
+        <div className="flex-grow text-center sm:text-left space-y-3">
+          {/* Title with Link Icon */}
+          <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
+            <h3 className={`text-lg font-bold transition-colors duration-300
+              ${isDark ? 'text-gray-100' : 'text-gray-900'}`}>
+              {props.title}
+            </h3>
+            <ExternalLink className={`w-4 h-4 transition-colors duration-300
+              ${isDark ? 'text-gray-400' : 'text-gray-600'}`} />
+          </div>
+
+          {/* Organization */}
+          <div className={`text-base font-medium transition-colors duration-300
+            ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+            Issued by: {props.org}
+          </div>
+
+          {/* Date */}
+          <div className={`text-sm transition-colors duration-300
+            ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+            <span className={`font-semibold
+              ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+              On:{' '}
+            </span>
+            {props.date}
+          </div>
+
+          {/* Credential ID */}
+          <div className={`text-sm font-mono transition-colors duration-300
+            ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+            <span className={`font-semibold font-sans
+              ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+              Credential ID:{' '}
+            </span>
+            {props.cred}
+          </div>
+
+          {/* Skills */}
+          <div className="flex flex-wrap gap-2 pt-2">
+            {props.skills.split(',').map((skill, index) => (
+              <span
+                key={index}
+                className={`px-3 py-1 rounded-full text-sm
+                  ${isDark 
+                    ? 'bg-gray-900 text-gray-300' 
+                    : 'bg-gray-100 text-gray-700'}`}
+              >
+                {skill.trim()}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

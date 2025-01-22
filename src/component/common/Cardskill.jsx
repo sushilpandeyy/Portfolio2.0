@@ -3,26 +3,32 @@ import { useSelector } from 'react-redux';
 
 const Cardskill = (props) => {
   const currentMode = useSelector((state) => state.mode.current);
+  const isDark = currentMode !== 'Light';
 
   return (
     <div
-      className={`skillcard p-2 sm:p-3 md:p-4 rounded-lg border cursor-pointer transition-transform transform hover:scale-105 hover:z-10 overflow-hidden ${
-        currentMode === 'Light' ? 'bg-white border-gray-200' : 'bg-gray-800 border-gray-700'
-      }`}
+      className={`group p-4 rounded-xl transition-all duration-300 cursor-pointer
+        border hover:shadow-lg hover:-translate-y-1
+        ${isDark 
+          ? 'bg-gray-800 hover:bg-gray-700 border-gray-700' 
+          : 'bg-white hover:bg-gray-50 border-gray-200'}`}
     >
-      {/* Adjusted image size and layout */}
-      <div className="w-full h-20 sm:h-28 md:h-36 mb-2">
+      {/* Image Container */}
+      <div className={`w-full aspect-square mb-4 rounded-lg overflow-hidden
+        transition-colors duration-300 p-4
+        ${isDark ? 'bg-gray-900' : 'bg-gray-50'}`}>
         <img
-          className="sk-img w-full h-full object-contain rounded-lg"
           src={props.img}
           alt={props.title}
+          className="w-full h-full object-contain transition-transform duration-300 
+            group-hover:scale-110 filter
+            ${isDark ? 'brightness-90 group-hover:brightness-100' : 'brightness-100'}"
         />
       </div>
-      <h4
-        className={`text-sm sm:text-md md:text-lg font-semibold ${
-          currentMode === 'Light' ? 'text-gray-900' : 'text-gray-200'
-        }`}
-      >
+
+      {/* Title */}
+      <h4 className={`text-center text-base font-semibold transition-colors duration-300
+        ${isDark ? 'text-gray-200' : 'text-gray-900'}`}>
         {props.title}
       </h4>
     </div>
