@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Night from '../assets/night.png';
 import Day from "../assets/day.png";
 import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
 import { change } from "../feature/darkmode";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const currentMode = useSelector((state) => state.mode.current);
   const dispatch = useDispatch();
-  const [curr, setcurr] = useState(currentMode);
+  const isDark = currentMode === 'Dark';
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDark);
+  }, [isDark]);
 
   const setMode = () => {
-    const newMode = currentMode === 'Light' ? 'Dark' : 'Light';
+    const newMode = isDark ? 'Light' : 'Dark';
     dispatch(change({ mode: newMode }));
-    setcurr(newMode);
   };
-
-  const isDark = curr !== 'Light';
 
   return (
     <header 
@@ -28,22 +29,20 @@ const Header = () => {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16">
-          {/* Logo Section */}
           <div className="flex-shrink-0">
-            <a 
-              href="https://contactsushil.vercel.app/"
+            <Link 
+              to="/"
               className="block transition-transform duration-300 hover:scale-105"
             >
               <img
-                className="w-10 h-10 rounded-full shadow-md ring-2 ring-offset-2
-                  ${isDark ? 'ring-gray-700' : 'ring-gray-200'}"
+                className={`w-10 h-10 rounded-full shadow-md ring-2 ring-offset-2
+                  ${isDark ? 'ring-gray-700' : 'ring-gray-200'}`}
                 src="https://blog.contactsushil.me/static/images/sushil.png"
                 alt="Sushil Pandey"
               />
-            </a>
+            </Link>
           </div>
 
-          {/* Mode Toggle Section */}
           <div className="flex items-center">
             <button
               onClick={setMode}

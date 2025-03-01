@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { data } from "../../data";
-
-// Card Component
+ 
 const Card = ({ type, img, info, link, className }) => {
   const currentMode = useSelector((state) => state.mode.current);
-  const isDark = currentMode !== 'Light';
+  const isDark = currentMode === 'Dark';
 
   return (
     <div className={`h-full rounded-xl overflow-hidden shadow-lg transition-all duration-300
@@ -46,23 +45,61 @@ const Card = ({ type, img, info, link, className }) => {
   );
 };
 
-// Featured Component
+ 
 const Featured = () => {
   const currentMode = useSelector((state) => state.mode.current);
-  const isDark = currentMode !== 'Light';
+  const isDark = currentMode === 'Dark';
   const [currentSlide, setCurrentSlide] = useState(0);
-  const visibleSlides = 3;
+  
+  
+  const [visibleSlides, setVisibleSlides] = useState(3);
+  
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setVisibleSlides(1);
+      } else if (window.innerWidth < 1024) {
+        setVisibleSlides(2);
+      } else {
+        setVisibleSlides(3);
+      }
+    };
+    
+    // Set initial value
+    handleResize();
+    
+    // Add resize listener
+    window.addEventListener('resize', handleResize);
+    
+    // Clean up
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
+  const totalPages = Math.ceil(data.length / visibleSlides);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => 
-      (prev + visibleSlides >= data.length) ? 0 : prev + 1
-    );
+  const nextSlide = () => { 
+    const nextIndex = currentSlide + visibleSlides; 
+    if (nextIndex >= data.length) {
+      setCurrentSlide(0);
+    } else {
+      setCurrentSlide(nextIndex);
+    }
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => 
-      (prev === 0) ? Math.max(0, data.length - visibleSlides) : prev - 1
-    );
+  const prevSlide = () => { 
+    const prevIndex = currentSlide - visibleSlides;
+     
+    if (prevIndex < 0) { 
+      const lastPageStart = Math.max(0, data.length - (data.length % visibleSlides || visibleSlides));
+      setCurrentSlide(lastPageStart);
+    } else {
+      setCurrentSlide(prevIndex);
+    }
+  };
+   
+  const goToPage = (pageIndex) => {
+    setCurrentSlide(pageIndex * visibleSlides);
   };
 
   const navigationButtonClass = `
@@ -76,8 +113,7 @@ const Featured = () => {
   return (
     <div className={`w-full py-8 px-6 rounded-2xl shadow-xl transition-colors duration-300
       ${isDark ? 'bg-gray-900 border border-gray-800' : 'bg-white border border-gray-200'}`}
-    >
-      {/* Header */}
+    > 
       <div className="flex items-center justify-between mb-8 px-2">
         <h2 className={`text-2xl font-bold 
           ${isDark ? 'text-gray-100' : 'text-gray-900'}`}>
@@ -101,8 +137,7 @@ const Featured = () => {
           </button>
         </div>
       </div>
-
-      {/* Carousel */}
+ 
       <div className="relative overflow-hidden">
         <div 
           className="flex transition-transform duration-500 ease-out"
@@ -112,7 +147,11 @@ const Featured = () => {
           }}
         >
           {data.map((item, index) => (
-            <div key={index} className="w-1/3 px-3">
+            <div 
+              key={index} 
+              className={`px-3`}
+              style={{ width: `${100 / visibleSlides}%` }}
+            >
               <Card
                 type={item.type}
                 img={item.image}
@@ -124,13 +163,12 @@ const Featured = () => {
           ))}
         </div>
       </div>
-
-      {/* Pagination */}
+ 
       <div className="flex justify-center mt-6 gap-2">
-        {Array.from({ length: Math.ceil(data.length / visibleSlides) }).map((_, idx) => (
+        {Array.from({ length: totalPages }).map((_, idx) => (
           <button
             key={idx}
-            onClick={() => setCurrentSlide(idx * visibleSlides)}
+            onClick={() => goToPage(idx)}
             className={`w-2 h-2 rounded-full transition-all duration-300
               ${currentSlide === idx * visibleSlides
                 ? (isDark ? 'bg-blue-500' : 'bg-blue-600')

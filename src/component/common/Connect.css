@@ -1,304 +1,196 @@
-.connect{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-}
-.box-atom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-}
-.center{
-    height: 6em;
-    width: 6em;
-    background-color: black;
-    border: 0.1em solid white;
-    box-shadow: 0 0 10px white, inset 0 0 20px white; 
-    border-radius: 100%;
-    position: fixed;
-    left: 50%;
-   right: 50%;
-   top: 260px;
-}
-.nucleus1{
-  background-color: black;
-  position: fixed;
-  border-radius: 50%;
-  border: 0.6em solid white;
-  border-top: 1.5em solid white;
-  border-bottom: 1.5em solid white; 
-  box-shadow: 0 0 10px white, inset 0 0 20px white; 
-  height: 30em;
-  width: 5em;
+.connect {
+  position: relative;
+  min-height: calc(100vh - 64px);
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  animation: mymove1 24s infinite;
-}
-.nucleus2{
-    transform: rotate(45deg);
-    background-color: black;
-    position: fixed;
-    border-radius: 50%;
-    border: 0.6em solid white;
-    border-top: 1.5em solid white;
-    border-bottom: 1.5em solid rgb white; 
-    box-shadow: 0 0 10px white, inset 0 0 20px white; 
-    height: 30em;
-    width: 5em;
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  animation: mymove2 24s infinite;
-  }
-  .nucleus3{
-    transform: rotate(90deg);
-    background-color: black;
-    position: fixed;
-    border-radius: 50%;
-    border: 0.6em solid white;
-    border-top: 1.5em solid white;
-    border-bottom: 1.5em solid rgb white; 
-    box-shadow: 0 0 10px white, inset 0 0 20px white; 
-    height: 30em;
-    width: 5em;
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  animation: mymove3 24s infinite;
-  }
-  .nucleus4{
-    transform: rotate(135deg);
-    background-color: black;
-    position: fixed;
-    border-radius: 50%;
-    border: 0.6em solid white;
-    border-top: 1.5em solid white;
-    border-bottom: 1.5em solid rgb white; 
-    box-shadow: 0 0 10px white, inset 0 0 20px white; 
-    height: 30em;
-    width: 5em;
-    display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  animation: mymove4 24s infinite;
-  }
-  .img-prop{
-    height: 30px;
-    width: 30px;
-    margin: 25px;
-    border-radius: 5px;
-  }
-
-  @keyframes mymove1 {
-    100% {transform: rotate(360deg);}
-  }
-  @keyframes mymove2 {
-    100% {transform: rotate(405deg);}
-  }
-  @keyframes mymove3 {
-    100% {transform: rotate(450deg);}
-  }
-  @keyframes mymove4 {
-    100% {transform: rotate(495deg);}
-  }
-
-.allring:hover .nucleus1{
-    animation: none;
-}
-.allring:hover .nucleus2{
-    animation: none;
-}
-.allring:hover .nucleus3{
-    animation: none;
-}
-.allring:hover .nucleus4{
-    animation: none;
-}
-#sus-img{
-    transform: rotate(-135deg);
-}
-#what-img{
-    transform: rotate(-135deg);
-}
-#link-img{
-    transform: rotate(-90deg);
-}
-#mail-img{
-    transform: rotate(-90deg);
-}
-#git-img{
-    transform: rotate(-45deg);
-}
-#med-img{
-    transform: rotate(-45deg);
-}
-.follow-txt{
-  margin-top: 200px;
-}
-.bot-follow{
-  position: fixed;
-   left: 0;
-   bottom: 100px;
-   width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.projectbox {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--border-color);
-  background-color: var(--bg-color);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-image {
-  height: 200px; /* Fallback */
-}
-
-.project-image img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-image img:hover {
-  transform: scale(1.1);
-}
-
-@media (max-width: 640px) {
-  .projectbox {
-    margin-bottom: 1rem;
-  }
-
-  .project-image {
-    height: 150px;
-  }
-
-  .project-info h3 {
-    font-size: 1rem;
-  }
-
-  .project-info p {
-    font-size: 0.875rem;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  .project-image {
-    height: 180px;
-  }
-
-  .project-info h3 {
-    font-size: 1.25rem;
-  }
-
-  .project-info p {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .projectbox {
-    margin-bottom: 1.5rem;
-  }
-
-  .project-image {
-    height: 220px;
-  }
-
-  .project-info h3 {
-    font-size: 1.5rem;
-  }
-
-  .project-info p {
-    font-size: 1.125rem;
-  }
-}
-
-.projectbox {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--border-color);
-  background-color: var(--bg-color);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-image {
+.box-atom {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 0 1rem;
 }
 
-.project-image-propp {
-  height: 100px;
-  width: 100px;
-  object-fit: cover;
-  margin: 20px;
-  border-radius: 50%; /* Make it circular */
-  transition: transform 0.3s ease-in-out;
+.center {
+  height: 6em;
+  width: 6em;
+  border: 0.1em solid;
+  box-shadow: 0 0 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
-.project-image-propp:hover {
-  transform: scale(1.1);
+.light-mode .center {
+  background-color: white;
+  border-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.project-info {
-  text-align: left;
+.dark-mode .center {
+  background-color: #1B1F23;
+  border-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* For iPads and medium devices */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .projectbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 1.5rem;
+.allring {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nucleus1, .nucleus2, .nucleus3, .nucleus4 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30em;
+  width: 5em;
+}
+
+.nucleus1 {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: mymove1 24s infinite linear;
+}
+
+.nucleus2 {
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: mymove2 24s infinite linear;
+}
+
+.nucleus3 {
+  transform: translate(-50%, -50%) rotate(90deg);
+  animation: mymove3 24s infinite linear;
+}
+
+.nucleus4 {
+  transform: translate(-50%, -50%) rotate(135deg);
+  animation: mymove4 24s infinite linear;
+}
+
+.light-mode .nucleus1, 
+.light-mode .nucleus2, 
+.light-mode .nucleus3, 
+.light-mode .nucleus4 {
+  border: 0.6em solid #333;
+  border-top: 1.5em solid #333;
+  border-bottom: 1.5em solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .nucleus1, 
+.dark-mode .nucleus2, 
+.dark-mode .nucleus3, 
+.dark-mode .nucleus4 {
+  border: 0.6em solid white;
+  border-top: 1.5em solid white;
+  border-bottom: 1.5em solid white;
+  box-shadow: 0 0 10px white, inset 0 0 20px white;
+}
+
+.img-prop {
+  height: 50px;
+  width: 50px;
+  margin: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img-prop:hover {
+  transform: scale(1.2);
+}
+
+@keyframes mymove1 {
+  100% {transform: translate(-50%, -50%) rotate(360deg);}
+}
+@keyframes mymove2 {
+  100% {transform: translate(-50%, -50%) rotate(405deg);}
+}
+@keyframes mymove3 {
+  100% {transform: translate(-50%, -50%) rotate(450deg);}
+}
+@keyframes mymove4 {
+  100% {transform: translate(-50%, -50%) rotate(495deg);}
+}
+
+.allring:hover .nucleus1,
+.allring:hover .nucleus2,
+.allring:hover .nucleus3,
+.allring:hover .nucleus4 {
+  animation-play-state: paused;
+}
+
+#img-1, #img-2 {
+  transform: rotate(0deg);
+}
+
+#img-3, #img-4 {
+  transform: rotate(-45deg);
+}
+
+#img-5, #img-6 {
+  transform: rotate(-90deg);
+}
+
+#img-7, #img-8 {
+  transform: rotate(-135deg);
+}
+
+.follow-txt {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bot-follow {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nucleus1, .nucleus2, .nucleus3, .nucleus4 {
+    height: 20em;
   }
-
-  .project-image {
-    margin-right: 1rem;
+  
+  .img-prop {
+    height: 40px;
+    width: 40px;
+    margin: 15px;
   }
-
-  .project-info h3 {
+  
+  .follow-txt {
     font-size: 1.25rem;
   }
-
-  .project-info p {
-    font-size: 1rem;
-  }
 }
 
-/* General Responsive Adjustments */
-@media (max-width: 640px) {
-  .projectbox {
-    display: block;
-    margin-bottom: 1rem;
+@media (max-width: 480px) {
+  .nucleus1, .nucleus2, .nucleus3, .nucleus4 {
+    height: 15em;
   }
-
-  .project-info h3 {
+  
+  .img-prop {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
+  
+  .follow-txt {
     font-size: 1rem;
-  }
-
-  .project-info p {
-    font-size: 0.875rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .projectbox {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
-  }
-
-  .project-info h3 {
-    font-size: 1.5rem;
-  }
-
-  .project-info p {
-    font-size: 1.125rem;
   }
 }

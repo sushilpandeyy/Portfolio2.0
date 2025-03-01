@@ -1,7 +1,14 @@
-import { createSlice } from "@reduxjs/toolkit";
+ import { createSlice } from "@reduxjs/toolkit";
+ 
+const getPreferredTheme = () => {
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? "Dark" : "Light";
+  }
+  return "Dark"; n
+};
 
 const initmode = {
-   current: "Dark"
+   current: getPreferredTheme()
 };
 
 export const mode = createSlice({
@@ -9,10 +16,12 @@ export const mode = createSlice({
     initialState: initmode,
     reducers: {
       change: (state, action) => {
-        state.current = action.payload.mode; // Update the 'current' property directly
+        state.current = action.payload.mode;
       },
     },
   });
   
-export const { change } = mode.actions; // Corrected this line
+export const { change } = mode.actions;
 export default mode.reducer;
+
+export const isDarkMode = (mode) => mode === "Dark";

@@ -8,18 +8,19 @@ const Exp = () => {
   const currentMode = useSelector((state) => state.mode.current);
   const isDark = currentMode !== 'Light';
   const [currentPage, setCurrentPage] = useState(1);
+  const [displayedItems, setDisplayedItems] = useState([]);
   const itemsPerPage = 4;
-  const [currentItems, setCurrentItems] = useState([]);
 
   useEffect(() => {
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    setCurrentItems(exp.slice(indexOfFirstItem, indexOfLastItem));
+    setDisplayedItems(exp.slice(indexOfFirstItem, indexOfLastItem));
   }, [currentPage]);
 
   const totalPages = Math.ceil(exp.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setCurrentPage(pageNumber);
   };
 
@@ -34,8 +35,8 @@ const Exp = () => {
       </div>
 
       <div className="space-y-4">
-        {currentItems.length > 0 ? (
-          currentItems.map((info) => (
+        {displayedItems.length > 0 ? (
+          displayedItems.map((info) => (
             <Liste
               key={info.id}
               title={info.title}

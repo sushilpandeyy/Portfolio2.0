@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -6,23 +6,27 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const List = ({ items }) => {
   const currentMode = useSelector((state) => state.mode.current);
   const [currentPage, setCurrentPage] = useState(1);
+  const [displayedItems, setDisplayedItems] = useState([]);
   const itemsPerPage = 3;
   const isDark = currentMode !== 'Light';
 
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+  useEffect(() => {
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    setDisplayedItems(items.slice(indexOfFirstItem, indexOfLastItem));
+  }, [currentPage, items]);
+
   const totalPages = Math.ceil(items.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
+    // Changed: Removed scrolling behavior
     setCurrentPage(pageNumber);
   };
 
   return (
     <div className="space-y-6">
-      {/* Project List */}
       <div className="space-y-4">
-        {currentItems.map((item) => (
+        {displayedItems.map((item) => (
           <Link to={item.link} key={item.id}>
             <div className={`group p-4 rounded-xl transition-all duration-300
               ${isDark 
@@ -32,7 +36,6 @@ const List = ({ items }) => {
               ${isDark ? 'border-gray-700' : 'border-gray-200'}`}
             >
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-                {/* Project Image */}
                 <div className="flex-shrink-0">
                   <div className={`w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden
                     transition-transform duration-300 group-hover:scale-105
@@ -45,7 +48,6 @@ const List = ({ items }) => {
                   </div>
                 </div>
 
-                {/* Project Info */}
                 <div className="flex-grow text-center sm:text-left">
                   <h3 className={`text-lg sm:text-xl font-bold mb-2 transition-colors duration-300
                     ${isDark ? 'text-gray-100' : 'text-gray-900'}`}>
@@ -71,7 +73,6 @@ const List = ({ items }) => {
         ))}
       </div>
 
-      {/* Pagination */}
       {totalPages > 1 && (
         <div className="flex justify-center items-center gap-2 pt-4">
           <button

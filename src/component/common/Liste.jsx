@@ -14,7 +14,6 @@ const Liste = (props) => {
       ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
       
       <div className="flex flex-col sm:flex-row items-start gap-4">
-        {/* Image Section */}
         <div className="flex-shrink-0 w-full sm:w-auto flex justify-center sm:justify-start">
           <div className={`w-24 h-24 rounded-xl overflow-hidden
             transition-transform duration-300 group-hover:scale-105
@@ -27,33 +26,27 @@ const Liste = (props) => {
           </div>
         </div>
 
-        {/* Content Section */}
         <div className="flex-grow space-y-2 w-full text-center sm:text-left">
-          {/* Title */}
           <h3 className={`text-lg font-bold transition-colors duration-300
             ${isDark ? 'text-gray-100' : 'text-gray-900'}`}>
             {props.title}
           </h3>
 
-          {/* Organization */}
           <p className={`text-sm font-medium transition-colors duration-300
             ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
             {props.org}
           </p>
 
-          {/* Duration */}
           <div className={`inline-block px-3 py-1 rounded-full text-sm
             ${isDark ? 'bg-gray-900 text-gray-300' : 'bg-gray-100 text-gray-700'}`}>
             {props.dur}
           </div>
 
-          {/* Description */}
           <p className={`text-sm transition-colors duration-300 mt-2
             ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
             {props.info}
           </p>
 
-          {/* Skills */}
           {props.skill && (
             <div className="mt-3">
               <p className={`text-sm transition-colors duration-300
