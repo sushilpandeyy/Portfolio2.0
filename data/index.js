@@ -282,87 +282,117 @@ const other = [
 ];
 
 const exp = [
-  {
-    id: "exp_freelancer_001",
-    title: "Freelancer",
-    org: "Self Employed",
-    dur: "Mar 2020 - Present",
-    info: "Providing web development services to clients using MERN stack and SEO optimization.",
-    skill: "Web Development, MERN Stack, Wordpress, SEO",
-    link: "mailto:contact.sushilpandey@gmail.com?subject=Hey%F0%9F%91%8B%2C%20I%20would%20like%20to%20hire%20you",
-    img: "https://media.licdn.com/dms/image/C4E0BAQH3nUDO57s78A/company-logo_200_200/0/1631370638108/indpendent_contractor_logo?e=2147483647&v=beta&t=FbMDR4MarTAJ5cSWyxjjcPbuKucYw_ppQUP1TIOYmHw"
-  },
-  {
-    id: "exp_gdg_002",
-    title: "Co-Lead",
-    org: "GDG oncampus SRMUAP",
-    dur: "Sep 2023 - Present",
-    info: "Leading a developer community to organize events and hands-on sessions.",
-    skill: "",
-    link: "",
-    img: "https://i.ytimg.com/vi/UOhkdowmdnU/sddefault.jpg"
-  },
-  {
-    id: "exp_ntl_003",
-    title: "Associate",
-    org: "Next Tech Lab",
-    dur: "Feb 2024 - Present",
-    info: "Working on blockchain and Web3 solutions for decentralized applications.",
-    skill: "Solidity, Web3",
-    link: "",
-    img: "https://media.licdn.com/dms/image/C510BAQGikFtlBr3v3A/company-logo_200_200/0/1631390746545?e=2147483647&v=beta&t=lsbetbfgbmruFsl84eWyA4Kvsbknpqhxhkm-kuhlmVU"
-  },
-  {
-    id: "exp_myraa_004",
-    title: "Full Stack Development Intern",
-    org: "Myraa Technologies",
-    dur: "Oct 2023 - Jan 2024",
-    info: "Built and maintained full stack applications using Tornado and AWS from scratch.",
-    skill: "Tornado, Python, HTML, CSS, Javascript, AWS, EC2, S3 Bucket",
-    link: "",
-    img: "https://www.myraatechnologies.com/images/Myraa-Logo-footer.png"
-  },
-  {
-    id: "exp_everydukan_005",
-    title: "Founder",
-    org: "EveryDukan",
-    dur: "Aug 2021 - Jan 2023",
-    info: "Launched a shopping application which allows users to compare prices across different marketplaces and order.",
-    skill: "MIT App Inventor, Digital Marketing, Designing",
-    link: "https://play.google.com/store/apps/details?id=com.dukan.every",
-    img: "https://play-lh.googleusercontent.com/yeiKvJm7eMM97edS0RTUnNFIxkqHdEoT1zdfSNUS0swfG4y76lB7r9YLtPg74l16RQ"
-  },
-  {
-    id: "exp_wejobstation_006",
-    title: "Founder",
-    org: "WeJobStation",
-    dur: "May 2018 - Mar 2022",
-    info: "Developed a platform for government job information.",
-    skill: "Kotlin, Wordpress, Airtable",
-    link: "",
-    img: "/wejobstation.png"
-  },
-  {
-    id: "exp_pnewsoi_007",
-    title: "Developer & Founding Member",
-    org: "Prakash News Of India",
-    dur: "May 2018 - Mar 2022",
-    info: "Built and moved an offline newspaper to an online platform.",
-    skill: "CMS Development, Digital Marketing, SEO",
-    link: "",
-    img: "https://1.bp.blogspot.com/-M9n8cE8-LBA/YQVWPsbJqcI/AAAAAAAAGrc/HgGz4YDbcLondjrwdSenR0YZQUiAW8jGwCLcBGAsYHQ/s1920/logo%2B5.7.png"
-  },
-  {
-    id: "exp_wordsmith_008",
-    title: "Technical Lead",
-    org: "Wordsmith Foundation",
-    dur: "Jan 2022 - Feb 2022",
-    info: "Led the technical team in developing internal tools for efficient content management.",
-    skill: "CMS Development, Internal Tools, Wordpress, SEO",
-    link: "",
-    img: "/wf.jpg"
-  }
-];
+    {
+      id: "exp_freelancer_001",
+      title: "Freelancer",
+      org: "Self Employed",
+      dur: "Mar 2020 - Present",
+      info: "Delivered web and mobile solutions to 50+ global clients, specializing in e-commerce platforms and custom web applications. Implemented responsive designs, payment gateways, and data management solutions with high client satisfaction.",
+      skill: "Web Development, MERN Stack, Shopify, Flutter, AWS, Firebase, Mobile App Development",
+      link: "mailto:contact.sushilpandey@gmail.com?subject=Hey%F0%9F%91%8B%2C%20I%20would%20like%20to%20hire%20you",
+      img: "https://media.licdn.com/dms/image/C4E0BAQH3nUDO57s78A/company-logo_200_200/0/1631370638108/indpendent_contractor_logo?e=2147483647&v=beta&t=FbMDR4MarTAJ5cSWyxjjcPbuKucYw_ppQUP1TIOYmHw"
+    },
+    {
+      id: "exp_gdg_002",
+      title: "Co-Lead",
+      org: "GDG oncampus SRMUAP",
+      dur: "Sep 2023 - Present",
+      info: "Leading campus Google Developer Group, organizing technical workshops for 200+ student developers. Coordinated in various events covering web development, cloud computing, and mobile app development with industry professionals.",
+      skill: "Community Building, Event Management, Public Speaking, Google Technologies, Leadership",
+      link: "",
+      img: "https://pbs.twimg.com/media/D22N_huX4AEbb1y.jpg"
+    },
+    {
+      id: "exp_ntl_003",
+      title: "Member",
+      org: "Next Tech Lab",
+      dur: "Jun 2023 - Jan 2025",
+      info: "",
+      skill: "",
+      link: "",
+      img: "https://media.licdn.com/dms/image/C510BAQGikFtlBr3v3A/company-logo_200_200/0/1631390746545?e=2147483647&v=beta&t=lsbetbfgbmruFsl84eWyA4Kvsbknpqhxhkm-kuhlmVU",
+      location: "Amaravati, Andhra Pradesh, India",
+      type: "On-site",
+      promotions: [
+        {
+          title: "Member",
+          dur: "Jun 2023 - Jan 2024 · 8 mos",
+          description: "Contributed to Web3 projects, mentored junior developers, and participated in 9hacks & unfold hackathons. Developed blockchain solutions and decentralized applications with cross-functional teams.",
+          skills: "Web3, Mentoring, Hackathons, Blockchain, Smart Contracts, DApps"
+        },
+        {
+          title: "Associate",
+          dur: "Feb 2024 - Jul 2024 · 6 mos",
+          description: "Led Web3 and full-stack development at Satoshi Lab, creating decentralized applications and integrating blockchain technologies with modern web solutions. Developed secure digital platforms aligned with decentralization principles.",
+          skills: "Communication, Blockchain, Web3, Full Stack Development, Smart Contracts, DeFi"
+        }
+      ]
+    },
+    {
+      id: "exp_myraa_004",
+      title: "Full Stack Development Intern",
+      org: "Myraa Technologies",
+      dur: "Oct 2023 - Jan 2024 · 4 mos",
+      info: "Developed FlocHealth, an AI-driven healthcare platform serving 10,000+ users on AWS EC2. Built a Tornado backend for disease prediction and insurance recommendations using Neo4J for data management. Received 50% stipend increase for exceptional contributions.",
+      skill: "Tornado, Python, Neo4J, HTML, CSS, JavaScript, AWS EC2, S3 Bucket, AI Implementation, Healthcare Solutions",
+      link: "",
+      img: "https://www.myraatechnologies.com/images/Myraa-Logo-footer.png"
+    },
+    {
+      id: "exp_everydukan_005",
+      title: "Founder",
+      org: "EveryDukan",
+      dur: "Aug 2021 - Jan 2023 · 1 yr 6 mos",
+      info: "Founded a comparative shopping application integrating major e-commerce APIs for real-time price comparison. Grew to 2,000+ active users with advanced search algorithms for enhanced product discovery across multiple marketplaces.",
+      skill: "Mobile App Development, Firebase, Digital Marketing, UI/UX Design, E-commerce Integration, API Development",
+      link: "https://play.google.com/store/apps/details?id=com.dukan.every",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchk49zgvo3n5Irtkhbg3ut6mw6pWxUfZZRA&s"
+    },
+    {
+      id: "exp_pnewsoi_007",
+      title: "Developer & Founding Member",
+      org: "Prakash News Of India",
+      dur: "May 2018 - Mar 2022 · 3 yrs 11 mos",
+      info: "",
+      skill: "",
+      link: "",
+      img: "https://1.bp.blogspot.com/-M9n8cE8-LBA/YQVWPsbJqcI/AAAAAAAAGrc/HgGz4YDbcLondjrwdSenR0YZQUiAW8jGwCLcBGAsYHQ/s1920/logo%2B5.7.png",
+      promotions: [
+        {
+          title: "Founding Member",
+          dur: "May 2018 - Jul 2019 · 1 yr 3 mos",
+          description: "Established the newspaper's digital presence through website architecture development and SEO implementation, increasing organic traffic by 85%. Created content management workflows for editorial efficiency.",
+          skills: "Content Management, SEO, Web Development, Media Solutions"
+        },
+        {
+          title: "Head of Digital Transformation",
+          dur: "Aug 2019 - Mar 2022 · 2 yrs 8 mos",
+          description: "Led digital transformation by creating system & processes to manage and run a digital news platform. Managed a team of 3 content creators.",
+          skills: "Digital Marketing, SEO, Team Management"
+        }
+      ]
+    },
+    {
+      id: "exp_wejobstation_006",
+      title: "Founder",
+      org: "WeJobStation",
+      dur: "May 2018 - Mar 2022 · 3 yrs 11 mos",
+      info: "Built a comprehensive government job platform with real-time notifications for vacancies, exams, and results. Grew to 15,000+ monthly active users with Firebase integration for notifications and established partnerships with coaching institutes.",
+      skill: "Kotlin, Firebase, Mobile App Development, AWS, Content Strategy, User Growth",
+      link: "",
+      img: "/wejobstation.png"
+    },
+    {
+      id: "exp_wordsmith_008",
+      title: "Technical Lead",
+      org: "Wordsmith Foundation",
+      dur: "Jan 2022 - Feb 2022 · 2 mos",
+      info: "Led 4-person technical team creating content management tools that reduced publishing time by 40%. Implemented analytics tracking and developed automated social media distribution, increasing reach by 65%.",
+      skill: "CMS Development, Internal Tools, Web Services, SEO, Team Leadership, Technical Architecture",
+      link: "",
+      img: "/wf.jpg"
+    }
+  ];
 
 const view = [
   {

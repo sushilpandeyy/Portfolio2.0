@@ -19,6 +19,11 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    // Apply background color to the entire document body
+    document.body.style.backgroundColor = (currentMode === "Light") ? "#F4F2EE" : "#1B1F23";
+  }, [currentMode]);
+
   return (
     (loading)?
     <div className='fullmainload' style={{
@@ -28,7 +33,8 @@ function App() {
     </div> :
     <>
       <div className='fullmain' style={{
-        backgroundColor: (currentMode === "Light") ? "#F4F2EE" : "#1B1F23"
+        backgroundColor: (currentMode === "Light") ? "#F4F2EE" : "#1B1F23",
+        minHeight: "100vh" // Ensure the div covers the entire viewport height
       }}>
         <Header />
         <Outlet />

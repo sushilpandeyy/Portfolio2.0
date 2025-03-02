@@ -20,7 +20,7 @@ const Exp = () => {
   const totalPages = Math.ceil(exp.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Remove the window.scrollTo call to prevent auto-scrolling
     setCurrentPage(pageNumber);
   };
 
@@ -45,6 +45,11 @@ const Exp = () => {
               info={info.info}
               skill={info.skill}
               img={info.img}
+              location={info.location}
+              type={info.type}
+              // Support both single promotion and promotions array
+              promotion={info.promotion}
+              promotions={info.promotions}
             />
           ))
         ) : (
